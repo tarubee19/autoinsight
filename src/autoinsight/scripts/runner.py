@@ -53,7 +53,18 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 
-os.makedirs(os.path.join(OUT_DIR, "charts"), exist_ok=True)
+CHARTS_DIR = os.path.join(OUT_DIR, "charts")
+os.makedirs(CHARTS_DIR, exist_ok=True)
+
+
+def _chmod_best_effort(path, mode):
+    try:
+        os.chmod(path, mode)
+    except OSError:
+        pass
+
+
+_chmod_best_effort(CHARTS_DIR, 0o755)
 
 
 def _clean(obj):
@@ -86,18 +97,23 @@ def _safe_name(name, suffix=None):
 
 
 def save_json(obj, name):
-    with open(os.path.join(OUT_DIR, _safe_name(name, ".json")), "w", encoding="utf-8") as fh:
+    path = os.path.join(OUT_DIR, _safe_name(name, ".json"))
+    with open(path, "w", encoding="utf-8") as fh:
         json.dump(_clean(obj), fh, indent=2)
+    _chmod_best_effort(path, 0o644)
 
 
 def save_csv(df, name):
-    df.to_csv(os.path.join(OUT_DIR, _safe_name(name, ".csv")), index=False)
+    path = os.path.join(OUT_DIR, _safe_name(name, ".csv"))
+    df.to_csv(path, index=False)
+    _chmod_best_effort(path, 0o644)
 
 
 def save_fig(fig, name):
-    path = os.path.join(OUT_DIR, "charts", _safe_name(name, ".png"))
+    path = os.path.join(CHARTS_DIR, _safe_name(name, ".png"))
     fig.savefig(path, dpi=130, bbox_inches="tight", facecolor="white")
     plt.close(fig)
+    _chmod_best_effort(path, 0o644)
 
 
 def log(*args):

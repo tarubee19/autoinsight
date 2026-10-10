@@ -56,6 +56,25 @@ def test_output_filenames_cannot_escape(sandbox, csv, tmp_path):
     assert not (tmp_path / "escape.json").exists()
 
 
+def test_saved_outputs_are_world_readable_even_with_strict_umask(sandbox, csv, tmp_path):
+    code = (
+        "import os\n"
+        "os.umask(0o077)\n"
+        "save_json({'x': 1}, 'o.json')\n"
+        "import pandas as pd\n"
+        "save_csv(pd.DataFrame({'a':[1]}), 'o.csv')\n"
+        "fig, ax = plt.subplots()\n"
+        "ax.plot([1, 2], [3, 4])\n"
+        "save_fig(fig, 'o.png')\n"
+    )
+    res = sandbox.run(code, input_csv=csv, params={}, exec_dir=tmp_path / "e")
+    assert res.ok, res.stderr
+    assert ((res.out_dir / "o.json").stat().st_mode & 0o777) == 0o644
+    assert ((res.out_dir / "o.csv").stat().st_mode & 0o777) == 0o644
+    assert ((res.out_dir / "charts").stat().st_mode & 0o777) == 0o755
+    assert ((res.out_dir / "charts" / "o.png").stat().st_mode & 0o777) == 0o644
+
+
 def test_llm_code_is_refused_in_weak_sandbox():
     sb = Sandbox(Settings(sandbox_mode="local"), mode="local")
     with pytest.raises(SandboxUnavailable):
