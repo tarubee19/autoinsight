@@ -1,0 +1,549 @@
+{
+  "task_type": "classification",
+  "target": "Churn",
+  "n_rows": 5000,
+  "n_features": 14,
+  "n_numeric_tested": 3,
+  "n_categorical_tested": 11,
+  "n_significant": 9,
+  "skipped_features": [],
+  "top_drivers": [
+    {
+      "feature": "Contract",
+      "kind": "categorical",
+      "strength": 0.4489981676678012,
+      "strength_label": "medium",
+      "p_adjusted": 1.829826547748284e-218,
+      "significant": true,
+      "finding": "Contract: 'Month-to-month' has the highest Churn rate (47.4%, n=2788) vs 'Two year' at 3.9% (n=1206); overall rate 29.3%"
+    },
+    {
+      "feature": "tenure",
+      "kind": "numeric",
+      "strength": 0.4080016520690395,
+      "strength_label": "medium",
+      "p_adjusted": 2.652524205987329e-168,
+      "significant": true,
+      "finding": "tenure is lower when Churn = Yes (median 14.00 vs 31.00; Cohen's d = -0.89)"
+    },
+    {
+      "feature": "TotalCharges",
+      "kind": "numeric",
+      "strength": 0.26571332293589717,
+      "strength_label": "small",
+      "p_adjusted": 6.814872141489541e-64,
+      "significant": true,
+      "finding": "TotalCharges is lower when Churn = Yes (median 925.27 vs 1555.72; Cohen's d = -0.55)"
+    },
+    {
+      "feature": "MonthlyCharges",
+      "kind": "numeric",
+      "strength": 0.23515562680083185,
+      "strength_label": "small",
+      "p_adjusted": 2.5530069584730498e-52,
+      "significant": true,
+      "finding": "MonthlyCharges is higher when Churn = Yes (median 73.62 vs 59.17; Cohen's d = 0.48)"
+    },
+    {
+      "feature": "InternetService",
+      "kind": "categorical",
+      "strength": 0.23409826546358753,
+      "strength_label": "small",
+      "p_adjusted": 1.1054900518470048e-59,
+      "significant": true,
+      "finding": "InternetService: 'Fiber optic' has the highest Churn rate (40.9%, n=2174) vs 'No' at 15.5% (n=1128); overall rate 29.3%"
+    },
+    {
+      "feature": "TechSupport",
+      "kind": "categorical",
+      "strength": 0.17947687619888184,
+      "strength_label": "small",
+      "p_adjusted": 2.479119334132877e-35,
+      "significant": true,
+      "finding": "TechSupport: 'No' has the highest Churn rate (35.9%, n=2665) vs 'No internet service' at 15.5% (n=1128); overall rate 29.3%"
+    },
+    {
+      "feature": "OnlineSecurity",
+      "kind": "categorical",
+      "strength": 0.16464935862674343,
+      "strength_label": "small",
+      "p_adjusted": 7.368187377499738e-30,
+      "significant": true,
+      "finding": "OnlineSecurity: 'No' has the highest Churn rate (34.1%, n=2645) vs 'No internet service' at 15.5% (n=1128); overall rate 29.3%"
+    },
+    {
+      "feature": "PaymentMethod",
+      "kind": "categorical",
+      "strength": 0.05547062218252412,
+      "strength_label": "negligible",
+      "p_adjusted": 0.002652219738166749,
+      "significant": true,
+      "finding": "PaymentMethod: 'Electronic check' has the highest Churn rate (32.6%, n=1757) vs 'Bank transfer (automatic)' at 26.8% (n=1097); overall rate 29.3%"
+    },
+    {
+      "feature": "PaperlessBilling",
+      "kind": "categorical",
+      "strength": 0.030389548819892403,
+      "strength_label": "negligible",
+      "p_adjusted": 0.04922564116245689,
+      "significant": true,
+      "finding": "PaperlessBilling: 'Yes' has the highest Churn rate (30.4%, n=2977) vs 'No' at 27.6% (n=2023); overall rate 29.3%"
+    },
+    {
+      "feature": "gender",
+      "kind": "categorical",
+      "strength": 0.02055390071052823,
+      "strength_label": "negligible",
+      "p_adjusted": 0.20456548693126758,
+      "significant": false,
+      "finding": "gender: 'Female' has the highest Churn rate (30.2%, n=2497) vs 'Male' at 28.3% (n=2503); overall rate 29.3%"
+    }
+  ],
+  "all_tests": [
+    {
+      "feature": "Contract",
+      "kind": "categorical",
+      "test": "chi-square",
+      "p_value": 1.3070189626773456e-219,
+      "cramers_v": 0.4489981676678012,
+      "strength": 0.4489981676678012,
+      "levels": [
+        {
+          "level": "Month-to-month",
+          "n": 2788,
+          "rate": 0.47381635581061693
+        },
+        {
+          "level": "One year",
+          "n": 1006,
+          "rate": 0.09443339960238568
+        },
+        {
+          "level": "Two year",
+          "n": 1206,
+          "rate": 0.03897180762852405
+        }
+      ],
+      "top_level": "Month-to-month",
+      "top_rate": 0.47381635581061693,
+      "top_n": 2788,
+      "low_level": "Two year",
+      "low_rate": 0.03897180762852405,
+      "low_n": 1206,
+      "low_expected_share": 0.0,
+      "finding": "Contract: 'Month-to-month' has the highest Churn rate (47.4%, n=2788) vs 'Two year' at 3.9% (n=1206); overall rate 29.3%",
+      "p_adjusted": 1.829826547748284e-218,
+      "significant": true,
+      "strength_label": "medium"
+    },
+    {
+      "feature": "tenure",
+      "kind": "numeric",
+      "test": "Mann-Whitney U",
+      "p_value": 3.7893202942676125e-169,
+      "p_welch": 4.862876672141048e-227,
+      "cohens_d": -0.893778879295373,
+      "auc": 0.25127250619416147,
+      "strength": 0.4080016520690395,
+      "direction": "lower",
+      "median_positive": 14.0,
+      "median_negative": 31.0,
+      "mean_positive": 17.489405331510596,
+      "mean_negative": 33.68730562623693,
+      "finding": "tenure is lower when Churn = Yes (median 14.00 vs 31.00; Cohen's d = -0.89)",
+      "p_adjusted": 2.652524205987329e-168,
+      "significant": true,
+      "strength_label": "medium"
+    },
+    {
+      "feature": "TotalCharges",
+      "kind": "numeric",
+      "test": "Mann-Whitney U",
+      "p_value": 1.4603297446049017e-64,
+      "p_welch": 1.206138297479855e-92,
+      "cohens_d": -0.5512426683356966,
+      "auc": 0.34774083408072964,
+      "strength": 0.26571332293589717,
+      "direction": "lower",
+      "median_positive": 925.27,
+      "median_negative": 1555.72,
+      "mean_positive": 1204.2510973684211,
+      "mean_negative": 1967.6832596974841,
+      "finding": "TotalCharges is lower when Churn = Yes (median 925.27 vs 1555.72; Cohen's d = -0.55)",
+      "p_adjusted": 6.814872141489541e-64,
+      "significant": true,
+      "strength_label": "small"
+    },
+    {
+      "feature": "MonthlyCharges",
+      "kind": "numeric",
+      "test": "Mann-Whitney U",
+      "p_value": 9.117881994546606e-53,
+      "p_welch": 4.449855662653895e-58,
+      "cohens_d": 0.4838803566435273,
+      "auc": 0.6371927776106161,
+      "strength": 0.23515562680083185,
+      "direction": "higher",
+      "median_positive": 73.62,
+      "median_negative": 59.17,
+      "mean_positive": 68.51647983595352,
+      "mean_negative": 57.51379700310998,
+      "finding": "MonthlyCharges is higher when Churn = Yes (median 73.62 vs 59.17; Cohen's d = 0.48)",
+      "p_adjusted": 2.5530069584730498e-52,
+      "significant": true,
+      "strength_label": "small"
+    },
+    {
+      "feature": "InternetService",
+      "kind": "categorical",
+      "test": "chi-square",
+      "p_value": 3.1585430052771567e-60,
+      "cramers_v": 0.23409826546358753,
+      "strength": 0.23409826546358753,
+      "levels": [
+        {
+          "level": "Fiber optic",
+          "n": 2174,
+          "rate": 0.4093836246550138
+        },
+        {
+          "level": "DSL",
+          "n": 1698,
+          "rate": 0.23439340400471143
+        },
+        {
+          "level": "No",
+          "n": 1128,
+          "rate": 0.1551418439716312
+        }
+      ],
+      "top_level": "Fiber optic",
+      "top_rate": 0.4093836246550138,
+      "top_n": 2174,
+      "low_level": "No",
+      "low_rate": 0.1551418439716312,
+      "low_n": 1128,
+      "low_expected_share": 0.0,
+      "finding": "InternetService: 'Fiber optic' has the highest Churn rate (40.9%, n=2174) vs 'No' at 15.5% (n=1128); overall rate 29.3%",
+      "p_adjusted": 1.1054900518470048e-59,
+      "significant": true,
+      "strength_label": "small"
+    },
+    {
+      "feature": "TechSupport",
+      "kind": "categorical",
+      "test": "chi-square",
+      "p_value": 1.062479714628376e-35,
+      "cramers_v": 0.17947687619888184,
+      "strength": 0.17947687619888184,
+      "levels": [
+        {
+          "level": "No",
+          "n": 2665,
+          "rate": 0.3587242026266417
+        },
+        {
+          "level": "Yes",
+          "n": 1207,
+          "rate": 0.2750621375310688
+        },
+        {
+          "level": "No internet service",
+          "n": 1128,
+          "rate": 0.1551418439716312
+        }
+      ],
+      "top_level": "No",
+      "top_rate": 0.3587242026266417,
+      "top_n": 2665,
+      "low_level": "No internet service",
+      "low_rate": 0.1551418439716312,
+      "low_n": 1128,
+      "low_expected_share": 0.0,
+      "finding": "TechSupport: 'No' has the highest Churn rate (35.9%, n=2665) vs 'No internet service' at 15.5% (n=1128); overall rate 29.3%",
+      "p_adjusted": 2.479119334132877e-35,
+      "significant": true,
+      "strength_label": "small"
+    },
+    {
+      "feature": "OnlineSecurity",
+      "kind": "categorical",
+      "test": "chi-square",
+      "p_value": 3.684093688749869e-30,
+      "cramers_v": 0.16464935862674343,
+      "strength": 0.16464935862674343,
+      "levels": [
+        {
+          "level": "No",
+          "n": 2645,
+          "rate": 0.34064272211720226
+        },
+        {
+          "level": "Yes",
+          "n": 1227,
+          "rate": 0.3154034229828851
+        },
+        {
+          "level": "No internet service",
+          "n": 1128,
+          "rate": 0.1551418439716312
+        }
+      ],
+      "top_level": "No",
+      "top_rate": 0.34064272211720226,
+      "top_n": 2645,
+      "low_level": "No internet service",
+      "low_rate": 0.1551418439716312,
+      "low_n": 1128,
+      "low_expected_share": 0.0,
+      "finding": "OnlineSecurity: 'No' has the highest Churn rate (34.1%, n=2645) vs 'No internet service' at 15.5% (n=1128); overall rate 29.3%",
+      "p_adjusted": 7.368187377499738e-30,
+      "significant": true,
+      "strength_label": "small"
+    },
+    {
+      "feature": "PaymentMethod",
+      "kind": "categorical",
+      "test": "chi-square",
+      "p_value": 0.0015155541360952851,
+      "cramers_v": 0.05547062218252412,
+      "strength": 0.05547062218252412,
+      "levels": [
+        {
+          "level": "Electronic check",
+          "n": 1757,
+          "rate": 0.3255549231644849
+        },
+        {
+          "level": "Credit card (automatic)",
+          "n": 1030,
+          "rate": 0.287378640776699
+        },
+        {
+          "level": "Mailed check",
+          "n": 1116,
+          "rate": 0.26971326164874554
+        },
+        {
+          "level": "Bank transfer (automatic)",
+          "n": 1097,
+          "rate": 0.268003646308113
+        }
+      ],
+      "top_level": "Electronic check",
+      "top_rate": 0.3255549231644849,
+      "top_n": 1757,
+      "low_level": "Bank transfer (automatic)",
+      "low_rate": 0.268003646308113,
+      "low_n": 1097,
+      "low_expected_share": 0.0,
+      "finding": "PaymentMethod: 'Electronic check' has the highest Churn rate (32.6%, n=1757) vs 'Bank transfer (automatic)' at 26.8% (n=1097); overall rate 29.3%",
+      "p_adjusted": 0.002652219738166749,
+      "significant": true,
+      "strength_label": "negligible"
+    },
+    {
+      "feature": "PaperlessBilling",
+      "kind": "categorical",
+      "test": "chi-square",
+      "p_value": 0.031645055033008,
+      "cramers_v": 0.030389548819892403,
+      "strength": 0.030389548819892403,
+      "levels": [
+        {
+          "level": "Yes",
+          "n": 2977,
+          "rate": 0.30399731273093716
+        },
+        {
+          "level": "No",
+          "n": 2023,
+          "rate": 0.27582797825012356
+        }
+      ],
+      "top_level": "Yes",
+      "top_rate": 0.30399731273093716,
+      "top_n": 2977,
+      "low_level": "No",
+      "low_rate": 0.27582797825012356,
+      "low_n": 2023,
+      "low_expected_share": 0.0,
+      "finding": "PaperlessBilling: 'Yes' has the highest Churn rate (30.4%, n=2977) vs 'No' at 27.6% (n=2023); overall rate 29.3%",
+      "p_adjusted": 0.04922564116245689,
+      "significant": true,
+      "strength_label": "negligible"
+    },
+    {
+      "feature": "gender",
+      "kind": "categorical",
+      "test": "chi-square",
+      "p_value": 0.1461182049509054,
+      "cramers_v": 0.02055390071052823,
+      "strength": 0.02055390071052823,
+      "levels": [
+        {
+          "level": "Female",
+          "n": 2497,
+          "rate": 0.3019623548257909
+        },
+        {
+          "level": "Male",
+          "n": 2503,
+          "rate": 0.28326008789452656
+        }
+      ],
+      "top_level": "Female",
+      "top_rate": 0.3019623548257909,
+      "top_n": 2497,
+      "low_level": "Male",
+      "low_rate": 0.28326008789452656,
+      "low_n": 2503,
+      "low_expected_share": 0.0,
+      "finding": "gender: 'Female' has the highest Churn rate (30.2%, n=2497) vs 'Male' at 28.3% (n=2503); overall rate 29.3%",
+      "p_adjusted": 0.20456548693126758,
+      "significant": false,
+      "strength_label": "negligible"
+    },
+    {
+      "feature": "Partner",
+      "kind": "categorical",
+      "test": "chi-square",
+      "p_value": 0.4514830977851976,
+      "cramers_v": 0.010648247187664252,
+      "strength": 0.010648247187664252,
+      "levels": [
+        {
+          "level": "Yes",
+          "n": 2515,
+          "rate": 0.2974155069582505
+        },
+        {
+          "level": "No",
+          "n": 2485,
+          "rate": 0.28772635814889336
+        }
+      ],
+      "top_level": "Yes",
+      "top_rate": 0.2974155069582505,
+      "top_n": 2515,
+      "low_level": "No",
+      "low_rate": 0.28772635814889336,
+      "low_n": 2485,
+      "low_expected_share": 0.0,
+      "finding": "Partner: 'Yes' has the highest Churn rate (29.7%, n=2515) vs 'No' at 28.8% (n=2485); overall rate 29.3%",
+      "p_adjusted": 0.5746148517266151,
+      "significant": false,
+      "strength_label": "negligible"
+    },
+    {
+      "feature": "SeniorCitizen",
+      "kind": "categorical",
+      "test": "chi-square",
+      "p_value": 0.6623192734039081,
+      "cramers_v": 0.00617605889549487,
+      "strength": 0.00617605889549487,
+      "levels": [
+        {
+          "level": "0",
+          "n": 4217,
+          "rate": 0.29381076594735595
+        },
+        {
+          "level": "1",
+          "n": 783,
+          "rate": 0.28607918263090676
+        }
+      ],
+      "top_level": "0",
+      "top_rate": 0.29381076594735595,
+      "top_n": 4217,
+      "low_level": "1",
+      "low_rate": 0.28607918263090676,
+      "low_n": 783,
+      "low_expected_share": 0.0,
+      "finding": "SeniorCitizen: '0' has the highest Churn rate (29.4%, n=4217) vs '1' at 28.6% (n=783); overall rate 29.3%",
+      "p_adjusted": 0.7727058189712261,
+      "significant": false,
+      "strength_label": "negligible"
+    },
+    {
+      "feature": "Dependents",
+      "kind": "categorical",
+      "test": "chi-square",
+      "p_value": 0.7695298727497163,
+      "cramers_v": 0.0041435028835727465,
+      "strength": 0.0041435028835727465,
+      "levels": [
+        {
+          "level": "No",
+          "n": 3478,
+          "rate": 0.29384703852788957
+        },
+        {
+          "level": "Yes",
+          "n": 1522,
+          "rate": 0.2897503285151117
+        }
+      ],
+      "top_level": "No",
+      "top_rate": 0.29384703852788957,
+      "top_n": 3478,
+      "low_level": "Yes",
+      "low_rate": 0.2897503285151117,
+      "low_n": 1522,
+      "low_expected_share": 0.0,
+      "finding": "Dependents: 'No' has the highest Churn rate (29.4%, n=3478) vs 'Yes' at 29.0% (n=1522); overall rate 29.3%",
+      "p_adjusted": 0.8287244783458483,
+      "significant": false,
+      "strength_label": "negligible"
+    },
+    {
+      "feature": "PhoneService",
+      "kind": "categorical",
+      "test": "chi-square",
+      "p_value": 0.8358949706618733,
+      "cramers_v": 0.002929502537824714,
+      "strength": 0.002929502537824714,
+      "levels": [
+        {
+          "level": "No",
+          "n": 482,
+          "rate": 0.2966804979253112
+        },
+        {
+          "level": "Yes",
+          "n": 4518,
+          "rate": 0.2921646746347942
+        }
+      ],
+      "top_level": "No",
+      "top_rate": 0.2966804979253112,
+      "top_n": 482,
+      "low_level": "Yes",
+      "low_rate": 0.2921646746347942,
+      "low_n": 4518,
+      "low_expected_share": 0.0,
+      "finding": "PhoneService: 'No' has the highest Churn rate (29.7%, n=482) vs 'Yes' at 29.2% (n=4518); overall rate 29.3%",
+      "p_adjusted": 0.8358949706618733,
+      "significant": false,
+      "strength_label": "negligible"
+    }
+  ],
+  "multicollinearity": [
+    {
+      "a": "tenure",
+      "b": "TotalCharges",
+      "spearman_r": 0.8429864232524652
+    }
+  ],
+  "charts": [
+    "categorical_drivers.png",
+    "correlation_heatmap.png",
+    "driver_strength.png",
+    "numeric_drivers.png",
+    "target_distribution.png"
+  ],
+  "positive_label": "Yes",
+  "base_rate": 0.2926,
+  "n_positive": 1463
+}

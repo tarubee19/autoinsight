@@ -1,0 +1,32 @@
+# Override: real LLM agents + hardened Docker sandbox for the code they write.
+#   1. cp .env.example .env   and set ANTHROPIC_API_KEY (or OPENAI_API_KEY)
+#   2. docker compose -f docker-compose.yml -f docker-compose.llm.yml up --build
+#
+# SECURITY: mounting the Docker socket gives this container control of the host's Docker daemon
+# (equivalent to root on the host). Use it on your own machine or a throw-away VM only. For a public
+# deployment run the sandbox on a separate, isolated host/service (gVisor, Firecracker, E2B, ...).
+services:
+  sandbox-image:            # builds the sandbox image once, then exits
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.sandbox
+    image: autoinsight-sandbox:latest
+    entrypoint: ["true"]
+    restart: "no"
+
+  api:
+    user: root              # needs access to /var/run/docker.sock
+    depends_on:
+      - sandbox-image
+    environment:
+      AUTOINSIGHT_LLM_PROVIDER: ${AUTOINSIGHT_LLM_PROVIDER:-auto}
+      AUTOINSIGHT_MODEL: ${AUTOINSIGHT_MODEL:-}
+      AUTOINSIGHT_SANDBOX_MODE: docker
+      AUTOINSIGHT_SANDBOX_IMAGE: autoinsight-sandbox:latest
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      # Sibling containers mount paths from the HOST, so tell the API where ./runs lives on the host:
+      AUTOINSIGHT_HOST_RUNS_DIR: ${PWD}/runs
+    volumes:
+      - ./runs:/app/runs
+      - /var/run/docker.sock:/var/run/docker.sock

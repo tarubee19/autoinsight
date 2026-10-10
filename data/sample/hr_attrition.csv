@@ -1,0 +1,1501 @@
+EmployeeNumber,Age,Department,MonthlyIncome,OverTime,YearsAtCompany,JobSatisfaction,DistanceFromHome,BusinessTravel,MaritalStatus,Over18,StandardHours,Attrition
+1,25,Research & Development,4459.0,Yes,4,4.0,2,Travel_Rarely,Divorced,Y,80,No
+2,25,Sales,7209.0,No,19,4.0,9,Travel_Rarely,Single,Y,80,No
+3,51,Research & Development,4542.0,Yes,1,2.0,1,Travel_Frequently,Married,Y,80,No
+4,39,Research & Development,5489.0,No,5,2.0,15,Travel_Frequently,Married,Y,80,No
+5,43,Research & Development,4974.0,No,4,4.0,5,Travel_Rarely,Single,Y,80,No
+6,44,Research & Development,4709.0,No,11,4.0,16,Travel_Rarely,Married,Y,80,No
+7,48,Research & Development,5729.0,No,4,4.0,28,Travel_Rarely,Divorced,Y,80,Yes
+8,21,Sales,4011.0,Yes,3,4.0,8,Travel_Rarely,Married,Y,80,Yes
+9,39,Sales,5022.0,No,8,1.0,9,Travel_Rarely,Married,Y,80,No
+10,25,Sales,2884.0,Yes,3,2.0,17,Travel_Rarely,Single,Y,80,Yes
+11,36,Sales,6861.0,No,11,2.0,13,Travel_Frequently,Single,Y,80,No
+12,57,Sales,6127.0,Yes,7,3.0,4,Travel_Rarely,Single,Y,80,No
+13,41,Sales,4470.0,Yes,5,2.0,2,Travel_Rarely,Single,Y,80,Yes
+14,22,Research & Development,2958.0,Yes,3,,26,Travel_Frequently,Single,Y,80,Yes
+15,41,Research & Development,7492.0,No,14,1.0,12,Travel_Rarely,Divorced,Y,80,Yes
+16,25,Research & Development,4616.0,Yes,6,3.0,21,Travel_Rarely,Married,Y,80,Yes
+17,50,Research & Development,4929.0,No,1,1.0,3,Non-Travel,Married,Y,80,Yes
+18,57,Sales,7915.0,No,13,3.0,8,Travel_Rarely,Divorced,Y,80,No
+19,59,Research & Development,8632.0,No,14,1.0,11,Non-Travel,Single,Y,80,No
+20,44,Research & Development,,No,3,1.0,5,Non-Travel,Divorced,Y,80,No
+21,54,Sales,5886.0,No,6,4.0,20,Travel_Rarely,Divorced,Y,80,No
+22,34,Research & Development,3340.0,No,3,4.0,20,Travel_Frequently,Single,Y,80,Yes
+23,25,Research & Development,3790.0,Yes,1,1.0,27,Travel_Rarely,Single,Y,80,Yes
+24,40,Research & Development,4484.0,No,2,3.0,14,Travel_Rarely,Married,Y,80,No
+25,37,Sales,7880.0,Yes,7,3.0,7,Travel_Rarely,Married,Y,80,Yes
+26,46,Research & Development,5600.0,No,1,1.0,23,Travel_Rarely,Single,Y,80,No
+27,59,Research & Development,5896.0,Yes,3,1.0,20,Travel_Rarely,Married,Y,80,Yes
+28,31,Human Resources,5852.0,No,13,3.0,27,Travel_Rarely,Single,Y,80,No
+29,54,Research & Development,6246.0,No,2,2.0,3,Travel_Rarely,Divorced,Y,80,No
+30,25,Research & Development,3867.0,No,3,1.0,4,Travel_Rarely,Single,Y,80,Yes
+31,33,Sales,4990.0,No,5,2.0,24,Travel_Rarely,Single,Y,80,No
+32,51,Research & Development,6796.0,No,6,2.0,7,Travel_Rarely,Married,Y,80,No
+33,29,Sales,3566.0,Yes,2,4.0,27,Travel_Rarely,Married,Y,80,No
+34,46,Research & Development,5803.0,Yes,2,4.0,14,Travel_Rarely,Married,Y,80,No
+35,38,Human Resources,9341.0,No,18,3.0,21,Travel_Rarely,Married,Y,80,No
+36,40,Research & Development,4825.0,No,5,1.0,10,Travel_Rarely,Married,Y,80,No
+37,57,Research & Development,5688.0,No,1,4.0,9,Travel_Rarely,Married,Y,80,No
+38,52,Research & Development,6396.0,No,2,3.0,29,Non-Travel,Divorced,Y,80,No
+39,53,Research & Development,7148.0,No,3,1.0,11,Travel_Rarely,Single,Y,80,No
+40,41,Research & Development,6763.0,No,9,2.0,12,Travel_Rarely,Married,Y,80,No
+41,59,Research & Development,8381.0,No,7,4.0,24,Travel_Rarely,Married,Y,80,No
+42,59,Research & Development,7605.0,No,9,1.0,19,Travel_Frequently,Single,Y,80,No
+43,25,Research & Development,5103.0,Yes,13,4.0,3,Travel_Frequently,Married,Y,80,No
+44,28,Sales,7606.0,Yes,21,1.0,1,Travel_Rarely,Married,Y,80,No
+45,32,Research & Development,5104.0,No,5,2.0,23,Travel_Rarely,Married,Y,80,No
+46,42,Sales,7439.0,No,8,4.0,27,Travel_Rarely,Divorced,Y,80,No
+47,52,Research & Development,7517.0,Yes,4,3.0,8,Travel_Rarely,Married,Y,80,No
+48,39,Research & Development,3852.0,No,7,2.0,3,Travel_Rarely,Married,Y,80,No
+49,59,Sales,7087.0,No,2,2.0,20,Travel_Rarely,Married,Y,80,No
+50,34,Research & Development,5158.0,No,11,2.0,21,Travel_Rarely,Divorced,Y,80,No
+51,57,Sales,5398.0,Yes,8,3.0,19,Travel_Rarely,Divorced,Y,80,Yes
+52,43,Human Resources,9619.0,No,26,4.0,11,Travel_Rarely,Single,Y,80,No
+53,48,Sales,7046.0,No,12,4.0,12,Travel_Rarely,Single,Y,80,No
+54,29,Sales,4094.0,No,6,1.0,7,Travel_Rarely,Divorced,Y,80,No
+55,43,Research & Development,5594.0,No,12,1.0,3,Travel_Frequently,Married,Y,80,No
+56,52,Research & Development,5745.0,Yes,7,4.0,23,Travel_Rarely,Single,Y,80,No
+57,55,Sales,6552.0,No,6,2.0,1,Travel_Rarely,Married,Y,80,Yes
+58,54,Research & Development,6393.0,No,12,3.0,26,Travel_Rarely,Married,Y,80,No
+59,58,Research & Development,6016.0,Yes,1,4.0,28,Travel_Rarely,Married,Y,80,No
+60,25,Research & Development,3244.0,Yes,1,1.0,10,Non-Travel,Divorced,Y,80,Yes
+61,51,Research & Development,6244.0,Yes,6,3.0,15,Travel_Frequently,Single,Y,80,No
+62,38,Research & Development,5659.0,No,7,3.0,10,Travel_Rarely,Single,Y,80,No
+63,47,Sales,7579.0,No,15,4.0,15,Travel_Rarely,Divorced,Y,80,No
+64,31,Sales,3717.0,No,7,4.0,6,Travel_Rarely,Married,Y,80,No
+65,20,Sales,2662.0,No,6,3.0,6,Travel_Rarely,Married,Y,80,Yes
+66,23,Research & Development,,No,12,,10,Travel_Frequently,Single,Y,80,No
+67,58,Sales,8414.0,No,9,4.0,14,Travel_Rarely,Married,Y,80,No
+68,55,Research & Development,7052.0,No,7,1.0,15,Travel_Rarely,Married,Y,80,No
+69,32,Research & Development,6917.0,Yes,21,4.0,16,Travel_Rarely,Married,Y,80,No
+70,37,Research & Development,5446.0,No,7,2.0,14,Travel_Rarely,Married,Y,80,No
+71,29,Research & Development,3314.0,No,9,2.0,6,Travel_Rarely,Married,Y,80,No
+72,25,Sales,3503.0,No,8,1.0,5,Travel_Rarely,Single,Y,80,No
+73,54,Sales,5586.0,Yes,2,3.0,1,Travel_Frequently,Single,Y,80,Yes
+74,46,Research & Development,5147.0,No,2,1.0,5,Travel_Rarely,Single,Y,80,Yes
+75,23,Sales,2842.0,Yes,2,4.0,23,Non-Travel,Divorced,Y,80,No
+76,28,Human Resources,4060.0,No,6,3.0,18,Travel_Rarely,Married,Y,80,No
+77,42,Sales,5038.0,No,9,4.0,14,Travel_Rarely,Married,Y,80,Yes
+78,56,Research & Development,,Yes,15,3.0,5,Travel_Rarely,Single,Y,80,No
+79,59,Research & Development,6415.0,No,1,4.0,14,Travel_Rarely,Divorced,Y,80,No
+80,28,Research & Development,2469.0,No,5,1.0,26,Travel_Rarely,Single,Y,80,No
+81,44,Research & Development,7363.0,No,21,2.0,24,Travel_Frequently,Married,Y,80,No
+82,21,Sales,,No,25,2.0,25,Travel_Frequently,Divorced,Y,80,No
+83,26,Research & Development,6350.0,No,11,4.0,28,Travel_Frequently,Married,Y,80,No
+84,28,Sales,8147.0,Yes,24,,16,Travel_Rarely,Single,Y,80,No
+85,37,Sales,6153.0,No,4,4.0,19,Travel_Rarely,Single,Y,80,Yes
+86,33,Research & Development,5234.0,No,2,1.0,6,Travel_Rarely,Single,Y,80,No
+87,49,Human Resources,5788.0,No,6,2.0,1,Travel_Frequently,Married,Y,80,No
+88,38,Human Resources,5497.0,No,8,3.0,20,Travel_Rarely,Married,Y,80,No
+89,33,Research & Development,5136.0,Yes,14,3.0,28,Travel_Rarely,Single,Y,80,No
+90,56,Sales,8774.0,Yes,11,1.0,16,Travel_Frequently,Married,Y,80,No
+91,45,Research & Development,6844.0,No,8,,29,Travel_Frequently,Married,Y,80,No
+92,47,Research & Development,6541.0,No,6,1.0,13,Travel_Frequently,Married,Y,80,Yes
+93,49,Research & Development,6785.0,No,6,3.0,7,Travel_Rarely,Married,Y,80,No
+94,33,Human Resources,4444.0,No,2,3.0,21,Travel_Rarely,Married,Y,80,No
+95,55,Sales,6378.0,Yes,3,4.0,6,Travel_Rarely,Single,Y,80,No
+96,20,Research & Development,3468.0,Yes,4,2.0,8,Travel_Frequently,Divorced,Y,80,No
+97,32,Research & Development,6647.0,No,11,2.0,6,Travel_Rarely,Married,Y,80,No
+98,26,Research & Development,4134.0,Yes,10,3.0,18,Travel_Rarely,Single,Y,80,No
+99,20,Research & Development,2643.0,No,6,3.0,15,Travel_Rarely,Married,Y,80,No
+100,59,Research & Development,6374.0,Yes,2,3.0,26,Non-Travel,Single,Y,80,No
+101,23,Sales,4892.0,No,6,1.0,20,Travel_Frequently,Married,Y,80,No
+102,38,Human Resources,7037.0,No,15,4.0,8,Travel_Rarely,Single,Y,80,No
+103,52,Research & Development,7177.0,Yes,11,4.0,5,Travel_Rarely,Single,Y,80,No
+104,47,Sales,7479.0,No,10,1.0,1,Travel_Rarely,Single,Y,80,No
+105,54,Research & Development,6382.0,No,4,4.0,17,Travel_Rarely,Married,Y,80,No
+106,22,Sales,1518.0,Yes,3,2.0,18,Travel_Rarely,Married,Y,80,Yes
+107,39,Research & Development,4749.0,No,8,1.0,26,Travel_Rarely,Single,Y,80,Yes
+108,21,Research & Development,3237.0,No,14,1.0,8,Travel_Rarely,Divorced,Y,80,Yes
+109,27,Research & Development,3835.0,No,5,1.0,3,Travel_Rarely,Single,Y,80,No
+110,53,Research & Development,6691.0,No,9,4.0,3,Travel_Rarely,Divorced,Y,80,No
+111,22,Human Resources,5597.0,Yes,14,4.0,16,Travel_Rarely,Single,Y,80,No
+112,43,Research & Development,7007.0,Yes,3,,10,Travel_Rarely,Single,Y,80,Yes
+113,20,Research & Development,2868.0,Yes,5,2.0,22,Travel_Frequently,Single,Y,80,Yes
+114,32,Research & Development,3950.0,No,2,3.0,13,Travel_Frequently,Single,Y,80,No
+115,57,Research & Development,6032.0,Yes,3,2.0,28,Travel_Frequently,Divorced,Y,80,Yes
+116,32,Research & Development,,No,1,4.0,9,Travel_Rarely,Married,Y,80,No
+117,32,Sales,3801.0,Yes,5,4.0,28,Travel_Rarely,Divorced,Y,80,No
+118,23,Research & Development,,No,12,3.0,14,Travel_Rarely,Married,Y,80,No
+119,50,Research & Development,7070.0,No,9,2.0,25,Travel_Frequently,Single,Y,80,No
+120,26,Research & Development,3553.0,No,7,1.0,27,Travel_Rarely,Married,Y,80,No
+121,39,Human Resources,4497.0,No,8,4.0,7,Travel_Rarely,Divorced,Y,80,Yes
+122,20,Research & Development,3393.0,No,2,2.0,11,Non-Travel,Married,Y,80,No
+123,20,Research & Development,2986.0,No,3,2.0,29,Travel_Rarely,Married,Y,80,No
+124,53,Sales,6113.0,Yes,8,4.0,8,Non-Travel,Single,Y,80,No
+125,20,Sales,,No,4,3.0,23,Travel_Rarely,Divorced,Y,80,No
+126,38,Sales,4576.0,No,4,2.0,3,Travel_Rarely,Divorced,Y,80,No
+127,37,Research & Development,5669.0,No,5,3.0,18,Travel_Rarely,Divorced,Y,80,No
+128,25,Research & Development,4770.0,No,3,3.0,1,Travel_Frequently,Married,Y,80,No
+129,45,Research & Development,4664.0,No,6,4.0,25,Travel_Rarely,Divorced,Y,80,No
+130,49,Research & Development,10121.0,Yes,22,2.0,25,Travel_Frequently,Married,Y,80,No
+131,59,Sales,7325.0,No,7,3.0,23,Travel_Frequently,Single,Y,80,No
+132,27,Research & Development,4360.0,No,5,3.0,22,Travel_Rarely,Single,Y,80,Yes
+133,56,Human Resources,8237.0,No,9,,8,Travel_Frequently,Single,Y,80,No
+134,22,Research & Development,3262.0,Yes,8,4.0,7,Travel_Rarely,Divorced,Y,80,Yes
+135,25,Research & Development,3906.0,No,1,4.0,25,Travel_Rarely,Single,Y,80,No
+136,43,Research & Development,7546.0,No,23,3.0,11,Travel_Frequently,Divorced,Y,80,No
+137,54,Research & Development,6229.0,No,6,3.0,16,Travel_Rarely,Married,Y,80,No
+138,55,Human Resources,5255.0,No,2,4.0,28,Travel_Rarely,Single,Y,80,No
+139,49,Research & Development,8609.0,Yes,11,4.0,9,Travel_Rarely,Divorced,Y,80,No
+140,21,Research & Development,5867.0,No,10,1.0,10,Travel_Rarely,Married,Y,80,No
+141,36,Sales,8947.0,Yes,24,3.0,2,Travel_Rarely,Single,Y,80,No
+142,52,Sales,6210.0,Yes,2,4.0,5,Travel_Rarely,Married,Y,80,No
+143,41,Research & Development,6623.0,Yes,15,3.0,27,Travel_Frequently,Married,Y,80,No
+144,27,Research & Development,6859.0,No,12,1.0,19,Travel_Rarely,Single,Y,80,No
+145,47,Sales,6551.0,No,2,2.0,7,Travel_Rarely,Married,Y,80,No
+146,23,Sales,6466.0,No,16,3.0,29,Travel_Rarely,Divorced,Y,80,No
+147,47,Research & Development,5561.0,No,4,2.0,9,Non-Travel,Married,Y,80,No
+148,20,Research & Development,2559.0,No,2,4.0,12,Travel_Rarely,Divorced,Y,80,No
+149,34,Research & Development,5317.0,Yes,9,4.0,18,Travel_Rarely,Married,Y,80,No
+150,31,Sales,5053.0,No,2,3.0,24,Travel_Frequently,Single,Y,80,Yes
+151,57,Sales,6078.0,No,6,2.0,14,Travel_Rarely,Single,Y,80,No
+152,49,Sales,6310.0,No,6,1.0,22,Travel_Frequently,Single,Y,80,No
+153,46,Research & Development,7939.0,No,9,4.0,23,Travel_Rarely,Divorced,Y,80,No
+154,39,Research & Development,6279.0,No,7,4.0,19,Travel_Rarely,Divorced,Y,80,No
+155,31,Research & Development,6507.0,No,8,1.0,3,Travel_Frequently,Married,Y,80,No
+156,54,Sales,6131.0,No,1,2.0,7,Travel_Rarely,Single,Y,80,No
+157,57,Sales,7136.0,No,5,4.0,22,Travel_Rarely,Divorced,Y,80,No
+158,28,Human Resources,5380.0,No,5,1.0,4,Travel_Rarely,Married,Y,80,Yes
+159,29,Sales,5178.0,No,7,3.0,26,Travel_Frequently,Married,Y,80,No
+160,32,Research & Development,4633.0,Yes,4,4.0,21,Travel_Rarely,Divorced,Y,80,No
+161,39,Sales,7021.0,No,18,4.0,26,Non-Travel,Married,Y,80,No
+162,30,Research & Development,,Yes,5,2.0,20,Travel_Rarely,Single,Y,80,No
+163,36,Research & Development,6741.0,No,8,2.0,1,Travel_Rarely,Divorced,Y,80,No
+164,59,Research & Development,7468.0,No,10,1.0,27,Travel_Rarely,Married,Y,80,No
+165,34,Research & Development,4386.0,No,7,3.0,2,Travel_Rarely,Single,Y,80,No
+166,57,Research & Development,7178.0,No,3,4.0,6,Travel_Rarely,Married,Y,80,No
+167,40,Sales,4441.0,Yes,5,4.0,18,Travel_Rarely,Single,Y,80,No
+168,33,Research & Development,3758.0,Yes,7,3.0,7,Travel_Rarely,Married,Y,80,Yes
+169,57,Human Resources,5897.0,Yes,3,2.0,5,Travel_Frequently,Divorced,Y,80,No
+170,37,Research & Development,5811.0,No,10,1.0,28,Travel_Rarely,Married,Y,80,No
+171,50,Research & Development,8901.0,Yes,19,1.0,18,Travel_Rarely,Married,Y,80,No
+172,32,Research & Development,5335.0,No,7,1.0,11,Travel_Rarely,Single,Y,80,No
+173,59,Sales,8174.0,No,7,1.0,28,Travel_Rarely,Married,Y,80,No
+174,49,Sales,5406.0,No,2,4.0,21,Travel_Rarely,Married,Y,80,No
+175,55,Research & Development,6917.0,No,5,3.0,20,Travel_Rarely,Married,Y,80,No
+176,21,Research & Development,3252.0,Yes,4,,26,Travel_Rarely,Divorced,Y,80,No
+177,24,Research & Development,4131.0,No,10,3.0,14,Travel_Rarely,Married,Y,80,Yes
+178,22,Research & Development,3801.0,Yes,4,4.0,16,Travel_Rarely,Divorced,Y,80,Yes
+179,41,Research & Development,,No,5,4.0,22,Travel_Rarely,Married,Y,80,Yes
+180,36,Research & Development,6535.0,Yes,5,,1,Travel_Rarely,Married,Y,80,No
+181,59,Sales,8567.0,No,11,2.0,12,Travel_Rarely,Married,Y,80,No
+182,29,Sales,3272.0,No,3,1.0,24,Travel_Rarely,Divorced,Y,80,Yes
+183,26,Sales,4335.0,Yes,4,1.0,29,Non-Travel,Single,Y,80,No
+184,53,Sales,5651.0,Yes,2,4.0,28,Non-Travel,Married,Y,80,No
+185,32,Sales,6829.0,Yes,10,4.0,23,Travel_Frequently,Married,Y,80,No
+186,49,Research & Development,4176.0,No,3,2.0,21,Travel_Rarely,Divorced,Y,80,Yes
+187,31,Research & Development,4205.0,No,7,1.0,15,Travel_Rarely,Married,Y,80,Yes
+188,41,Research & Development,5647.0,No,10,2.0,9,Travel_Rarely,Married,Y,80,No
+189,23,Research & Development,3282.0,Yes,2,1.0,18,Non-Travel,Single,Y,80,Yes
+190,46,Sales,6029.0,No,7,1.0,13,Travel_Frequently,Married,Y,80,No
+191,56,Sales,5630.0,No,7,1.0,8,Travel_Rarely,Divorced,Y,80,No
+192,47,Research & Development,4217.0,Yes,5,2.0,10,Travel_Rarely,Married,Y,80,No
+193,55,Research & Development,8017.0,No,12,3.0,9,Travel_Rarely,Single,Y,80,No
+194,51,Research & Development,8079.0,No,8,1.0,6,Travel_Frequently,Divorced,Y,80,No
+195,42,Research & Development,7619.0,No,10,3.0,23,Travel_Rarely,Single,Y,80,No
+196,57,Human Resources,8220.0,No,15,4.0,16,Travel_Rarely,Single,Y,80,No
+197,39,Research & Development,6645.0,No,11,2.0,25,Travel_Rarely,Married,Y,80,No
+198,25,Sales,4026.0,Yes,10,,25,Travel_Frequently,Married,Y,80,Yes
+199,42,Research & Development,3961.0,No,4,1.0,29,Travel_Rarely,Divorced,Y,80,No
+200,45,Research & Development,7326.0,No,8,4.0,17,Travel_Rarely,Single,Y,80,No
+201,27,Sales,4678.0,No,5,2.0,5,Travel_Rarely,Single,Y,80,No
+202,25,Sales,3960.0,No,7,1.0,24,Travel_Rarely,Single,Y,80,Yes
+203,46,Sales,,No,9,2.0,20,Travel_Frequently,Single,Y,80,No
+204,37,Research & Development,5793.0,No,5,1.0,15,Travel_Frequently,Divorced,Y,80,Yes
+205,39,Research & Development,5263.0,No,4,2.0,2,Travel_Rarely,Married,Y,80,No
+206,51,Research & Development,5580.0,No,3,1.0,3,Travel_Rarely,Single,Y,80,Yes
+207,47,Research & Development,6309.0,Yes,6,3.0,1,Non-Travel,Divorced,Y,80,No
+208,55,Research & Development,6770.0,Yes,6,4.0,4,Travel_Rarely,Single,Y,80,No
+209,26,Research & Development,3087.0,No,2,,28,Travel_Rarely,Single,Y,80,No
+210,50,Research & Development,4973.0,No,2,1.0,3,Travel_Rarely,Divorced,Y,80,Yes
+211,41,Research & Development,6521.0,Yes,7,3.0,6,Travel_Frequently,Married,Y,80,Yes
+212,21,Human Resources,3481.0,No,7,3.0,22,Travel_Frequently,Married,Y,80,No
+213,22,Sales,2043.0,Yes,2,1.0,4,Travel_Rarely,Married,Y,80,Yes
+214,34,Sales,6135.0,Yes,4,4.0,12,Travel_Rarely,Single,Y,80,No
+215,45,Research & Development,6807.0,No,5,3.0,16,Travel_Rarely,Single,Y,80,Yes
+216,26,Research & Development,6075.0,No,14,3.0,10,Travel_Frequently,Divorced,Y,80,No
+217,41,Research & Development,7443.0,No,17,1.0,9,Travel_Rarely,Single,Y,80,No
+218,59,Research & Development,6955.0,No,4,1.0,27,Travel_Rarely,Married,Y,80,No
+219,25,Sales,3155.0,No,8,3.0,27,Non-Travel,Married,Y,80,No
+220,25,Sales,4963.0,No,11,4.0,17,Travel_Rarely,Single,Y,80,No
+221,58,Research & Development,9273.0,No,17,1.0,2,Travel_Rarely,Single,Y,80,No
+222,29,Research & Development,3542.0,No,2,2.0,15,Travel_Frequently,Married,Y,80,No
+223,54,Research & Development,6714.0,No,4,2.0,11,Non-Travel,Divorced,Y,80,No
+224,34,Sales,4569.0,No,8,4.0,3,Travel_Rarely,Married,Y,80,Yes
+225,50,Human Resources,6308.0,Yes,5,4.0,27,Travel_Rarely,Married,Y,80,No
+226,22,Sales,2236.0,Yes,5,1.0,24,Travel_Rarely,Married,Y,80,Yes
+227,45,Sales,4951.0,No,1,2.0,15,Travel_Rarely,Married,Y,80,No
+228,54,Research & Development,5419.0,No,2,1.0,4,Travel_Rarely,Married,Y,80,No
+229,33,Research & Development,3256.0,No,4,3.0,23,Travel_Rarely,Married,Y,80,No
+230,45,Research & Development,4798.0,Yes,2,1.0,20,Travel_Rarely,Married,Y,80,Yes
+231,28,Research & Development,4178.0,Yes,5,3.0,22,Travel_Rarely,Single,Y,80,No
+232,26,Sales,6872.0,Yes,24,1.0,10,Travel_Rarely,Divorced,Y,80,Yes
+233,20,Research & Development,4079.0,Yes,4,3.0,14,Travel_Rarely,Single,Y,80,Yes
+234,39,Sales,4530.0,No,5,4.0,12,Travel_Rarely,Married,Y,80,No
+235,40,Research & Development,5525.0,Yes,2,1.0,29,Travel_Rarely,Single,Y,80,Yes
+236,23,Sales,3810.0,No,2,2.0,22,Travel_Rarely,Married,Y,80,Yes
+237,29,Sales,,Yes,8,2.0,26,Travel_Rarely,Single,Y,80,Yes
+238,44,Research & Development,7402.0,No,8,1.0,24,Travel_Rarely,Married,Y,80,No
+239,34,Research & Development,4570.0,No,11,3.0,10,Travel_Rarely,Single,Y,80,No
+240,29,Human Resources,5255.0,No,8,3.0,3,Travel_Rarely,Single,Y,80,No
+241,20,Human Resources,3491.0,No,5,3.0,17,Travel_Rarely,Single,Y,80,No
+242,21,Sales,4917.0,No,9,3.0,20,Travel_Rarely,Married,Y,80,No
+243,45,Research & Development,3937.0,No,3,3.0,27,Travel_Rarely,Married,Y,80,No
+244,24,Human Resources,3638.0,No,10,1.0,16,Travel_Rarely,Single,Y,80,Yes
+245,53,Research & Development,,Yes,1,3.0,27,Non-Travel,Married,Y,80,Yes
+246,42,Research & Development,8123.0,Yes,20,3.0,16,Travel_Rarely,Married,Y,80,Yes
+247,30,Research & Development,4219.0,No,4,3.0,18,Travel_Rarely,Married,Y,80,No
+248,45,Research & Development,6229.0,Yes,8,2.0,8,Travel_Frequently,Married,Y,80,No
+249,26,Research & Development,3912.0,Yes,6,1.0,2,Travel_Rarely,Married,Y,80,Yes
+250,32,Human Resources,4776.0,No,10,1.0,22,Travel_Rarely,Married,Y,80,No
+251,39,Research & Development,3380.0,No,2,3.0,11,Non-Travel,Divorced,Y,80,No
+252,45,Research & Development,5649.0,Yes,7,2.0,27,Travel_Rarely,Divorced,Y,80,Yes
+253,25,Research & Development,5053.0,No,9,2.0,7,Travel_Rarely,Single,Y,80,No
+254,34,Sales,6292.0,No,9,2.0,17,Travel_Rarely,Married,Y,80,No
+255,23,Sales,2698.0,No,2,2.0,3,Travel_Frequently,Married,Y,80,No
+256,25,Research & Development,6430.0,No,14,2.0,2,Travel_Rarely,Married,Y,80,No
+257,28,Sales,3119.0,Yes,6,4.0,24,Travel_Rarely,Married,Y,80,No
+258,32,Research & Development,6978.0,Yes,15,1.0,28,Travel_Rarely,Divorced,Y,80,No
+259,56,Research & Development,6234.0,Yes,8,1.0,26,Travel_Rarely,Divorced,Y,80,Yes
+260,35,Research & Development,4617.0,No,3,2.0,22,Travel_Rarely,Single,Y,80,No
+261,24,Research & Development,2569.0,No,3,2.0,1,Travel_Rarely,Divorced,Y,80,No
+262,56,Research & Development,5796.0,No,5,4.0,5,Travel_Rarely,Divorced,Y,80,No
+263,42,Sales,4190.0,Yes,1,2.0,17,Travel_Rarely,Married,Y,80,Yes
+264,24,Human Resources,5383.0,No,7,1.0,12,Travel_Rarely,Single,Y,80,No
+265,23,Research & Development,2914.0,Yes,4,4.0,13,Travel_Rarely,Divorced,Y,80,No
+266,23,Research & Development,4948.0,Yes,9,4.0,22,Travel_Rarely,Single,Y,80,No
+267,56,Research & Development,6427.0,No,3,1.0,11,Travel_Rarely,Divorced,Y,80,Yes
+268,42,Research & Development,5657.0,No,5,1.0,19,Travel_Rarely,Single,Y,80,No
+269,47,Research & Development,5576.0,No,2,3.0,7,Travel_Rarely,Divorced,Y,80,No
+270,58,Research & Development,7024.0,No,3,3.0,10,Travel_Rarely,Divorced,Y,80,No
+271,36,Sales,3792.0,No,5,3.0,9,Travel_Rarely,Married,Y,80,No
+272,56,Research & Development,6509.0,Yes,4,1.0,14,Non-Travel,Married,Y,80,Yes
+273,36,Research & Development,4798.0,No,3,3.0,21,Travel_Rarely,Married,Y,80,No
+274,48,Research & Development,5058.0,Yes,3,3.0,27,Travel_Rarely,Married,Y,80,Yes
+275,53,Sales,6875.0,No,6,2.0,8,Travel_Rarely,Divorced,Y,80,No
+276,22,Sales,2153.0,No,2,,20,Travel_Rarely,Married,Y,80,Yes
+277,49,Sales,8640.0,No,16,2.0,27,Non-Travel,Single,Y,80,No
+278,52,Research & Development,5674.0,No,5,3.0,20,Travel_Frequently,Married,Y,80,Yes
+279,58,Research & Development,8025.0,No,13,4.0,11,Non-Travel,Single,Y,80,No
+280,47,Research & Development,6718.0,Yes,6,4.0,13,Travel_Rarely,Married,Y,80,No
+281,39,Research & Development,7152.0,No,11,1.0,2,Travel_Frequently,Single,Y,80,No
+282,25,Human Resources,3902.0,Yes,8,2.0,1,Travel_Frequently,Married,Y,80,Yes
+283,50,Research & Development,6810.0,No,12,2.0,19,Travel_Rarely,Married,Y,80,No
+284,38,Sales,7162.0,Yes,12,4.0,7,Travel_Rarely,Single,Y,80,No
+285,52,Sales,3756.0,No,5,2.0,17,Travel_Rarely,Divorced,Y,80,Yes
+286,21,Research & Development,4319.0,No,3,1.0,16,Travel_Frequently,Married,Y,80,Yes
+287,33,Sales,5718.0,Yes,5,1.0,27,Travel_Rarely,Single,Y,80,No
+288,52,Research & Development,4813.0,No,2,2.0,6,Travel_Frequently,Single,Y,80,No
+289,44,Research & Development,6799.0,Yes,6,1.0,11,Travel_Rarely,Divorced,Y,80,No
+290,48,Research & Development,5890.0,No,3,1.0,18,Travel_Rarely,Divorced,Y,80,No
+291,43,Research & Development,6784.0,Yes,10,4.0,12,Travel_Rarely,Single,Y,80,No
+292,52,Sales,4251.0,No,5,2.0,29,Travel_Frequently,Single,Y,80,No
+293,53,Human Resources,5948.0,No,5,,16,Travel_Rarely,Single,Y,80,Yes
+294,50,Research & Development,5760.0,No,4,4.0,18,Travel_Rarely,Married,Y,80,No
+295,46,Sales,6289.0,No,10,4.0,3,Travel_Rarely,Married,Y,80,No
+296,30,Sales,3968.0,Yes,5,,17,Travel_Rarely,Single,Y,80,No
+297,23,Sales,3787.0,Yes,7,2.0,27,Travel_Frequently,Married,Y,80,Yes
+298,51,Research & Development,5116.0,Yes,13,2.0,18,Travel_Rarely,Single,Y,80,No
+299,34,Human Resources,5393.0,No,10,1.0,17,Non-Travel,Single,Y,80,No
+300,29,Human Resources,3248.0,No,3,1.0,13,Travel_Rarely,Married,Y,80,Yes
+301,20,Research & Development,3690.0,No,7,4.0,27,Non-Travel,Married,Y,80,No
+302,25,Human Resources,4860.0,No,13,3.0,10,Travel_Rarely,Single,Y,80,No
+303,21,Sales,3674.0,Yes,6,1.0,5,Non-Travel,Married,Y,80,No
+304,35,Research & Development,4286.0,Yes,1,1.0,20,Travel_Rarely,Single,Y,80,No
+305,31,Research & Development,5780.0,Yes,4,3.0,15,Travel_Rarely,Married,Y,80,Yes
+306,39,Human Resources,4211.0,No,4,4.0,13,Travel_Rarely,Single,Y,80,No
+307,42,Sales,7053.0,No,6,4.0,11,Travel_Rarely,Single,Y,80,No
+308,31,Research & Development,7243.0,No,22,3.0,4,Travel_Frequently,Single,Y,80,No
+309,41,Sales,5228.0,Yes,9,1.0,18,Travel_Rarely,Divorced,Y,80,Yes
+310,44,Sales,4110.0,No,4,,5,Travel_Frequently,Married,Y,80,No
+311,46,Sales,7766.0,No,12,2.0,14,Travel_Frequently,Single,Y,80,No
+312,44,Research & Development,3689.0,No,2,1.0,12,Travel_Rarely,Divorced,Y,80,Yes
+313,21,Sales,4117.0,No,4,,11,Travel_Rarely,Married,Y,80,No
+314,29,Sales,5239.0,Yes,9,,23,Travel_Rarely,Married,Y,80,No
+315,51,Research & Development,5693.0,Yes,5,3.0,20,Travel_Frequently,Married,Y,80,No
+316,44,Research & Development,7137.0,No,17,3.0,2,Travel_Frequently,Single,Y,80,No
+317,31,Research & Development,6621.0,No,15,4.0,26,Travel_Frequently,Married,Y,80,No
+318,34,Sales,4079.0,No,1,1.0,20,Travel_Rarely,Married,Y,80,No
+319,57,Research & Development,7927.0,Yes,8,1.0,12,Travel_Rarely,Single,Y,80,Yes
+320,49,Sales,5472.0,No,2,3.0,25,Travel_Rarely,Single,Y,80,No
+321,34,Research & Development,3671.0,No,2,1.0,16,Non-Travel,Single,Y,80,Yes
+322,31,Research & Development,4326.0,No,2,4.0,4,Non-Travel,Single,Y,80,No
+323,25,Research & Development,2617.0,No,4,2.0,26,Travel_Rarely,Married,Y,80,Yes
+324,51,Research & Development,6938.0,Yes,5,4.0,24,Travel_Rarely,Married,Y,80,Yes
+325,45,Research & Development,7320.0,Yes,14,1.0,12,Travel_Rarely,Married,Y,80,Yes
+326,36,Research & Development,4577.0,Yes,9,2.0,20,Travel_Rarely,Single,Y,80,No
+327,47,Research & Development,5475.0,No,8,,19,Travel_Rarely,Divorced,Y,80,No
+328,42,Human Resources,5455.0,Yes,7,3.0,22,Travel_Frequently,Divorced,Y,80,No
+329,41,Research & Development,3327.0,No,3,2.0,6,Travel_Rarely,Married,Y,80,No
+330,46,Sales,6789.0,No,4,2.0,2,Travel_Rarely,Married,Y,80,No
+331,50,Research & Development,8034.0,Yes,11,2.0,26,Travel_Frequently,Married,Y,80,Yes
+332,40,Sales,4955.0,Yes,9,4.0,11,Travel_Frequently,Married,Y,80,Yes
+333,36,Sales,5281.0,No,8,2.0,28,Travel_Rarely,Married,Y,80,Yes
+334,30,Research & Development,5258.0,No,2,3.0,22,Travel_Rarely,Married,Y,80,Yes
+335,32,Human Resources,5377.0,Yes,8,3.0,27,Travel_Rarely,Married,Y,80,Yes
+336,59,Research & Development,5294.0,Yes,1,1.0,7,Travel_Rarely,Single,Y,80,Yes
+337,27,Sales,1585.0,No,2,1.0,23,Travel_Rarely,Divorced,Y,80,Yes
+338,23,Research & Development,2941.0,No,9,4.0,16,Travel_Rarely,Single,Y,80,No
+339,44,Research & Development,6614.0,Yes,5,4.0,6,Non-Travel,Married,Y,80,No
+340,32,Research & Development,6200.0,No,13,4.0,19,Travel_Rarely,Single,Y,80,No
+341,23,Research & Development,1792.0,No,1,1.0,12,Travel_Rarely,Married,Y,80,Yes
+342,41,Research & Development,6637.0,No,9,3.0,13,Non-Travel,Divorced,Y,80,No
+343,49,Sales,7489.0,No,15,1.0,23,Travel_Rarely,Single,Y,80,No
+344,21,Research & Development,5059.0,No,17,4.0,16,Travel_Frequently,Single,Y,80,No
+345,39,Human Resources,5008.0,No,7,3.0,22,Travel_Frequently,Married,Y,80,No
+346,26,Research & Development,5688.0,Yes,17,2.0,1,Travel_Rarely,Single,Y,80,No
+347,42,Sales,6502.0,No,3,2.0,20,Travel_Rarely,Single,Y,80,No
+348,51,Research & Development,5171.0,Yes,4,1.0,4,Travel_Rarely,Single,Y,80,Yes
+349,52,Sales,6643.0,Yes,9,4.0,20,Non-Travel,Divorced,Y,80,Yes
+350,51,Research & Development,7014.0,No,3,3.0,12,Travel_Rarely,Married,Y,80,No
+351,31,Research & Development,6267.0,No,8,4.0,26,Non-Travel,Divorced,Y,80,No
+352,45,Research & Development,5679.0,No,10,3.0,9,Travel_Rarely,Single,Y,80,No
+353,45,Human Resources,10006.0,Yes,19,4.0,23,Travel_Frequently,Married,Y,80,No
+354,56,Sales,8160.0,No,8,3.0,15,Travel_Rarely,Married,Y,80,No
+355,47,Research & Development,4150.0,No,3,2.0,7,Travel_Rarely,Single,Y,80,No
+356,50,Research & Development,8067.0,No,7,4.0,19,Travel_Frequently,Married,Y,80,No
+357,23,Sales,3976.0,Yes,14,2.0,15,Travel_Frequently,Married,Y,80,No
+358,31,Sales,4457.0,Yes,2,1.0,23,Non-Travel,Married,Y,80,No
+359,34,Research & Development,4536.0,No,10,2.0,8,Travel_Frequently,Married,Y,80,No
+360,45,Research & Development,4606.0,Yes,8,3.0,8,Travel_Rarely,Married,Y,80,Yes
+361,54,Sales,8659.0,No,13,3.0,8,Travel_Rarely,Single,Y,80,No
+362,33,Research & Development,5667.0,No,9,1.0,23,Travel_Rarely,Divorced,Y,80,Yes
+363,39,Sales,5938.0,No,10,4.0,20,Travel_Rarely,Married,Y,80,No
+364,49,Sales,7442.0,No,12,4.0,29,Travel_Rarely,Married,Y,80,No
+365,27,Sales,5380.0,No,13,1.0,11,Travel_Rarely,Single,Y,80,No
+366,35,Human Resources,4161.0,Yes,3,1.0,5,Travel_Frequently,Single,Y,80,Yes
+367,27,Sales,3798.0,Yes,9,2.0,5,Travel_Rarely,Divorced,Y,80,No
+368,26,Sales,4821.0,Yes,7,1.0,24,Travel_Rarely,Married,Y,80,No
+369,47,Research & Development,6571.0,No,9,2.0,24,Non-Travel,Divorced,Y,80,No
+370,55,Research & Development,8494.0,No,17,4.0,6,Travel_Rarely,Married,Y,80,No
+371,25,Sales,3704.0,Yes,7,4.0,9,Travel_Rarely,Single,Y,80,Yes
+372,47,Sales,5041.0,No,2,3.0,1,Travel_Rarely,Single,Y,80,Yes
+373,47,Research & Development,3938.0,No,2,3.0,15,Travel_Rarely,Divorced,Y,80,Yes
+374,49,Sales,6995.0,No,12,3.0,14,Travel_Rarely,Married,Y,80,No
+375,48,Research & Development,4863.0,No,4,3.0,1,Non-Travel,Single,Y,80,No
+376,42,Research & Development,6887.0,Yes,7,4.0,29,Travel_Rarely,Married,Y,80,No
+377,24,Research & Development,3451.0,No,8,1.0,15,Non-Travel,Married,Y,80,No
+378,51,Sales,6329.0,No,8,4.0,26,Non-Travel,Married,Y,80,No
+379,27,Research & Development,4225.0,No,6,1.0,28,Travel_Rarely,Divorced,Y,80,No
+380,37,Research & Development,7801.0,No,17,4.0,13,Travel_Rarely,Single,Y,80,No
+381,58,Research & Development,8132.0,Yes,10,4.0,11,Travel_Rarely,Divorced,Y,80,No
+382,42,Sales,5215.0,Yes,4,4.0,5,Travel_Rarely,Divorced,Y,80,No
+383,31,Research & Development,5959.0,Yes,3,4.0,29,Non-Travel,Married,Y,80,No
+384,22,Human Resources,3386.0,No,4,4.0,12,Travel_Rarely,Single,Y,80,No
+385,30,Research & Development,6029.0,Yes,13,3.0,19,Travel_Rarely,Married,Y,80,Yes
+386,42,Research & Development,9080.0,No,12,1.0,22,Non-Travel,Married,Y,80,No
+387,54,Research & Development,,No,11,3.0,26,Travel_Frequently,Single,Y,80,No
+388,52,Research & Development,7501.0,Yes,7,1.0,3,Travel_Rarely,Divorced,Y,80,No
+389,28,Research & Development,5417.0,Yes,10,1.0,8,Travel_Frequently,Married,Y,80,Yes
+390,48,Sales,5106.0,No,7,4.0,14,Travel_Rarely,Single,Y,80,No
+391,45,Sales,4555.0,No,2,2.0,4,Travel_Rarely,Divorced,Y,80,No
+392,52,Sales,7565.0,No,8,2.0,5,Travel_Rarely,Married,Y,80,No
+393,39,Research & Development,3636.0,No,4,3.0,15,Travel_Frequently,Divorced,Y,80,No
+394,39,Research & Development,4946.0,Yes,5,4.0,20,Travel_Rarely,Married,Y,80,No
+395,36,Research & Development,5134.0,No,2,2.0,17,Travel_Rarely,Single,Y,80,No
+396,55,Research & Development,6519.0,No,6,4.0,17,Travel_Rarely,Married,Y,80,No
+397,40,Research & Development,5080.0,No,3,3.0,23,Travel_Frequently,Married,Y,80,Yes
+398,24,Sales,,No,2,3.0,23,Travel_Rarely,Single,Y,80,No
+399,40,Human Resources,4463.0,Yes,4,2.0,21,Travel_Rarely,Married,Y,80,No
+400,55,Research & Development,5642.0,Yes,3,2.0,8,Travel_Frequently,Married,Y,80,Yes
+401,53,Research & Development,6597.0,No,8,2.0,18,Travel_Rarely,Married,Y,80,No
+402,34,Research & Development,5045.0,No,4,3.0,15,Travel_Rarely,Married,Y,80,No
+403,55,Research & Development,6979.0,Yes,7,4.0,16,Travel_Frequently,Married,Y,80,Yes
+404,23,Research & Development,7411.0,Yes,16,3.0,1,Travel_Rarely,Single,Y,80,No
+405,49,Sales,7043.0,No,8,2.0,24,Travel_Rarely,Divorced,Y,80,No
+406,44,Sales,5808.0,No,5,3.0,20,Travel_Rarely,Married,Y,80,No
+407,20,Research & Development,6127.0,No,9,3.0,16,Travel_Frequently,Single,Y,80,No
+408,38,Sales,5102.0,No,6,1.0,12,Travel_Rarely,Married,Y,80,No
+409,35,Research & Development,4210.0,Yes,6,3.0,25,Travel_Rarely,Married,Y,80,No
+410,37,Sales,5427.0,No,7,2.0,6,Travel_Rarely,Married,Y,80,Yes
+411,30,Research & Development,3507.0,No,6,4.0,1,Travel_Rarely,Divorced,Y,80,No
+412,54,Sales,6741.0,No,4,3.0,10,Travel_Rarely,Married,Y,80,Yes
+413,53,Human Resources,7589.0,Yes,5,3.0,25,Travel_Rarely,Single,Y,80,No
+414,25,Sales,4960.0,No,8,3.0,27,Travel_Rarely,Single,Y,80,No
+415,50,Research & Development,5555.0,Yes,4,4.0,27,Travel_Rarely,Married,Y,80,No
+416,44,Research & Development,,Yes,15,2.0,5,Travel_Rarely,Married,Y,80,No
+417,27,Research & Development,5002.0,No,8,1.0,23,Travel_Rarely,Single,Y,80,Yes
+418,36,Research & Development,6614.0,No,9,2.0,16,Travel_Rarely,Married,Y,80,No
+419,31,Sales,4573.0,No,8,4.0,17,Travel_Rarely,Divorced,Y,80,No
+420,41,Research & Development,7439.0,Yes,19,1.0,6,Travel_Rarely,Single,Y,80,No
+421,25,Research & Development,6261.0,No,13,3.0,12,Travel_Rarely,Married,Y,80,Yes
+422,39,Research & Development,4586.0,No,1,4.0,28,Travel_Rarely,Divorced,Y,80,No
+423,24,Research & Development,3349.0,Yes,1,1.0,27,Travel_Rarely,Single,Y,80,Yes
+424,25,Research & Development,3743.0,No,2,4.0,4,Travel_Rarely,Married,Y,80,Yes
+425,54,Research & Development,5411.0,No,3,3.0,22,Travel_Frequently,Married,Y,80,No
+426,40,Research & Development,5249.0,Yes,6,2.0,1,Travel_Rarely,Divorced,Y,80,No
+427,31,Sales,5161.0,No,4,4.0,28,Travel_Rarely,Married,Y,80,No
+428,54,Research & Development,7042.0,Yes,9,,4,Travel_Rarely,Married,Y,80,Yes
+429,33,Research & Development,6015.0,No,14,4.0,1,Travel_Frequently,Single,Y,80,No
+430,26,Sales,,No,5,1.0,29,Travel_Rarely,Divorced,Y,80,Yes
+431,55,Sales,8881.0,Yes,16,3.0,5,Travel_Rarely,Married,Y,80,No
+432,20,Sales,6034.0,No,7,3.0,11,Travel_Frequently,Married,Y,80,Yes
+433,57,Research & Development,6731.0,No,9,3.0,16,Travel_Rarely,Married,Y,80,No
+434,22,Sales,,Yes,11,3.0,24,Travel_Rarely,Married,Y,80,No
+435,52,Research & Development,8806.0,Yes,9,2.0,15,Non-Travel,Divorced,Y,80,No
+436,38,Sales,5235.0,No,6,2.0,4,Travel_Rarely,Divorced,Y,80,No
+437,25,Research & Development,3474.0,Yes,1,1.0,23,Travel_Rarely,Married,Y,80,Yes
+438,58,Research & Development,7146.0,No,14,4.0,8,Travel_Frequently,Single,Y,80,No
+439,37,Human Resources,5445.0,Yes,3,3.0,20,Travel_Rarely,Married,Y,80,No
+440,21,Research & Development,5534.0,No,12,4.0,25,Travel_Rarely,Divorced,Y,80,No
+441,48,Research & Development,7559.0,No,10,2.0,4,Travel_Frequently,Single,Y,80,No
+442,59,Research & Development,6754.0,Yes,5,1.0,13,Travel_Rarely,Married,Y,80,No
+443,26,Research & Development,5536.0,No,12,3.0,23,Travel_Rarely,Married,Y,80,Yes
+444,41,Research & Development,5056.0,No,4,1.0,4,Travel_Frequently,Divorced,Y,80,No
+445,57,Research & Development,6956.0,No,2,2.0,2,Travel_Rarely,Single,Y,80,No
+446,24,Research & Development,4294.0,No,8,3.0,22,Travel_Frequently,Divorced,Y,80,No
+447,51,Research & Development,6899.0,No,5,2.0,1,Non-Travel,Married,Y,80,Yes
+448,36,Research & Development,3112.0,Yes,2,2.0,24,Travel_Frequently,Single,Y,80,Yes
+449,22,Human Resources,2753.0,No,2,3.0,27,Non-Travel,Single,Y,80,Yes
+450,28,Research & Development,1500.0,No,2,4.0,21,Travel_Rarely,Single,Y,80,Yes
+451,54,Sales,8134.0,No,15,3.0,14,Travel_Rarely,Single,Y,80,No
+452,48,Sales,7336.0,Yes,9,1.0,9,Travel_Rarely,Single,Y,80,No
+453,55,Sales,8486.0,No,17,1.0,27,Travel_Rarely,Divorced,Y,80,No
+454,41,Research & Development,6857.0,No,2,2.0,26,Travel_Rarely,Divorced,Y,80,No
+455,25,Human Resources,2789.0,Yes,4,4.0,24,Travel_Rarely,Married,Y,80,No
+456,31,Research & Development,4274.0,Yes,6,1.0,2,Travel_Frequently,Married,Y,80,No
+457,31,Sales,3750.0,No,6,2.0,11,Non-Travel,Married,Y,80,Yes
+458,30,Sales,3137.0,Yes,1,4.0,22,Travel_Rarely,Single,Y,80,No
+459,23,Research & Development,3257.0,No,5,3.0,22,Travel_Frequently,Married,Y,80,No
+460,54,Sales,4969.0,No,4,4.0,19,Travel_Rarely,Married,Y,80,No
+461,23,Research & Development,2261.0,No,2,3.0,16,Non-Travel,Divorced,Y,80,No
+462,50,Research & Development,7560.0,No,3,3.0,14,Non-Travel,Single,Y,80,No
+463,48,Sales,4972.0,No,1,1.0,26,Travel_Rarely,Married,Y,80,Yes
+464,37,Sales,5571.0,No,4,4.0,14,Travel_Rarely,Married,Y,80,No
+465,45,Sales,,No,5,2.0,19,Travel_Rarely,Single,Y,80,No
+466,36,Sales,4562.0,Yes,4,3.0,19,Non-Travel,Divorced,Y,80,Yes
+467,41,Sales,6135.0,No,7,2.0,21,Travel_Rarely,Divorced,Y,80,Yes
+468,49,Research & Development,8021.0,Yes,17,1.0,24,Non-Travel,Divorced,Y,80,No
+469,38,Research & Development,4747.0,Yes,6,3.0,8,Travel_Rarely,Divorced,Y,80,Yes
+470,58,Research & Development,7737.0,No,11,2.0,20,Non-Travel,Single,Y,80,No
+471,53,Sales,5680.0,No,1,4.0,24,Travel_Rarely,Divorced,Y,80,No
+472,23,Research & Development,5139.0,No,9,4.0,28,Travel_Rarely,Married,Y,80,No
+473,56,Research & Development,9162.0,Yes,13,4.0,24,Travel_Rarely,Single,Y,80,No
+474,26,Research & Development,2045.0,No,1,2.0,26,Travel_Frequently,Single,Y,80,Yes
+475,28,Research & Development,4445.0,No,17,3.0,8,Travel_Rarely,Married,Y,80,Yes
+476,34,Research & Development,3951.0,No,2,2.0,24,Travel_Rarely,Single,Y,80,No
+477,52,Research & Development,7727.0,No,13,2.0,12,Travel_Rarely,Married,Y,80,No
+478,40,Research & Development,5664.0,No,4,3.0,28,Travel_Rarely,Divorced,Y,80,No
+479,50,Research & Development,7417.0,No,7,2.0,4,Travel_Rarely,Single,Y,80,No
+480,22,Sales,5688.0,No,20,4.0,3,Travel_Rarely,Single,Y,80,No
+481,49,Sales,9296.0,Yes,13,2.0,3,Non-Travel,Married,Y,80,No
+482,22,Sales,4533.0,No,9,4.0,22,Travel_Rarely,Divorced,Y,80,Yes
+483,29,Research & Development,2272.0,No,3,1.0,11,Travel_Rarely,Married,Y,80,Yes
+484,28,Research & Development,4621.0,No,3,3.0,16,Travel_Rarely,Married,Y,80,No
+485,53,Research & Development,6441.0,No,4,4.0,11,Travel_Rarely,Single,Y,80,Yes
+486,35,Sales,5009.0,Yes,5,1.0,28,Travel_Frequently,Divorced,Y,80,Yes
+487,50,Sales,4859.0,Yes,6,2.0,12,Travel_Frequently,Married,Y,80,No
+488,49,Research & Development,6101.0,No,7,1.0,9,Travel_Rarely,Single,Y,80,No
+489,47,Research & Development,5615.0,No,3,1.0,1,Travel_Rarely,Single,Y,80,No
+490,44,Research & Development,5065.0,Yes,3,4.0,21,Travel_Frequently,Single,Y,80,Yes
+491,54,Research & Development,8517.0,No,13,1.0,14,Non-Travel,Married,Y,80,No
+492,21,Research & Development,4977.0,No,7,,18,Travel_Rarely,Married,Y,80,No
+493,46,Research & Development,6746.0,No,3,,24,Travel_Rarely,Single,Y,80,No
+494,21,Research & Development,4972.0,No,7,4.0,11,Travel_Rarely,Married,Y,80,No
+495,45,Research & Development,6781.0,Yes,12,4.0,25,Travel_Rarely,Married,Y,80,No
+496,38,Sales,7281.0,No,9,1.0,23,Travel_Rarely,Married,Y,80,No
+497,58,Research & Development,6517.0,No,2,2.0,23,Travel_Rarely,Single,Y,80,No
+498,54,Research & Development,7048.0,No,4,2.0,25,Travel_Rarely,Married,Y,80,No
+499,22,Research & Development,2646.0,No,1,2.0,21,Non-Travel,Married,Y,80,No
+500,56,Research & Development,5216.0,No,4,3.0,22,Travel_Rarely,Single,Y,80,No
+501,27,Research & Development,1500.0,Yes,2,3.0,29,Travel_Rarely,Married,Y,80,Yes
+502,34,Research & Development,,No,1,3.0,20,Non-Travel,Married,Y,80,No
+503,41,Research & Development,4687.0,No,5,4.0,3,Travel_Rarely,Married,Y,80,No
+504,55,Human Resources,6187.0,No,3,4.0,3,Travel_Rarely,Divorced,Y,80,No
+505,33,Research & Development,4653.0,No,1,4.0,2,Travel_Rarely,Married,Y,80,Yes
+506,57,Research & Development,5725.0,No,7,4.0,14,Travel_Rarely,Married,Y,80,No
+507,31,Research & Development,3716.0,No,10,2.0,14,Travel_Rarely,Single,Y,80,No
+508,36,Research & Development,4716.0,No,3,,21,Travel_Rarely,Single,Y,80,No
+509,57,Sales,8320.0,Yes,12,4.0,18,Travel_Rarely,Single,Y,80,No
+510,49,Research & Development,5229.0,No,2,4.0,22,Travel_Rarely,Divorced,Y,80,No
+511,47,Research & Development,6444.0,Yes,11,4.0,16,Travel_Frequently,Single,Y,80,No
+512,34,Research & Development,2339.0,Yes,0,3.0,27,Travel_Rarely,Divorced,Y,80,Yes
+513,20,Sales,4046.0,No,9,4.0,5,Travel_Rarely,Married,Y,80,Yes
+514,26,Research & Development,3638.0,No,7,2.0,1,Travel_Frequently,Divorced,Y,80,Yes
+515,32,Research & Development,5589.0,No,9,2.0,29,Travel_Rarely,Married,Y,80,No
+516,43,Sales,6860.0,No,8,3.0,12,Travel_Rarely,Single,Y,80,No
+517,54,Research & Development,6685.0,Yes,9,4.0,3,Travel_Rarely,Married,Y,80,No
+518,23,Research & Development,3865.0,No,4,2.0,25,Travel_Rarely,Divorced,Y,80,Yes
+519,22,Human Resources,3209.0,No,2,4.0,7,Travel_Rarely,Single,Y,80,No
+520,46,Sales,7629.0,Yes,12,2.0,14,Travel_Rarely,Single,Y,80,No
+521,29,Research & Development,5225.0,No,3,1.0,10,Travel_Frequently,Married,Y,80,Yes
+522,52,Research & Development,8854.0,Yes,16,3.0,5,Travel_Rarely,Divorced,Y,80,No
+523,43,Human Resources,5748.0,No,3,2.0,12,Travel_Rarely,Single,Y,80,No
+524,56,Research & Development,7534.0,Yes,6,3.0,2,Travel_Rarely,Married,Y,80,No
+525,38,Research & Development,4102.0,Yes,2,3.0,13,Travel_Frequently,Married,Y,80,No
+526,37,Research & Development,5467.0,No,8,1.0,19,Non-Travel,Married,Y,80,No
+527,51,Sales,5782.0,No,1,1.0,9,Travel_Rarely,Married,Y,80,Yes
+528,24,Sales,5051.0,No,6,4.0,5,Travel_Rarely,Single,Y,80,No
+529,28,Research & Development,5101.0,Yes,4,4.0,20,Travel_Rarely,Divorced,Y,80,No
+530,56,Research & Development,8856.0,No,6,1.0,13,Non-Travel,Married,Y,80,No
+531,25,Sales,1976.0,No,0,4.0,18,Travel_Rarely,Single,Y,80,No
+532,54,Research & Development,5706.0,Yes,1,3.0,13,Travel_Rarely,Single,Y,80,No
+533,47,Research & Development,4648.0,No,7,4.0,19,Non-Travel,Divorced,Y,80,No
+534,58,Research & Development,,No,6,,12,Travel_Rarely,Single,Y,80,No
+535,30,Research & Development,5892.0,Yes,22,2.0,12,Travel_Rarely,Single,Y,80,No
+536,43,Research & Development,6517.0,No,5,3.0,13,Travel_Frequently,Single,Y,80,Yes
+537,21,Research & Development,3628.0,Yes,2,1.0,7,Travel_Rarely,Married,Y,80,Yes
+538,46,Research & Development,5142.0,No,7,3.0,18,Travel_Rarely,Divorced,Y,80,No
+539,22,Research & Development,5143.0,No,12,2.0,11,Travel_Rarely,Divorced,Y,80,No
+540,34,Research & Development,6763.0,No,13,2.0,22,Travel_Rarely,Divorced,Y,80,No
+541,33,Research & Development,5229.0,No,0,2.0,4,Travel_Rarely,Married,Y,80,No
+542,27,Sales,4775.0,No,5,3.0,26,Travel_Rarely,Married,Y,80,Yes
+543,41,Research & Development,5406.0,No,5,3.0,6,Travel_Frequently,Married,Y,80,No
+544,31,Research & Development,5031.0,No,9,4.0,15,Travel_Rarely,Single,Y,80,No
+545,23,Research & Development,3513.0,No,1,3.0,10,Travel_Rarely,Single,Y,80,No
+546,48,Sales,7815.0,No,14,3.0,28,Travel_Rarely,Single,Y,80,No
+547,27,Research & Development,3245.0,Yes,3,4.0,22,Travel_Rarely,Married,Y,80,Yes
+548,32,Research & Development,2851.0,Yes,2,1.0,2,Travel_Rarely,Married,Y,80,Yes
+549,32,Research & Development,5607.0,No,6,1.0,20,Travel_Rarely,Single,Y,80,No
+550,47,Research & Development,5548.0,No,7,3.0,3,Non-Travel,Divorced,Y,80,No
+551,48,Research & Development,5141.0,Yes,2,3.0,13,Non-Travel,Single,Y,80,Yes
+552,40,Sales,7178.0,No,12,4.0,1,Travel_Rarely,Married,Y,80,No
+553,23,Research & Development,4163.0,No,8,4.0,22,Travel_Rarely,Divorced,Y,80,No
+554,37,Research & Development,5947.0,Yes,5,2.0,8,Travel_Rarely,Single,Y,80,No
+555,48,Research & Development,5459.0,Yes,8,2.0,22,Travel_Rarely,Divorced,Y,80,Yes
+556,58,Sales,8045.0,No,8,1.0,15,Travel_Rarely,Divorced,Y,80,No
+557,58,Research & Development,6534.0,No,10,3.0,26,Non-Travel,Married,Y,80,No
+558,26,Research & Development,3139.0,No,8,2.0,29,Non-Travel,Single,Y,80,No
+559,29,Sales,3640.0,Yes,7,2.0,25,Non-Travel,Married,Y,80,No
+560,39,Research & Development,6658.0,No,13,2.0,9,Non-Travel,Single,Y,80,No
+561,30,Research & Development,4418.0,No,9,2.0,24,Travel_Frequently,Married,Y,80,No
+562,26,Sales,3968.0,No,12,3.0,4,Travel_Rarely,Married,Y,80,No
+563,28,Sales,5017.0,No,4,3.0,7,Travel_Rarely,Divorced,Y,80,Yes
+564,57,Sales,6052.0,No,6,1.0,6,Travel_Rarely,Single,Y,80,Yes
+565,48,Research & Development,6361.0,No,8,4.0,10,Travel_Rarely,Divorced,Y,80,No
+566,39,Research & Development,4980.0,No,3,4.0,3,Travel_Rarely,Married,Y,80,No
+567,42,Research & Development,5498.0,No,8,,24,Travel_Rarely,Single,Y,80,No
+568,33,Research & Development,8677.0,No,26,4.0,6,Travel_Rarely,Single,Y,80,No
+569,41,Research & Development,6026.0,Yes,6,2.0,21,Non-Travel,Divorced,Y,80,No
+570,26,Research & Development,5472.0,No,14,1.0,7,Travel_Rarely,Single,Y,80,No
+571,22,Sales,3794.0,Yes,1,4.0,26,Travel_Rarely,Single,Y,80,Yes
+572,43,Research & Development,5122.0,No,6,4.0,7,Travel_Rarely,Single,Y,80,No
+573,42,Research & Development,3715.0,No,1,1.0,8,Travel_Frequently,Married,Y,80,Yes
+574,35,Research & Development,4935.0,Yes,5,1.0,14,Travel_Rarely,Single,Y,80,Yes
+575,38,Research & Development,4156.0,Yes,5,4.0,26,Non-Travel,Married,Y,80,Yes
+576,25,Sales,,No,12,1.0,2,Travel_Rarely,Married,Y,80,No
+577,53,Research & Development,7541.0,Yes,12,4.0,2,Travel_Rarely,Single,Y,80,No
+578,21,Research & Development,2893.0,No,4,4.0,7,Travel_Rarely,Single,Y,80,No
+579,39,Sales,5450.0,No,4,2.0,18,Travel_Rarely,Married,Y,80,No
+580,35,Sales,4512.0,No,1,1.0,1,Travel_Rarely,Married,Y,80,Yes
+581,51,Sales,5701.0,Yes,17,3.0,3,Travel_Rarely,Divorced,Y,80,No
+582,43,Research & Development,6806.0,No,14,3.0,21,Travel_Frequently,Divorced,Y,80,No
+583,27,Sales,3796.0,No,3,3.0,13,Travel_Rarely,Single,Y,80,No
+584,40,Research & Development,4740.0,No,0,2.0,22,Travel_Frequently,Divorced,Y,80,No
+585,43,Sales,5703.0,No,9,1.0,13,Travel_Rarely,Divorced,Y,80,Yes
+586,56,Sales,4893.0,Yes,1,2.0,29,Travel_Rarely,Divorced,Y,80,No
+587,40,Research & Development,5673.0,No,7,3.0,13,Travel_Rarely,Divorced,Y,80,No
+588,56,Research & Development,11031.0,Yes,26,2.0,25,Travel_Rarely,Married,Y,80,No
+589,33,Research & Development,2188.0,No,2,2.0,4,Travel_Rarely,Divorced,Y,80,Yes
+590,57,Research & Development,5745.0,Yes,7,1.0,25,Travel_Rarely,Married,Y,80,No
+591,57,Sales,5485.0,No,1,2.0,4,Travel_Rarely,Married,Y,80,No
+592,51,Research & Development,3692.0,No,4,1.0,8,Travel_Rarely,Single,Y,80,No
+593,54,Research & Development,5926.0,No,5,,15,Travel_Rarely,Married,Y,80,No
+594,39,Research & Development,7107.0,No,12,,25,Travel_Rarely,Married,Y,80,No
+595,57,Research & Development,,No,10,2.0,10,Travel_Rarely,Single,Y,80,No
+596,40,Human Resources,4964.0,No,3,2.0,9,Travel_Rarely,Single,Y,80,No
+597,43,Research & Development,5395.0,Yes,9,4.0,1,Travel_Rarely,Divorced,Y,80,No
+598,35,Research & Development,5489.0,No,7,1.0,20,Travel_Rarely,Single,Y,80,Yes
+599,43,Research & Development,6052.0,No,5,4.0,13,Non-Travel,Married,Y,80,No
+600,35,Sales,5738.0,No,4,1.0,13,Travel_Rarely,Married,Y,80,Yes
+601,42,Sales,5987.0,Yes,8,4.0,27,Travel_Rarely,Single,Y,80,Yes
+602,21,Research & Development,6232.0,Yes,15,1.0,16,Non-Travel,Single,Y,80,Yes
+603,22,Sales,3759.0,No,4,2.0,7,Travel_Rarely,Divorced,Y,80,No
+604,51,Sales,5045.0,No,1,3.0,25,Travel_Rarely,Married,Y,80,No
+605,54,Sales,12102.0,No,29,3.0,6,Travel_Rarely,Divorced,Y,80,No
+606,29,Research & Development,4393.0,No,9,4.0,5,Travel_Rarely,Married,Y,80,No
+607,20,Sales,4631.0,Yes,11,3.0,5,Travel_Frequently,Married,Y,80,Yes
+608,21,Sales,6584.0,No,10,4.0,27,Travel_Rarely,Single,Y,80,No
+609,51,Research & Development,6968.0,No,5,2.0,6,Travel_Rarely,Divorced,Y,80,No
+610,38,Research & Development,4461.0,No,6,1.0,18,Travel_Rarely,Single,Y,80,No
+611,30,Research & Development,7624.0,Yes,22,2.0,26,Travel_Rarely,Married,Y,80,Yes
+612,48,Sales,4703.0,No,1,2.0,4,Travel_Rarely,Single,Y,80,No
+613,40,Research & Development,5249.0,Yes,6,1.0,22,Travel_Rarely,Married,Y,80,Yes
+614,37,Research & Development,4479.0,No,10,4.0,15,Travel_Rarely,Single,Y,80,No
+615,23,Sales,4405.0,Yes,8,4.0,22,Travel_Rarely,Married,Y,80,No
+616,34,Sales,3086.0,No,4,1.0,28,Travel_Frequently,Single,Y,80,Yes
+617,50,Sales,7150.0,No,9,1.0,11,Non-Travel,Divorced,Y,80,Yes
+618,46,Research & Development,,Yes,5,4.0,4,Travel_Rarely,Married,Y,80,No
+619,38,Research & Development,5418.0,Yes,3,2.0,29,Travel_Rarely,Divorced,Y,80,No
+620,26,Research & Development,5578.0,No,3,1.0,1,Travel_Rarely,Divorced,Y,80,Yes
+621,45,Human Resources,4163.0,No,5,3.0,15,Travel_Rarely,Single,Y,80,Yes
+622,20,Sales,3046.0,No,9,2.0,2,Travel_Frequently,Single,Y,80,Yes
+623,59,Research & Development,7993.0,Yes,16,1.0,1,Non-Travel,Married,Y,80,Yes
+624,43,Research & Development,4959.0,Yes,5,2.0,24,Travel_Rarely,Married,Y,80,No
+625,48,Research & Development,6168.0,No,2,4.0,28,Travel_Rarely,Single,Y,80,No
+626,41,Sales,5706.0,No,9,3.0,8,Travel_Frequently,Divorced,Y,80,No
+627,33,Research & Development,3502.0,No,2,2.0,16,Non-Travel,Divorced,Y,80,Yes
+628,54,Human Resources,7785.0,No,18,4.0,13,Travel_Rarely,Single,Y,80,No
+629,20,Research & Development,2112.0,No,1,4.0,11,Travel_Rarely,Single,Y,80,No
+630,36,Research & Development,4804.0,Yes,7,2.0,15,Travel_Rarely,Single,Y,80,No
+631,49,Research & Development,6094.0,Yes,6,4.0,2,Travel_Frequently,Married,Y,80,No
+632,51,Research & Development,5441.0,No,8,4.0,10,Travel_Rarely,Single,Y,80,No
+633,29,Research & Development,5399.0,No,12,3.0,16,Non-Travel,Divorced,Y,80,No
+634,20,Research & Development,4446.0,Yes,8,4.0,6,Non-Travel,Single,Y,80,Yes
+635,59,Research & Development,7039.0,No,4,4.0,17,Travel_Rarely,Married,Y,80,No
+636,21,Sales,2007.0,No,3,4.0,15,Travel_Rarely,Married,Y,80,No
+637,52,Research & Development,6654.0,Yes,3,1.0,12,Travel_Rarely,Divorced,Y,80,No
+638,43,Research & Development,6009.0,No,4,2.0,19,Travel_Rarely,Single,Y,80,No
+639,20,Sales,4026.0,No,7,4.0,26,Travel_Rarely,Married,Y,80,No
+640,29,Sales,5265.0,No,17,1.0,9,Travel_Frequently,Married,Y,80,No
+641,27,Research & Development,2165.0,No,2,3.0,9,Travel_Rarely,Single,Y,80,No
+642,22,Research & Development,3793.0,No,6,4.0,24,Travel_Rarely,Married,Y,80,Yes
+643,43,Research & Development,5444.0,No,10,4.0,28,Non-Travel,Married,Y,80,No
+644,25,Sales,2286.0,No,3,1.0,16,Travel_Frequently,Single,Y,80,No
+645,33,Research & Development,5909.0,No,8,3.0,17,Travel_Frequently,Married,Y,80,Yes
+646,34,Sales,4937.0,No,2,2.0,4,Travel_Rarely,Married,Y,80,Yes
+647,21,Research & Development,3885.0,Yes,4,3.0,2,Travel_Rarely,Divorced,Y,80,No
+648,33,Research & Development,6105.0,No,7,3.0,20,Travel_Rarely,Divorced,Y,80,No
+649,44,Research & Development,6008.0,No,3,3.0,4,Travel_Rarely,Single,Y,80,No
+650,42,Research & Development,3978.0,No,3,1.0,11,Travel_Frequently,Single,Y,80,Yes
+651,41,Research & Development,6858.0,No,8,3.0,16,Travel_Rarely,Married,Y,80,Yes
+652,55,Research & Development,6836.0,Yes,6,3.0,19,Travel_Rarely,Married,Y,80,Yes
+653,28,Sales,4696.0,No,6,2.0,6,Travel_Rarely,Single,Y,80,No
+654,34,Research & Development,5347.0,Yes,1,4.0,23,Travel_Frequently,Single,Y,80,No
+655,47,Research & Development,5866.0,No,3,3.0,19,Travel_Rarely,Divorced,Y,80,No
+656,27,Sales,6343.0,No,10,3.0,1,Travel_Rarely,Married,Y,80,No
+657,32,Human Resources,8669.0,No,28,2.0,13,Travel_Frequently,Single,Y,80,No
+658,43,Research & Development,4766.0,No,3,4.0,13,Travel_Rarely,Married,Y,80,No
+659,48,Sales,6903.0,No,14,2.0,20,Travel_Frequently,Single,Y,80,No
+660,20,Sales,2737.0,No,2,4.0,13,Travel_Rarely,Married,Y,80,No
+661,35,Sales,2877.0,Yes,3,1.0,13,Travel_Rarely,Married,Y,80,Yes
+662,35,Research & Development,5772.0,No,11,2.0,7,Travel_Rarely,Single,Y,80,No
+663,32,Research & Development,4190.0,No,4,,8,Travel_Rarely,Divorced,Y,80,No
+664,32,Research & Development,3998.0,No,5,2.0,7,Travel_Rarely,Single,Y,80,No
+665,53,Sales,4002.0,No,3,2.0,9,Travel_Frequently,Married,Y,80,No
+666,35,Research & Development,2277.0,No,2,3.0,9,Travel_Rarely,Single,Y,80,No
+667,44,Research & Development,8353.0,No,17,2.0,14,Travel_Rarely,Married,Y,80,No
+668,22,Sales,3797.0,No,11,2.0,5,Travel_Frequently,Single,Y,80,No
+669,50,Research & Development,7512.0,No,6,3.0,28,Travel_Rarely,Single,Y,80,No
+670,42,Sales,4196.0,No,2,4.0,2,Travel_Rarely,Divorced,Y,80,Yes
+671,34,Research & Development,,No,3,4.0,5,Travel_Rarely,Divorced,Y,80,No
+672,44,Sales,3719.0,Yes,2,4.0,8,Travel_Frequently,Divorced,Y,80,No
+673,50,Human Resources,6425.0,Yes,10,,25,Travel_Rarely,Married,Y,80,No
+674,49,Sales,5451.0,Yes,3,1.0,9,Travel_Rarely,Single,Y,80,No
+675,54,Sales,8421.0,No,13,2.0,24,Travel_Rarely,Divorced,Y,80,No
+676,58,Research & Development,8693.0,No,7,1.0,20,Travel_Rarely,Single,Y,80,No
+677,50,Sales,6426.0,Yes,2,3.0,26,Travel_Rarely,Divorced,Y,80,Yes
+678,34,Research & Development,3533.0,No,6,,19,Travel_Frequently,Married,Y,80,Yes
+679,50,Research & Development,6645.0,No,8,3.0,10,Non-Travel,Married,Y,80,No
+680,46,Sales,5768.0,Yes,6,3.0,11,Non-Travel,Single,Y,80,Yes
+681,33,Research & Development,4537.0,No,8,1.0,6,Travel_Rarely,Divorced,Y,80,No
+682,37,Research & Development,5819.0,No,7,4.0,19,Travel_Rarely,Divorced,Y,80,No
+683,20,Sales,5900.0,Yes,11,3.0,2,Travel_Rarely,Married,Y,80,Yes
+684,28,Human Resources,5329.0,No,14,2.0,8,Travel_Rarely,Single,Y,80,No
+685,25,Research & Development,4675.0,No,4,4.0,12,Travel_Rarely,Single,Y,80,No
+686,55,Sales,,No,9,4.0,14,Travel_Frequently,Married,Y,80,No
+687,56,Research & Development,7124.0,Yes,13,4.0,26,Travel_Frequently,Divorced,Y,80,Yes
+688,49,Sales,7967.0,No,7,2.0,10,Travel_Rarely,Single,Y,80,No
+689,31,Research & Development,5909.0,No,5,4.0,26,Travel_Rarely,Single,Y,80,No
+690,57,Research & Development,8077.0,No,11,4.0,3,Travel_Rarely,Married,Y,80,No
+691,29,Research & Development,5749.0,Yes,5,1.0,15,Travel_Rarely,Married,Y,80,Yes
+692,52,Research & Development,6326.0,Yes,4,3.0,10,Travel_Frequently,Married,Y,80,No
+693,50,Research & Development,6418.0,No,1,2.0,14,Travel_Rarely,Married,Y,80,No
+694,56,Research & Development,7227.0,Yes,5,,25,Travel_Rarely,Married,Y,80,Yes
+695,49,Sales,,Yes,8,2.0,26,Travel_Frequently,Single,Y,80,Yes
+696,25,Research & Development,7506.0,No,24,3.0,21,Travel_Rarely,Single,Y,80,No
+697,20,Research & Development,3610.0,No,7,1.0,20,Non-Travel,Divorced,Y,80,No
+698,20,Sales,3856.0,No,10,3.0,6,Travel_Rarely,Married,Y,80,No
+699,58,Research & Development,5782.0,Yes,5,1.0,7,Travel_Frequently,Married,Y,80,Yes
+700,27,Research & Development,,Yes,14,4.0,27,Travel_Rarely,Single,Y,80,No
+701,53,Research & Development,4900.0,Yes,3,1.0,9,Travel_Rarely,Single,Y,80,No
+702,36,Research & Development,6405.0,Yes,8,2.0,21,Travel_Rarely,Married,Y,80,No
+703,54,Research & Development,8116.0,Yes,24,4.0,20,Travel_Rarely,Single,Y,80,No
+704,47,Research & Development,6080.0,Yes,6,2.0,28,Non-Travel,Married,Y,80,No
+705,22,Sales,3030.0,No,5,1.0,22,Travel_Rarely,Divorced,Y,80,No
+706,37,Research & Development,4165.0,Yes,7,1.0,6,Travel_Rarely,Married,Y,80,No
+707,46,Research & Development,6394.0,No,5,2.0,14,Travel_Frequently,Single,Y,80,No
+708,40,Research & Development,5202.0,Yes,9,1.0,17,Travel_Rarely,Married,Y,80,No
+709,25,Research & Development,6018.0,No,11,3.0,13,Travel_Rarely,Divorced,Y,80,No
+710,50,Research & Development,6660.0,No,9,4.0,20,Travel_Rarely,Single,Y,80,No
+711,47,Human Resources,6130.0,No,5,3.0,29,Travel_Rarely,Single,Y,80,No
+712,22,Research & Development,2743.0,No,1,3.0,1,Travel_Rarely,Married,Y,80,Yes
+713,27,Sales,10016.0,No,35,1.0,26,Travel_Rarely,Married,Y,80,No
+714,47,Research & Development,8656.0,No,16,1.0,13,Travel_Rarely,Married,Y,80,No
+715,24,Sales,3896.0,No,8,1.0,21,Travel_Rarely,Married,Y,80,No
+716,21,Research & Development,5462.0,No,16,2.0,24,Travel_Frequently,Single,Y,80,No
+717,34,Research & Development,5704.0,No,2,1.0,6,Non-Travel,Single,Y,80,Yes
+718,29,Research & Development,4593.0,No,10,3.0,25,Non-Travel,Married,Y,80,No
+719,34,Research & Development,6470.0,No,6,3.0,13,Travel_Rarely,Divorced,Y,80,No
+720,48,Sales,6106.0,Yes,8,2.0,3,Non-Travel,Married,Y,80,No
+721,29,Research & Development,4068.0,No,7,2.0,9,Non-Travel,Married,Y,80,No
+722,47,Research & Development,,No,7,2.0,9,Travel_Rarely,Divorced,Y,80,No
+723,43,Research & Development,4527.0,No,4,4.0,21,Travel_Rarely,Single,Y,80,No
+724,36,Sales,3092.0,Yes,4,2.0,6,Travel_Rarely,Single,Y,80,No
+725,24,Research & Development,3425.0,No,6,4.0,17,Travel_Rarely,Married,Y,80,Yes
+726,31,Research & Development,,No,2,2.0,18,Travel_Rarely,Married,Y,80,No
+727,34,Research & Development,4425.0,No,4,4.0,14,Travel_Rarely,Single,Y,80,No
+728,53,Research & Development,5827.0,No,5,1.0,5,Travel_Rarely,Married,Y,80,Yes
+729,20,Research & Development,,Yes,8,3.0,8,Travel_Rarely,Single,Y,80,Yes
+730,30,Research & Development,3321.0,No,3,2.0,25,Travel_Frequently,Married,Y,80,Yes
+731,49,Sales,6500.0,No,15,2.0,6,Travel_Rarely,Married,Y,80,No
+732,21,Sales,1987.0,No,3,4.0,19,Travel_Rarely,Married,Y,80,No
+733,43,Human Resources,6503.0,No,1,2.0,22,Non-Travel,Divorced,Y,80,No
+734,29,Sales,5326.0,Yes,10,4.0,6,Travel_Frequently,Married,Y,80,No
+735,38,Sales,4735.0,No,8,2.0,16,Travel_Rarely,Married,Y,80,Yes
+736,20,Research & Development,4904.0,No,10,4.0,23,Travel_Rarely,Divorced,Y,80,No
+737,29,Research & Development,5380.0,Yes,4,1.0,29,Travel_Rarely,Married,Y,80,No
+738,52,Research & Development,5706.0,No,5,3.0,4,Travel_Frequently,Single,Y,80,No
+739,58,Research & Development,7262.0,No,8,3.0,24,Travel_Rarely,Divorced,Y,80,No
+740,24,Research & Development,4429.0,No,15,4.0,24,Travel_Rarely,Single,Y,80,No
+741,55,Human Resources,5294.0,No,6,3.0,14,Travel_Frequently,Single,Y,80,No
+742,58,Research & Development,8601.0,No,8,4.0,7,Travel_Rarely,Married,Y,80,No
+743,45,Research & Development,8913.0,No,6,3.0,18,Travel_Frequently,Married,Y,80,No
+744,28,Sales,3814.0,Yes,7,4.0,15,Travel_Rarely,Married,Y,80,Yes
+745,46,Research & Development,4276.0,Yes,5,4.0,2,Travel_Rarely,Single,Y,80,Yes
+746,32,Sales,6117.0,No,7,,1,Travel_Rarely,Married,Y,80,No
+747,33,Research & Development,6242.0,No,9,3.0,29,Non-Travel,Married,Y,80,No
+748,43,Research & Development,8418.0,No,19,4.0,9,Travel_Rarely,Married,Y,80,No
+749,25,Research & Development,4995.0,No,4,4.0,26,Travel_Rarely,Single,Y,80,No
+750,32,Research & Development,3635.0,No,2,3.0,8,Travel_Rarely,Single,Y,80,No
+751,57,Research & Development,7519.0,No,8,1.0,5,Travel_Frequently,Married,Y,80,No
+752,35,Research & Development,5641.0,No,6,2.0,28,Non-Travel,Divorced,Y,80,No
+753,45,Research & Development,5187.0,No,4,3.0,23,Travel_Frequently,Single,Y,80,Yes
+754,24,Research & Development,9229.0,Yes,33,2.0,21,Travel_Rarely,Single,Y,80,No
+755,48,Sales,6965.0,No,12,3.0,8,Travel_Rarely,Single,Y,80,No
+756,35,Research & Development,5159.0,Yes,5,2.0,25,Travel_Rarely,Divorced,Y,80,Yes
+757,44,Research & Development,5704.0,Yes,5,1.0,1,Travel_Rarely,Married,Y,80,Yes
+758,21,Human Resources,1527.0,No,4,3.0,23,Travel_Rarely,Married,Y,80,Yes
+759,27,Sales,4830.0,No,9,3.0,20,Travel_Rarely,Single,Y,80,Yes
+760,28,Research & Development,3551.0,No,9,4.0,3,Travel_Rarely,Married,Y,80,No
+761,25,Sales,3261.0,No,6,2.0,9,Travel_Rarely,Married,Y,80,No
+762,56,Research & Development,4780.0,Yes,3,2.0,17,Travel_Rarely,Single,Y,80,Yes
+763,40,Sales,7732.0,No,15,2.0,8,Non-Travel,Married,Y,80,No
+764,31,Sales,5352.0,No,12,1.0,10,Travel_Frequently,Married,Y,80,No
+765,29,Research & Development,4220.0,No,7,2.0,7,Travel_Rarely,Married,Y,80,No
+766,30,Research & Development,4880.0,No,2,2.0,11,Travel_Rarely,Single,Y,80,Yes
+767,29,Research & Development,6287.0,No,13,1.0,6,Travel_Frequently,Married,Y,80,No
+768,47,Sales,5094.0,No,2,2.0,4,Non-Travel,Single,Y,80,No
+769,41,Research & Development,3594.0,No,6,3.0,9,Travel_Rarely,Married,Y,80,No
+770,55,Research & Development,10381.0,Yes,23,2.0,22,Travel_Frequently,Married,Y,80,No
+771,52,Research & Development,6039.0,No,5,4.0,8,Travel_Frequently,Single,Y,80,No
+772,31,Research & Development,7299.0,Yes,23,4.0,9,Travel_Rarely,Married,Y,80,No
+773,32,Sales,4958.0,No,4,2.0,4,Travel_Rarely,Married,Y,80,No
+774,35,Research & Development,5799.0,No,14,4.0,6,Travel_Rarely,Single,Y,80,No
+775,53,Research & Development,6112.0,No,4,3.0,24,Travel_Rarely,Married,Y,80,No
+776,48,Research & Development,6536.0,No,4,1.0,1,Travel_Rarely,Single,Y,80,No
+777,37,Research & Development,4901.0,No,2,4.0,28,Travel_Rarely,Divorced,Y,80,No
+778,51,Human Resources,6534.0,Yes,10,2.0,22,Travel_Frequently,Married,Y,80,Yes
+779,44,Research & Development,6325.0,No,2,4.0,18,Travel_Rarely,Single,Y,80,Yes
+780,44,Research & Development,8931.0,No,18,2.0,26,Non-Travel,Married,Y,80,No
+781,49,Sales,,No,4,1.0,1,Travel_Rarely,Single,Y,80,No
+782,27,Research & Development,4519.0,No,8,4.0,4,Non-Travel,Married,Y,80,No
+783,46,Research & Development,5211.0,Yes,1,2.0,18,Non-Travel,Single,Y,80,No
+784,27,Sales,4976.0,No,5,4.0,8,Travel_Rarely,Married,Y,80,No
+785,23,Research & Development,3525.0,Yes,2,4.0,22,Travel_Rarely,Married,Y,80,No
+786,50,Research & Development,6044.0,No,4,3.0,16,Travel_Rarely,Married,Y,80,No
+787,21,Research & Development,5018.0,No,14,3.0,21,Travel_Frequently,Single,Y,80,No
+788,48,Sales,6188.0,No,8,1.0,21,Travel_Frequently,Single,Y,80,No
+789,28,Sales,4794.0,No,12,2.0,20,Travel_Rarely,Married,Y,80,No
+790,55,Research & Development,,No,12,1.0,15,Travel_Rarely,Married,Y,80,No
+791,21,Research & Development,3136.0,No,1,1.0,17,Travel_Rarely,Single,Y,80,Yes
+792,51,Research & Development,6276.0,No,7,2.0,22,Travel_Frequently,Married,Y,80,No
+793,56,Research & Development,5911.0,Yes,8,3.0,3,Travel_Frequently,Single,Y,80,No
+794,36,Sales,4349.0,No,2,3.0,24,Travel_Rarely,Married,Y,80,No
+795,59,Research & Development,7862.0,No,2,2.0,15,Travel_Rarely,Single,Y,80,No
+796,25,Sales,5075.0,No,5,1.0,13,Travel_Frequently,Divorced,Y,80,No
+797,54,Research & Development,6274.0,No,14,2.0,16,Travel_Rarely,Divorced,Y,80,Yes
+798,55,Sales,5610.0,No,4,3.0,21,Travel_Rarely,Married,Y,80,No
+799,29,Research & Development,5991.0,No,11,2.0,24,Travel_Rarely,Divorced,Y,80,No
+800,47,Research & Development,5004.0,No,0,1.0,22,Non-Travel,Single,Y,80,Yes
+801,49,Sales,6436.0,No,7,4.0,27,Travel_Rarely,Married,Y,80,No
+802,43,Research & Development,8056.0,No,20,4.0,4,Travel_Rarely,Single,Y,80,No
+803,21,Sales,3905.0,No,7,4.0,16,Travel_Rarely,Single,Y,80,Yes
+804,47,Research & Development,4378.0,No,2,1.0,16,Travel_Rarely,Married,Y,80,Yes
+805,23,Research & Development,4556.0,No,4,4.0,1,Non-Travel,Single,Y,80,No
+806,35,Research & Development,4356.0,No,8,3.0,9,Travel_Rarely,Married,Y,80,No
+807,30,Research & Development,5435.0,Yes,12,3.0,2,Travel_Rarely,Divorced,Y,80,No
+808,33,Research & Development,6313.0,No,7,4.0,8,Travel_Rarely,Single,Y,80,No
+809,59,Sales,9869.0,No,16,3.0,23,Travel_Rarely,Married,Y,80,No
+810,43,Research & Development,6008.0,No,8,,27,Travel_Frequently,Single,Y,80,Yes
+811,33,Research & Development,5108.0,No,8,4.0,24,Travel_Rarely,Divorced,Y,80,No
+812,39,Sales,4398.0,No,4,1.0,27,Travel_Frequently,Single,Y,80,Yes
+813,48,Research & Development,5656.0,No,6,2.0,23,Non-Travel,Divorced,Y,80,No
+814,48,Sales,5173.0,No,2,3.0,4,Travel_Rarely,Married,Y,80,No
+815,51,Research & Development,7397.0,Yes,5,2.0,6,Travel_Rarely,Married,Y,80,No
+816,57,Research & Development,8147.0,No,15,1.0,25,Travel_Rarely,Single,Y,80,No
+817,55,Research & Development,6884.0,No,4,1.0,28,Travel_Rarely,Single,Y,80,Yes
+818,53,Research & Development,7483.0,No,9,2.0,22,Travel_Rarely,Married,Y,80,No
+819,44,Sales,5752.0,No,4,4.0,15,Non-Travel,Married,Y,80,No
+820,35,Research & Development,5408.0,Yes,10,3.0,12,Non-Travel,Single,Y,80,No
+821,35,Research & Development,5059.0,No,3,1.0,20,Travel_Rarely,Divorced,Y,80,Yes
+822,34,Research & Development,5175.0,No,7,4.0,11,Non-Travel,Married,Y,80,No
+823,38,Research & Development,6380.0,No,12,1.0,4,Travel_Rarely,Single,Y,80,No
+824,57,Sales,7218.0,Yes,10,2.0,11,Travel_Rarely,Married,Y,80,No
+825,46,Sales,4365.0,No,8,4.0,26,Travel_Rarely,Married,Y,80,No
+826,35,Research & Development,5958.0,No,8,1.0,26,Travel_Rarely,Divorced,Y,80,No
+827,51,Research & Development,7243.0,No,7,4.0,4,Travel_Rarely,Married,Y,80,No
+828,52,Sales,6025.0,Yes,6,1.0,13,Travel_Rarely,Single,Y,80,Yes
+829,25,Sales,4247.0,No,8,4.0,22,Non-Travel,Married,Y,80,Yes
+830,23,Human Resources,3404.0,No,2,1.0,15,Travel_Frequently,Single,Y,80,No
+831,37,Sales,6056.0,Yes,16,2.0,2,Travel_Rarely,Married,Y,80,No
+832,38,Sales,5313.0,No,3,1.0,19,Travel_Rarely,Divorced,Y,80,Yes
+833,21,Research & Development,4327.0,Yes,6,3.0,5,Travel_Rarely,Single,Y,80,No
+834,40,Research & Development,5083.0,No,0,4.0,5,Travel_Rarely,Single,Y,80,No
+835,43,Research & Development,6316.0,No,5,3.0,22,Travel_Rarely,Divorced,Y,80,No
+836,52,Research & Development,5681.0,Yes,11,4.0,1,Travel_Rarely,Single,Y,80,No
+837,43,Sales,7220.0,No,12,4.0,17,Travel_Rarely,Divorced,Y,80,No
+838,55,Research & Development,6179.0,Yes,5,2.0,22,Travel_Rarely,Divorced,Y,80,No
+839,37,Research & Development,6848.0,No,10,4.0,19,Travel_Rarely,Married,Y,80,No
+840,26,Research & Development,4190.0,No,1,4.0,12,Non-Travel,Divorced,Y,80,No
+841,49,Research & Development,7484.0,No,9,2.0,3,Non-Travel,Divorced,Y,80,No
+842,44,Research & Development,7850.0,Yes,18,4.0,24,Travel_Rarely,Single,Y,80,No
+843,39,Research & Development,7999.0,No,7,4.0,18,Non-Travel,Married,Y,80,No
+844,45,Research & Development,5268.0,No,3,1.0,25,Travel_Frequently,Married,Y,80,No
+845,28,Research & Development,2852.0,No,3,4.0,9,Travel_Rarely,Married,Y,80,No
+846,26,Research & Development,4115.0,No,1,1.0,3,Travel_Rarely,Divorced,Y,80,No
+847,33,Research & Development,3123.0,No,4,3.0,26,Travel_Rarely,Married,Y,80,No
+848,53,Research & Development,7577.0,Yes,2,4.0,8,Travel_Rarely,Single,Y,80,No
+849,52,Research & Development,8118.0,No,10,4.0,4,Non-Travel,Single,Y,80,No
+850,42,Sales,6417.0,Yes,4,2.0,10,Travel_Rarely,Married,Y,80,Yes
+851,30,Research & Development,5447.0,Yes,6,,3,Non-Travel,Single,Y,80,No
+852,58,Research & Development,8654.0,No,13,,26,Travel_Rarely,Single,Y,80,No
+853,58,Research & Development,6396.0,No,9,2.0,9,Travel_Rarely,Single,Y,80,No
+854,27,Research & Development,3170.0,No,3,2.0,8,Non-Travel,Single,Y,80,Yes
+855,47,Research & Development,6730.0,Yes,7,4.0,15,Travel_Rarely,Married,Y,80,Yes
+856,40,Sales,5417.0,Yes,7,2.0,13,Non-Travel,Divorced,Y,80,Yes
+857,54,Research & Development,8449.0,Yes,14,4.0,4,Travel_Frequently,Single,Y,80,No
+858,32,Research & Development,4808.0,No,10,2.0,19,Travel_Rarely,Divorced,Y,80,No
+859,39,Research & Development,4266.0,Yes,4,3.0,21,Non-Travel,Divorced,Y,80,Yes
+860,45,Research & Development,6675.0,No,9,1.0,28,Travel_Frequently,Married,Y,80,No
+861,45,Sales,7430.0,Yes,11,3.0,20,Travel_Rarely,Single,Y,80,No
+862,44,Research & Development,9563.0,Yes,27,3.0,11,Non-Travel,Married,Y,80,No
+863,30,Research & Development,3647.0,No,6,2.0,14,Travel_Rarely,Married,Y,80,No
+864,40,Sales,3214.0,No,2,3.0,29,Travel_Frequently,Divorced,Y,80,No
+865,56,Research & Development,7763.0,Yes,1,4.0,19,Travel_Frequently,Single,Y,80,No
+866,32,Research & Development,2779.0,No,1,2.0,23,Travel_Rarely,Divorced,Y,80,No
+867,29,Research & Development,3827.0,Yes,7,4.0,5,Travel_Rarely,Married,Y,80,No
+868,40,Research & Development,6025.0,No,13,2.0,24,Travel_Rarely,Married,Y,80,No
+869,38,Sales,6032.0,No,6,2.0,24,Travel_Rarely,Single,Y,80,Yes
+870,34,Research & Development,4017.0,No,5,2.0,14,Travel_Rarely,Single,Y,80,No
+871,59,Research & Development,9050.0,No,14,1.0,19,Travel_Rarely,Single,Y,80,No
+872,55,Research & Development,6844.0,Yes,5,4.0,22,Travel_Rarely,Married,Y,80,Yes
+873,24,Research & Development,3490.0,No,9,3.0,8,Travel_Rarely,Single,Y,80,No
+874,38,Research & Development,5550.0,No,7,1.0,2,Travel_Frequently,Married,Y,80,No
+875,45,Sales,6206.0,No,14,4.0,17,Travel_Rarely,Single,Y,80,No
+876,39,Human Resources,4452.0,No,2,1.0,19,Travel_Rarely,Married,Y,80,Yes
+877,58,Research & Development,8405.0,No,10,1.0,17,Travel_Frequently,Married,Y,80,No
+878,30,Research & Development,5013.0,Yes,10,4.0,11,Travel_Rarely,Single,Y,80,Yes
+879,57,Research & Development,6660.0,No,9,2.0,19,Travel_Rarely,Divorced,Y,80,No
+880,30,Sales,4308.0,Yes,7,2.0,7,Non-Travel,Single,Y,80,Yes
+881,55,Research & Development,5864.0,No,2,3.0,23,Travel_Rarely,Married,Y,80,No
+882,58,Research & Development,6777.0,No,3,2.0,26,Travel_Rarely,Married,Y,80,No
+883,30,Research & Development,2631.0,Yes,7,2.0,5,Travel_Rarely,Divorced,Y,80,No
+884,32,Research & Development,3210.0,Yes,7,2.0,2,Travel_Frequently,Married,Y,80,Yes
+885,23,Research & Development,3759.0,No,3,2.0,17,Travel_Frequently,Single,Y,80,No
+886,54,Sales,6185.0,No,4,3.0,12,Travel_Rarely,Divorced,Y,80,No
+887,26,Human Resources,4318.0,Yes,7,2.0,8,Travel_Rarely,Single,Y,80,Yes
+888,43,Research & Development,5666.0,No,5,3.0,15,Travel_Frequently,Single,Y,80,No
+889,33,Research & Development,4610.0,Yes,6,3.0,19,Non-Travel,Single,Y,80,No
+890,59,Human Resources,9750.0,No,23,,29,Travel_Rarely,Divorced,Y,80,No
+891,45,Research & Development,6109.0,Yes,7,3.0,24,Travel_Frequently,Single,Y,80,Yes
+892,26,Sales,4174.0,No,3,1.0,19,Travel_Rarely,Divorced,Y,80,Yes
+893,50,Research & Development,6222.0,No,4,3.0,8,Travel_Rarely,Married,Y,80,No
+894,57,Sales,7466.0,No,9,4.0,5,Travel_Rarely,Single,Y,80,Yes
+895,42,Sales,,No,6,1.0,18,Travel_Rarely,Married,Y,80,No
+896,50,Sales,6666.0,No,7,1.0,17,Travel_Rarely,Married,Y,80,No
+897,48,Sales,5246.0,Yes,7,3.0,17,Non-Travel,Single,Y,80,No
+898,42,Research & Development,4597.0,No,4,4.0,23,Non-Travel,Married,Y,80,No
+899,52,Human Resources,6408.0,Yes,5,4.0,6,Non-Travel,Single,Y,80,No
+900,48,Research & Development,5660.0,No,3,4.0,21,Travel_Rarely,Married,Y,80,No
+901,27,Research & Development,5538.0,Yes,8,3.0,1,Travel_Rarely,Married,Y,80,No
+902,48,Research & Development,7240.0,Yes,8,4.0,16,Travel_Rarely,Single,Y,80,No
+903,42,Sales,6350.0,Yes,8,,5,Travel_Rarely,Married,Y,80,Yes
+904,37,Research & Development,,No,11,2.0,9,Travel_Rarely,Single,Y,80,No
+905,43,Sales,5813.0,Yes,7,2.0,18,Travel_Frequently,Married,Y,80,Yes
+906,45,Research & Development,5249.0,No,4,2.0,12,Travel_Rarely,Married,Y,80,No
+907,24,Research & Development,5118.0,No,4,2.0,27,Travel_Frequently,Single,Y,80,No
+908,29,Research & Development,4435.0,Yes,4,2.0,26,Travel_Rarely,Married,Y,80,Yes
+909,50,Research & Development,7318.0,Yes,15,4.0,2,Travel_Rarely,Married,Y,80,No
+910,20,Sales,3185.0,No,8,2.0,2,Travel_Frequently,Single,Y,80,No
+911,24,Sales,4680.0,No,4,4.0,24,Travel_Frequently,Married,Y,80,Yes
+912,47,Research & Development,5593.0,Yes,8,,16,Travel_Rarely,Single,Y,80,No
+913,27,Research & Development,4174.0,No,4,2.0,29,Travel_Rarely,Married,Y,80,No
+914,38,Sales,4996.0,Yes,4,2.0,8,Non-Travel,Single,Y,80,No
+915,51,Sales,,No,4,1.0,9,Travel_Rarely,Married,Y,80,No
+916,56,Research & Development,5499.0,Yes,3,4.0,6,Travel_Rarely,Married,Y,80,No
+917,53,Research & Development,6060.0,Yes,1,4.0,25,Travel_Rarely,Divorced,Y,80,No
+918,30,Research & Development,4119.0,No,3,2.0,6,Travel_Rarely,Married,Y,80,Yes
+919,32,Research & Development,6449.0,Yes,12,1.0,3,Non-Travel,Married,Y,80,Yes
+920,52,Research & Development,7489.0,No,5,1.0,7,Travel_Rarely,Divorced,Y,80,No
+921,51,Research & Development,7182.0,No,10,2.0,24,Travel_Frequently,Single,Y,80,No
+922,59,Research & Development,6892.0,No,6,1.0,26,Travel_Frequently,Single,Y,80,No
+923,49,Sales,6971.0,No,6,2.0,7,Travel_Rarely,Married,Y,80,Yes
+924,55,Research & Development,5479.0,No,6,4.0,29,Travel_Rarely,Single,Y,80,No
+925,36,Sales,6090.0,Yes,11,1.0,25,Travel_Rarely,Divorced,Y,80,No
+926,58,Research & Development,6310.0,No,7,3.0,24,Travel_Rarely,Married,Y,80,No
+927,33,Sales,4399.0,Yes,10,2.0,17,Travel_Rarely,Married,Y,80,No
+928,26,Research & Development,3259.0,Yes,9,4.0,28,Travel_Frequently,Married,Y,80,No
+929,41,Research & Development,4183.0,No,7,2.0,16,Travel_Rarely,Married,Y,80,Yes
+930,26,Research & Development,4321.0,Yes,3,1.0,5,Travel_Rarely,Divorced,Y,80,Yes
+931,21,Sales,4450.0,Yes,6,1.0,14,Travel_Rarely,Single,Y,80,Yes
+932,29,Research & Development,4307.0,No,5,2.0,29,Travel_Frequently,Married,Y,80,Yes
+933,35,Research & Development,5855.0,Yes,6,1.0,29,Travel_Frequently,Married,Y,80,No
+934,34,Sales,4333.0,No,3,3.0,7,Travel_Rarely,Married,Y,80,Yes
+935,20,Research & Development,3866.0,Yes,10,2.0,22,Travel_Rarely,Single,Y,80,No
+936,24,Human Resources,2446.0,Yes,3,3.0,7,Travel_Rarely,Single,Y,80,No
+937,24,Research & Development,4810.0,No,7,1.0,11,Travel_Rarely,Divorced,Y,80,No
+938,26,Human Resources,4492.0,No,4,3.0,10,Non-Travel,Married,Y,80,No
+939,50,Sales,9030.0,No,15,2.0,15,Travel_Rarely,Married,Y,80,No
+940,20,Research & Development,2878.0,No,6,4.0,13,Travel_Rarely,Divorced,Y,80,No
+941,33,Research & Development,6668.0,No,18,3.0,6,Travel_Rarely,Married,Y,80,No
+942,57,Research & Development,5540.0,Yes,5,1.0,26,Travel_Rarely,Married,Y,80,No
+943,34,Sales,,Yes,19,1.0,2,Travel_Rarely,Single,Y,80,No
+944,34,Sales,5480.0,No,6,1.0,25,Non-Travel,Divorced,Y,80,No
+945,49,Research & Development,7557.0,No,11,3.0,26,Non-Travel,Married,Y,80,No
+946,45,Research & Development,5648.0,No,5,4.0,4,Travel_Rarely,Single,Y,80,No
+947,29,Sales,4632.0,No,8,3.0,20,Travel_Frequently,Married,Y,80,No
+948,38,Research & Development,3809.0,No,0,2.0,24,Travel_Rarely,Divorced,Y,80,Yes
+949,39,Research & Development,6454.0,No,7,4.0,16,Travel_Rarely,Divorced,Y,80,No
+950,49,Sales,4743.0,Yes,1,4.0,19,Travel_Rarely,Divorced,Y,80,No
+951,36,Research & Development,5825.0,No,6,3.0,19,Travel_Frequently,Single,Y,80,No
+952,52,Sales,7271.0,No,9,4.0,29,Travel_Rarely,Single,Y,80,No
+953,37,Research & Development,3152.0,No,0,2.0,6,Travel_Rarely,Married,Y,80,Yes
+954,35,Sales,3660.0,No,6,1.0,20,Travel_Frequently,Married,Y,80,Yes
+955,33,Research & Development,4431.0,No,8,4.0,14,Travel_Rarely,Divorced,Y,80,No
+956,41,Sales,5633.0,No,7,2.0,12,Non-Travel,Married,Y,80,No
+957,39,Research & Development,4338.0,Yes,7,4.0,17,Travel_Frequently,Married,Y,80,Yes
+958,23,Research & Development,3704.0,No,2,4.0,14,Travel_Frequently,Married,Y,80,Yes
+959,36,Sales,6228.0,No,7,1.0,13,Travel_Frequently,Married,Y,80,No
+960,31,Research & Development,5250.0,Yes,7,2.0,27,Travel_Rarely,Married,Y,80,Yes
+961,39,Research & Development,3443.0,No,4,4.0,14,Non-Travel,Married,Y,80,Yes
+962,28,Research & Development,2228.0,Yes,6,4.0,1,Travel_Frequently,Single,Y,80,Yes
+963,55,Research & Development,9500.0,No,17,2.0,8,Travel_Rarely,Single,Y,80,No
+964,32,Sales,5823.0,No,5,3.0,28,Travel_Rarely,Married,Y,80,No
+965,40,Research & Development,6302.0,No,13,4.0,23,Travel_Rarely,Married,Y,80,No
+966,32,Research & Development,9642.0,Yes,31,3.0,14,Travel_Rarely,Married,Y,80,No
+967,42,Research & Development,6417.0,No,12,2.0,21,Travel_Rarely,Married,Y,80,No
+968,43,Research & Development,5100.0,Yes,6,1.0,4,Travel_Rarely,Married,Y,80,Yes
+969,35,Research & Development,6372.0,No,9,2.0,25,Travel_Rarely,Single,Y,80,No
+970,33,Research & Development,4277.0,Yes,6,1.0,27,Travel_Rarely,Single,Y,80,Yes
+971,47,Human Resources,6605.0,No,5,4.0,12,Travel_Rarely,Married,Y,80,No
+972,33,Sales,5941.0,No,4,3.0,25,Travel_Rarely,Single,Y,80,No
+973,38,Human Resources,4569.0,No,3,2.0,19,Travel_Rarely,Divorced,Y,80,No
+974,53,Sales,8236.0,Yes,6,3.0,9,Travel_Rarely,Single,Y,80,Yes
+975,20,Research & Development,3148.0,No,10,2.0,20,Travel_Rarely,Married,Y,80,No
+976,20,Research & Development,5316.0,No,11,2.0,14,Travel_Rarely,Single,Y,80,No
+977,38,Sales,4686.0,Yes,3,1.0,17,Travel_Rarely,Single,Y,80,No
+978,20,Research & Development,11106.0,No,35,3.0,9,Travel_Rarely,Single,Y,80,No
+979,42,Sales,6335.0,No,10,3.0,20,Travel_Rarely,Divorced,Y,80,No
+980,22,Sales,3609.0,No,9,,10,Travel_Rarely,Single,Y,80,No
+981,28,Sales,6668.0,No,11,2.0,5,Travel_Rarely,Divorced,Y,80,No
+982,54,Research & Development,4751.0,Yes,3,1.0,21,Travel_Rarely,Divorced,Y,80,Yes
+983,40,Human Resources,5793.0,No,6,4.0,12,Travel_Rarely,Married,Y,80,Yes
+984,45,Sales,5346.0,No,7,2.0,25,Travel_Rarely,Married,Y,80,No
+985,28,Research & Development,6092.0,No,9,1.0,16,Travel_Rarely,Married,Y,80,No
+986,49,Research & Development,5935.0,Yes,5,4.0,6,Non-Travel,Single,Y,80,No
+987,26,Research & Development,4185.0,No,2,3.0,7,Travel_Rarely,Single,Y,80,Yes
+988,58,Research & Development,6083.0,No,1,1.0,6,Travel_Rarely,Single,Y,80,No
+989,23,Research & Development,3242.0,Yes,8,2.0,20,Travel_Rarely,Divorced,Y,80,Yes
+990,28,Research & Development,2031.0,No,4,2.0,6,Travel_Rarely,Single,Y,80,Yes
+991,56,Research & Development,8435.0,No,6,2.0,24,Travel_Rarely,Divorced,Y,80,No
+992,56,Research & Development,8305.0,Yes,13,3.0,25,Travel_Rarely,Single,Y,80,No
+993,28,Research & Development,3285.0,No,6,2.0,22,Travel_Rarely,Married,Y,80,No
+994,29,Research & Development,,No,13,4.0,4,Travel_Rarely,Divorced,Y,80,No
+995,59,Human Resources,8170.0,No,7,1.0,29,Non-Travel,Married,Y,80,No
+996,40,Human Resources,4962.0,No,11,4.0,13,Travel_Rarely,Divorced,Y,80,No
+997,47,Human Resources,7517.0,No,3,4.0,4,Travel_Rarely,Single,Y,80,No
+998,47,Research & Development,5802.0,No,6,1.0,5,Travel_Rarely,Single,Y,80,No
+999,43,Sales,7316.0,Yes,17,1.0,23,Travel_Rarely,Married,Y,80,No
+1000,51,Research & Development,7895.0,Yes,8,2.0,10,Travel_Rarely,Married,Y,80,No
+1001,26,Research & Development,3602.0,No,2,3.0,20,Travel_Rarely,Married,Y,80,No
+1002,29,Human Resources,3326.0,Yes,5,1.0,3,Travel_Rarely,Single,Y,80,Yes
+1003,26,Research & Development,,No,8,3.0,22,Non-Travel,Divorced,Y,80,No
+1004,39,Sales,8046.0,Yes,19,1.0,7,Travel_Frequently,Married,Y,80,No
+1005,20,Research & Development,4601.0,No,6,2.0,8,Travel_Rarely,Single,Y,80,No
+1006,21,Sales,3756.0,No,11,2.0,24,Travel_Rarely,Married,Y,80,No
+1007,31,Research & Development,4112.0,Yes,9,4.0,20,Non-Travel,Married,Y,80,No
+1008,31,Research & Development,5322.0,Yes,7,2.0,20,Travel_Frequently,Single,Y,80,No
+1009,52,Sales,5540.0,Yes,3,2.0,28,Travel_Rarely,Single,Y,80,Yes
+1010,59,Research & Development,4268.0,No,1,4.0,19,Travel_Frequently,Single,Y,80,Yes
+1011,32,Research & Development,3603.0,Yes,3,1.0,28,Travel_Rarely,Married,Y,80,Yes
+1012,56,Sales,7211.0,No,5,3.0,11,Travel_Frequently,Single,Y,80,Yes
+1013,53,Research & Development,5367.0,No,3,2.0,9,Travel_Frequently,Married,Y,80,Yes
+1014,43,Research & Development,6624.0,No,5,2.0,10,Travel_Rarely,Married,Y,80,No
+1015,40,Research & Development,6014.0,No,12,2.0,5,Travel_Frequently,Married,Y,80,No
+1016,51,Human Resources,7009.0,No,10,3.0,2,Travel_Rarely,Married,Y,80,No
+1017,24,Sales,1948.0,No,3,2.0,26,Non-Travel,Married,Y,80,No
+1018,56,Sales,5386.0,No,2,2.0,12,Travel_Rarely,Single,Y,80,No
+1019,27,Sales,3145.0,No,1,3.0,13,Travel_Rarely,Married,Y,80,No
+1020,33,Human Resources,4911.0,No,4,2.0,25,Travel_Rarely,Single,Y,80,Yes
+1021,54,Research & Development,6090.0,No,2,1.0,8,Travel_Rarely,Married,Y,80,Yes
+1022,59,Research & Development,7865.0,No,5,3.0,8,Non-Travel,Single,Y,80,No
+1023,24,Research & Development,1808.0,Yes,5,3.0,12,Travel_Frequently,Single,Y,80,Yes
+1024,37,Sales,4593.0,No,3,1.0,7,Travel_Rarely,Married,Y,80,No
+1025,56,Research & Development,5610.0,Yes,0,2.0,29,Travel_Rarely,Divorced,Y,80,No
+1026,26,Research & Development,3543.0,No,8,1.0,1,Travel_Rarely,Single,Y,80,Yes
+1027,39,Research & Development,6512.0,Yes,13,1.0,22,Travel_Rarely,Married,Y,80,Yes
+1028,41,Sales,4621.0,No,5,1.0,22,Travel_Rarely,Married,Y,80,No
+1029,20,Human Resources,3065.0,No,1,2.0,14,Travel_Rarely,Divorced,Y,80,No
+1030,43,Research & Development,4619.0,No,2,2.0,4,Non-Travel,Single,Y,80,No
+1031,37,Research & Development,5564.0,Yes,6,3.0,24,Travel_Rarely,Single,Y,80,No
+1032,47,Research & Development,4832.0,No,4,2.0,5,Travel_Rarely,Single,Y,80,No
+1033,53,Research & Development,7510.0,Yes,5,2.0,16,Travel_Rarely,Single,Y,80,No
+1034,46,Research & Development,6637.0,No,8,4.0,2,Travel_Frequently,Married,Y,80,No
+1035,57,Sales,7973.0,No,3,3.0,13,Travel_Rarely,Divorced,Y,80,No
+1036,21,Sales,2829.0,No,2,4.0,18,Travel_Rarely,Married,Y,80,No
+1037,53,Research & Development,5559.0,No,3,3.0,19,Travel_Rarely,Married,Y,80,Yes
+1038,45,Research & Development,6492.0,No,9,1.0,5,Travel_Frequently,Single,Y,80,No
+1039,58,Research & Development,8200.0,No,15,4.0,6,Travel_Rarely,Married,Y,80,No
+1040,56,Sales,10385.0,No,31,3.0,20,Travel_Frequently,Divorced,Y,80,No
+1041,43,Research & Development,5124.0,No,3,4.0,12,Travel_Rarely,Married,Y,80,No
+1042,46,Research & Development,9101.0,No,24,1.0,18,Travel_Frequently,Married,Y,80,No
+1043,42,Sales,4975.0,No,6,3.0,14,Travel_Rarely,Single,Y,80,No
+1044,59,Research & Development,8364.0,No,15,3.0,28,Travel_Rarely,Married,Y,80,No
+1045,26,Sales,3064.0,No,5,1.0,28,Travel_Rarely,Divorced,Y,80,No
+1046,40,Research & Development,6410.0,No,11,4.0,10,Travel_Rarely,Divorced,Y,80,No
+1047,54,Research & Development,4710.0,No,2,1.0,28,Travel_Rarely,Married,Y,80,No
+1048,52,Research & Development,7087.0,No,1,3.0,16,Travel_Rarely,Married,Y,80,No
+1049,35,Sales,6398.0,Yes,14,1.0,13,Travel_Rarely,Married,Y,80,No
+1050,25,Research & Development,5060.0,No,7,3.0,27,Travel_Rarely,Divorced,Y,80,No
+1051,33,Human Resources,4747.0,No,12,2.0,28,Non-Travel,Married,Y,80,No
+1052,55,Sales,6140.0,Yes,1,3.0,18,Travel_Rarely,Married,Y,80,Yes
+1053,31,Sales,5170.0,Yes,10,1.0,27,Travel_Rarely,Married,Y,80,No
+1054,37,Sales,7975.0,No,17,1.0,21,Travel_Rarely,Single,Y,80,No
+1055,26,Research & Development,4546.0,No,4,4.0,9,Travel_Rarely,Single,Y,80,No
+1056,55,Research & Development,,No,7,2.0,5,Non-Travel,Single,Y,80,No
+1057,39,Research & Development,5786.0,No,3,1.0,24,Travel_Rarely,Single,Y,80,Yes
+1058,32,Research & Development,2954.0,No,4,2.0,27,Travel_Rarely,Married,Y,80,No
+1059,23,Sales,5418.0,Yes,8,3.0,11,Travel_Frequently,Married,Y,80,No
+1060,44,Research & Development,6592.0,No,11,3.0,13,Travel_Rarely,Married,Y,80,No
+1061,37,Research & Development,4031.0,Yes,6,3.0,26,Travel_Rarely,Single,Y,80,Yes
+1062,53,Research & Development,6647.0,No,3,3.0,20,Non-Travel,Single,Y,80,No
+1063,58,Research & Development,6855.0,No,5,4.0,5,Travel_Rarely,Married,Y,80,No
+1064,48,Research & Development,5206.0,No,6,3.0,23,Travel_Frequently,Married,Y,80,No
+1065,25,Research & Development,3903.0,No,9,2.0,2,Travel_Rarely,Married,Y,80,Yes
+1066,44,Research & Development,7251.0,No,12,2.0,10,Travel_Rarely,Divorced,Y,80,No
+1067,54,Research & Development,5404.0,No,6,3.0,8,Travel_Frequently,Single,Y,80,No
+1068,58,Sales,6043.0,No,5,2.0,29,Travel_Rarely,Married,Y,80,No
+1069,32,Sales,8132.0,No,16,2.0,21,Travel_Rarely,Divorced,Y,80,No
+1070,23,Sales,4597.0,No,14,3.0,14,Travel_Rarely,Single,Y,80,No
+1071,28,Research & Development,5535.0,No,11,2.0,2,Travel_Frequently,Divorced,Y,80,No
+1072,24,Research & Development,4884.0,Yes,9,1.0,23,Travel_Rarely,Married,Y,80,No
+1073,44,Research & Development,7328.0,Yes,10,1.0,11,Travel_Rarely,Married,Y,80,No
+1074,42,Research & Development,6895.0,No,9,1.0,14,Travel_Rarely,Divorced,Y,80,No
+1075,38,Sales,5081.0,No,18,4.0,8,Travel_Frequently,Divorced,Y,80,Yes
+1076,58,Sales,,No,9,2.0,16,Travel_Rarely,Divorced,Y,80,No
+1077,27,Research & Development,5460.0,No,7,3.0,8,Travel_Rarely,Married,Y,80,No
+1078,47,Sales,5476.0,No,7,2.0,17,Travel_Rarely,Married,Y,80,No
+1079,58,Sales,8287.0,Yes,4,1.0,26,Travel_Rarely,Divorced,Y,80,Yes
+1080,32,Research & Development,4346.0,No,3,2.0,11,Travel_Rarely,Single,Y,80,No
+1081,41,Research & Development,7248.0,Yes,22,4.0,4,Travel_Frequently,Single,Y,80,No
+1082,24,Research & Development,6433.0,No,17,2.0,12,Travel_Rarely,Married,Y,80,No
+1083,34,Research & Development,6960.0,Yes,8,3.0,11,Travel_Rarely,Single,Y,80,No
+1084,37,Research & Development,5045.0,No,9,4.0,2,Travel_Rarely,Single,Y,80,No
+1085,49,Research & Development,5977.0,No,2,2.0,6,Travel_Rarely,Divorced,Y,80,No
+1086,39,Human Resources,3773.0,No,2,3.0,22,Travel_Rarely,Single,Y,80,No
+1087,51,Research & Development,5663.0,No,5,3.0,6,Travel_Frequently,Married,Y,80,No
+1088,38,Research & Development,5666.0,No,8,1.0,25,Travel_Frequently,Divorced,Y,80,No
+1089,27,Research & Development,5217.0,No,9,1.0,13,Travel_Rarely,Married,Y,80,No
+1090,44,Research & Development,5342.0,Yes,2,1.0,28,Non-Travel,Divorced,Y,80,Yes
+1091,26,Research & Development,3774.0,No,3,3.0,7,Travel_Frequently,Married,Y,80,No
+1092,30,Sales,6122.0,No,3,2.0,1,Travel_Frequently,Married,Y,80,Yes
+1093,55,Sales,5753.0,Yes,6,4.0,21,Travel_Rarely,Divorced,Y,80,No
+1094,55,Research & Development,4509.0,No,3,1.0,20,Travel_Rarely,Single,Y,80,No
+1095,52,Research & Development,6611.0,No,4,2.0,2,Non-Travel,Divorced,Y,80,No
+1096,31,Research & Development,4024.0,No,2,2.0,1,Travel_Rarely,Single,Y,80,No
+1097,47,Sales,5433.0,No,10,2.0,25,Travel_Rarely,Married,Y,80,No
+1098,24,Sales,5686.0,No,7,2.0,20,Travel_Rarely,Married,Y,80,No
+1099,50,Sales,5109.0,No,3,4.0,1,Travel_Rarely,Married,Y,80,Yes
+1100,33,Sales,4557.0,No,12,1.0,28,Travel_Rarely,Single,Y,80,Yes
+1101,26,Sales,4146.0,Yes,4,4.0,22,Travel_Rarely,Married,Y,80,No
+1102,57,Research & Development,7856.0,No,8,2.0,15,Non-Travel,Divorced,Y,80,Yes
+1103,39,Research & Development,,No,10,1.0,4,Travel_Rarely,Divorced,Y,80,No
+1104,26,Research & Development,4533.0,No,16,3.0,4,Travel_Rarely,Married,Y,80,No
+1105,46,Sales,4049.0,No,2,3.0,22,Travel_Rarely,Married,Y,80,No
+1106,31,Sales,5226.0,No,11,2.0,18,Travel_Rarely,Single,Y,80,No
+1107,47,Research & Development,5618.0,No,6,,25,Travel_Rarely,Married,Y,80,Yes
+1108,57,Research & Development,6128.0,No,2,3.0,25,Travel_Rarely,Married,Y,80,No
+1109,34,Research & Development,,No,5,1.0,23,Travel_Rarely,Divorced,Y,80,Yes
+1110,33,Research & Development,2442.0,No,1,2.0,18,Travel_Rarely,Married,Y,80,No
+1111,27,Research & Development,4529.0,Yes,10,2.0,18,Travel_Frequently,Married,Y,80,Yes
+1112,53,Research & Development,7378.0,Yes,7,2.0,18,Travel_Rarely,Married,Y,80,Yes
+1113,34,Research & Development,5741.0,Yes,7,3.0,1,Non-Travel,Divorced,Y,80,No
+1114,21,Human Resources,2899.0,Yes,5,2.0,15,Travel_Rarely,Married,Y,80,No
+1115,37,Research & Development,5424.0,Yes,5,3.0,17,Travel_Rarely,Single,Y,80,No
+1116,55,Research & Development,7111.0,No,6,4.0,7,Travel_Frequently,Single,Y,80,No
+1117,24,Research & Development,2958.0,No,3,2.0,19,Travel_Rarely,Divorced,Y,80,Yes
+1118,29,Research & Development,4437.0,No,8,4.0,14,Travel_Rarely,Single,Y,80,Yes
+1119,57,Sales,8038.0,No,12,1.0,5,Travel_Rarely,Married,Y,80,No
+1120,27,Research & Development,7655.0,No,11,3.0,20,Travel_Rarely,Married,Y,80,No
+1121,24,Research & Development,4996.0,No,11,2.0,3,Travel_Rarely,Divorced,Y,80,No
+1122,49,Sales,4669.0,No,2,4.0,1,Travel_Frequently,Married,Y,80,Yes
+1123,22,Research & Development,3262.0,No,4,4.0,8,Travel_Rarely,Single,Y,80,No
+1124,59,Human Resources,,No,5,2.0,4,Travel_Rarely,Married,Y,80,No
+1125,54,Research & Development,8941.0,No,13,4.0,8,Travel_Rarely,Divorced,Y,80,No
+1126,58,Research & Development,5224.0,No,7,,25,Travel_Rarely,Single,Y,80,No
+1127,48,Research & Development,4393.0,No,2,3.0,5,Travel_Rarely,Single,Y,80,No
+1128,50,Research & Development,6862.0,No,5,2.0,8,Travel_Frequently,Married,Y,80,No
+1129,24,Sales,7748.0,No,25,4.0,23,Travel_Rarely,Divorced,Y,80,No
+1130,56,Research & Development,,No,12,3.0,12,Travel_Rarely,Single,Y,80,No
+1131,56,Research & Development,6762.0,No,2,4.0,3,Travel_Rarely,Married,Y,80,No
+1132,59,Sales,5711.0,Yes,5,3.0,4,Travel_Frequently,Single,Y,80,Yes
+1133,44,Research & Development,5720.0,Yes,4,1.0,22,Travel_Rarely,Single,Y,80,Yes
+1134,42,Research & Development,7772.0,Yes,24,4.0,5,Travel_Rarely,Divorced,Y,80,No
+1135,27,Research & Development,2871.0,No,5,2.0,15,Travel_Rarely,Married,Y,80,No
+1136,25,Research & Development,4672.0,Yes,7,2.0,17,Travel_Frequently,Divorced,Y,80,Yes
+1137,44,Research & Development,4123.0,No,1,4.0,17,Non-Travel,Married,Y,80,No
+1138,53,Sales,6054.0,Yes,5,4.0,16,Travel_Frequently,Married,Y,80,No
+1139,48,Research & Development,6138.0,Yes,3,3.0,3,Travel_Rarely,Married,Y,80,No
+1140,35,Sales,3629.0,No,4,3.0,13,Travel_Rarely,Married,Y,80,No
+1141,45,Research & Development,5494.0,Yes,1,3.0,26,Travel_Rarely,Divorced,Y,80,Yes
+1142,32,Research & Development,,No,8,1.0,18,Travel_Rarely,Single,Y,80,No
+1143,21,Research & Development,2779.0,No,2,2.0,28,Travel_Rarely,Married,Y,80,No
+1144,40,Research & Development,6264.0,Yes,6,2.0,4,Travel_Rarely,Single,Y,80,No
+1145,57,Sales,,Yes,1,4.0,1,Travel_Frequently,Married,Y,80,No
+1146,21,Sales,2169.0,No,4,4.0,17,Travel_Rarely,Married,Y,80,No
+1147,30,Research & Development,3788.0,Yes,9,4.0,5,Travel_Rarely,Single,Y,80,No
+1148,20,Research & Development,3055.0,No,3,1.0,4,Travel_Rarely,Single,Y,80,No
+1149,35,Sales,3721.0,No,10,2.0,22,Travel_Frequently,Married,Y,80,Yes
+1150,30,Research & Development,3812.0,Yes,2,3.0,7,Travel_Frequently,Married,Y,80,Yes
+1151,26,Research & Development,4728.0,Yes,8,,10,Travel_Rarely,Married,Y,80,No
+1152,43,Research & Development,5730.0,No,4,4.0,11,Travel_Rarely,Married,Y,80,No
+1153,54,Sales,6883.0,Yes,5,2.0,16,Travel_Rarely,Married,Y,80,No
+1154,49,Research & Development,6878.0,No,3,3.0,8,Travel_Rarely,Single,Y,80,No
+1155,55,Human Resources,6622.0,No,7,4.0,1,Travel_Frequently,Married,Y,80,No
+1156,58,Research & Development,8244.0,No,6,3.0,10,Travel_Rarely,Single,Y,80,No
+1157,52,Sales,6599.0,No,4,4.0,28,Travel_Rarely,Single,Y,80,No
+1158,52,Research & Development,8037.0,No,12,4.0,14,Travel_Frequently,Single,Y,80,No
+1159,22,Research & Development,3816.0,No,7,1.0,24,Travel_Frequently,Married,Y,80,No
+1160,57,Research & Development,7619.0,Yes,5,1.0,19,Travel_Rarely,Divorced,Y,80,No
+1161,23,Research & Development,2463.0,Yes,2,3.0,22,Travel_Frequently,Divorced,Y,80,Yes
+1162,45,Research & Development,6150.0,No,4,2.0,4,Travel_Frequently,Married,Y,80,No
+1163,59,Research & Development,8486.0,Yes,8,2.0,13,Travel_Frequently,Divorced,Y,80,No
+1164,49,Research & Development,4880.0,No,2,4.0,18,Travel_Rarely,Married,Y,80,No
+1165,49,Research & Development,5343.0,No,6,2.0,10,Travel_Frequently,Married,Y,80,No
+1166,43,Research & Development,7140.0,No,18,4.0,10,Travel_Rarely,Single,Y,80,No
+1167,31,Sales,4373.0,No,5,2.0,16,Travel_Rarely,Married,Y,80,No
+1168,23,Human Resources,6181.0,No,17,1.0,7,Travel_Frequently,Married,Y,80,No
+1169,45,Research & Development,6468.0,No,5,3.0,5,Travel_Frequently,Married,Y,80,No
+1170,22,Research & Development,5147.0,No,4,2.0,4,Travel_Frequently,Single,Y,80,No
+1171,40,Research & Development,7599.0,Yes,10,1.0,4,Travel_Rarely,Divorced,Y,80,Yes
+1172,50,Sales,6370.0,Yes,5,3.0,14,Non-Travel,Married,Y,80,No
+1173,26,Sales,3428.0,Yes,4,4.0,7,Travel_Rarely,Single,Y,80,Yes
+1174,28,Research & Development,2863.0,No,4,1.0,1,Travel_Rarely,Married,Y,80,Yes
+1175,56,Sales,,No,11,2.0,25,Non-Travel,Divorced,Y,80,No
+1176,51,Research & Development,8123.0,Yes,13,1.0,6,Travel_Rarely,Single,Y,80,No
+1177,48,Sales,,Yes,7,1.0,20,Travel_Rarely,Divorced,Y,80,No
+1178,38,Research & Development,4171.0,No,1,1.0,10,Travel_Rarely,Single,Y,80,No
+1179,57,Research & Development,7544.0,Yes,10,2.0,23,Travel_Rarely,Married,Y,80,No
+1180,20,Sales,1500.0,No,1,1.0,29,Travel_Frequently,Married,Y,80,Yes
+1181,30,Sales,3730.0,Yes,2,2.0,13,Travel_Frequently,Single,Y,80,Yes
+1182,42,Sales,,Yes,15,1.0,13,Non-Travel,Married,Y,80,No
+1183,21,Research & Development,3218.0,No,4,1.0,7,Travel_Rarely,Divorced,Y,80,Yes
+1184,37,Research & Development,6682.0,No,20,2.0,14,Travel_Rarely,Single,Y,80,No
+1185,40,Research & Development,4903.0,No,3,1.0,19,Travel_Rarely,Divorced,Y,80,Yes
+1186,22,Research & Development,5118.0,No,11,4.0,26,Travel_Rarely,Single,Y,80,No
+1187,26,Research & Development,8122.0,No,19,4.0,9,Travel_Rarely,Married,Y,80,No
+1188,30,Research & Development,6727.0,No,13,1.0,17,Travel_Frequently,Single,Y,80,No
+1189,58,Research & Development,7022.0,No,3,4.0,17,Travel_Frequently,Divorced,Y,80,No
+1190,32,Research & Development,4814.0,Yes,7,3.0,19,Travel_Rarely,Single,Y,80,No
+1191,45,Research & Development,4272.0,No,4,4.0,22,Travel_Rarely,Married,Y,80,No
+1192,33,Research & Development,6863.0,No,20,4.0,11,Travel_Rarely,Married,Y,80,No
+1193,31,Sales,4245.0,No,11,2.0,28,Non-Travel,Single,Y,80,No
+1194,48,Research & Development,6927.0,Yes,11,4.0,4,Travel_Rarely,Married,Y,80,No
+1195,52,Human Resources,7093.0,Yes,4,1.0,23,Travel_Frequently,Divorced,Y,80,Yes
+1196,26,Research & Development,5276.0,No,7,1.0,7,Travel_Rarely,Divorced,Y,80,No
+1197,26,Research & Development,5147.0,No,7,2.0,13,Travel_Rarely,Single,Y,80,No
+1198,37,Sales,5331.0,No,7,3.0,3,Travel_Rarely,Married,Y,80,No
+1199,39,Research & Development,6755.0,No,9,3.0,5,Travel_Rarely,Divorced,Y,80,No
+1200,44,Research & Development,5154.0,Yes,4,1.0,16,Travel_Rarely,Divorced,Y,80,Yes
+1201,46,Research & Development,4877.0,Yes,10,1.0,4,Travel_Rarely,Married,Y,80,No
+1202,57,Sales,6517.0,Yes,3,1.0,3,Travel_Frequently,Married,Y,80,No
+1203,55,Research & Development,6786.0,Yes,6,4.0,10,Travel_Frequently,Married,Y,80,No
+1204,24,Research & Development,,No,25,4.0,13,Travel_Rarely,Single,Y,80,Yes
+1205,28,Research & Development,,No,3,2.0,14,Travel_Rarely,Married,Y,80,No
+1206,23,Research & Development,1500.0,No,4,4.0,8,Travel_Rarely,Married,Y,80,No
+1207,57,Research & Development,6317.0,No,5,1.0,29,Travel_Rarely,Single,Y,80,No
+1208,27,Human Resources,4974.0,No,4,4.0,1,Non-Travel,Divorced,Y,80,No
+1209,45,Sales,4723.0,No,3,4.0,25,Travel_Rarely,Married,Y,80,No
+1210,28,Research & Development,5519.0,No,6,4.0,20,Travel_Rarely,Married,Y,80,No
+1211,28,Research & Development,3989.0,No,3,2.0,28,Travel_Rarely,Single,Y,80,No
+1212,26,Sales,3466.0,No,6,2.0,1,Travel_Rarely,Single,Y,80,Yes
+1213,58,Sales,4682.0,No,2,3.0,15,Non-Travel,Single,Y,80,No
+1214,23,Research & Development,4015.0,No,3,3.0,16,Travel_Rarely,Married,Y,80,No
+1215,54,Research & Development,6728.0,Yes,3,1.0,29,Travel_Rarely,Single,Y,80,Yes
+1216,28,Research & Development,2786.0,Yes,5,4.0,13,Travel_Rarely,Divorced,Y,80,No
+1217,20,Research & Development,3576.0,No,8,3.0,11,Travel_Rarely,Married,Y,80,No
+1218,28,Human Resources,5330.0,Yes,6,3.0,25,Non-Travel,Married,Y,80,No
+1219,34,Research & Development,3460.0,No,2,3.0,11,Travel_Frequently,Married,Y,80,Yes
+1220,39,Research & Development,4771.0,Yes,1,1.0,12,Non-Travel,Single,Y,80,Yes
+1221,43,Research & Development,3712.0,No,5,1.0,25,Travel_Frequently,Married,Y,80,Yes
+1222,45,Research & Development,6629.0,No,15,1.0,5,Travel_Rarely,Married,Y,80,No
+1223,42,Sales,7322.0,No,12,3.0,5,Travel_Rarely,Divorced,Y,80,No
+1224,34,Human Resources,4142.0,No,8,2.0,12,Travel_Rarely,Divorced,Y,80,No
+1225,32,Sales,3726.0,No,8,4.0,20,Travel_Rarely,Married,Y,80,No
+1226,26,Research & Development,2871.0,No,6,2.0,14,Travel_Frequently,Single,Y,80,Yes
+1227,36,Research & Development,4155.0,No,3,2.0,9,Travel_Rarely,Single,Y,80,No
+1228,23,Sales,2793.0,No,8,4.0,3,Travel_Rarely,Married,Y,80,Yes
+1229,38,Research & Development,4577.0,No,3,4.0,27,Travel_Frequently,Divorced,Y,80,No
+1230,30,Human Resources,4649.0,No,4,3.0,7,Travel_Rarely,Single,Y,80,No
+1231,45,Sales,9407.0,Yes,18,3.0,12,Travel_Rarely,Single,Y,80,No
+1232,26,Sales,3235.0,Yes,3,3.0,6,Travel_Rarely,Married,Y,80,Yes
+1233,43,Research & Development,9482.0,Yes,19,1.0,17,Travel_Frequently,Divorced,Y,80,No
+1234,39,Sales,5101.0,Yes,2,2.0,7,Travel_Rarely,Divorced,Y,80,No
+1235,38,Research & Development,4118.0,No,1,1.0,10,Travel_Rarely,Single,Y,80,No
+1236,54,Sales,6954.0,No,5,3.0,24,Travel_Frequently,Married,Y,80,No
+1237,36,Research & Development,5705.0,No,2,1.0,29,Travel_Frequently,Divorced,Y,80,No
+1238,48,Research & Development,7124.0,Yes,4,3.0,9,Travel_Rarely,Married,Y,80,Yes
+1239,24,Research & Development,4649.0,Yes,6,2.0,19,Travel_Rarely,Divorced,Y,80,No
+1240,28,Research & Development,3876.0,No,4,2.0,20,Travel_Rarely,Divorced,Y,80,Yes
+1241,43,Research & Development,7329.0,No,11,4.0,10,Travel_Rarely,Single,Y,80,No
+1242,21,Research & Development,4247.0,No,8,2.0,1,Travel_Rarely,Divorced,Y,80,No
+1243,58,Research & Development,7714.0,No,9,1.0,23,Travel_Frequently,Married,Y,80,No
+1244,22,Research & Development,4557.0,No,9,3.0,29,Travel_Rarely,Single,Y,80,No
+1245,46,Research & Development,7235.0,No,4,3.0,19,Travel_Rarely,Single,Y,80,No
+1246,37,Research & Development,3318.0,No,2,2.0,25,Travel_Rarely,Divorced,Y,80,No
+1247,51,Research & Development,5960.0,No,4,4.0,13,Travel_Rarely,Divorced,Y,80,No
+1248,34,Research & Development,4045.0,No,7,1.0,13,Travel_Rarely,Divorced,Y,80,No
+1249,59,Sales,7719.0,Yes,5,2.0,25,Non-Travel,Single,Y,80,No
+1250,47,Research & Development,7585.0,No,9,1.0,3,Travel_Frequently,Married,Y,80,Yes
+1251,22,Research & Development,6995.0,No,17,1.0,15,Travel_Rarely,Divorced,Y,80,No
+1252,23,Research & Development,4088.0,Yes,9,,14,Travel_Frequently,Single,Y,80,No
+1253,31,Research & Development,5540.0,No,11,1.0,20,Travel_Rarely,Divorced,Y,80,No
+1254,30,Research & Development,7903.0,No,21,2.0,20,Travel_Rarely,Divorced,Y,80,No
+1255,54,Research & Development,8269.0,No,14,3.0,4,Travel_Rarely,Single,Y,80,No
+1256,47,Sales,7380.0,No,12,4.0,9,Travel_Rarely,Single,Y,80,No
+1257,51,Research & Development,6394.0,No,5,4.0,11,Non-Travel,Single,Y,80,No
+1258,42,Research & Development,5292.0,No,3,4.0,1,Travel_Rarely,Married,Y,80,No
+1259,25,Research & Development,5210.0,Yes,13,4.0,16,Non-Travel,Married,Y,80,No
+1260,40,Research & Development,5986.0,No,7,2.0,9,Travel_Frequently,Married,Y,80,Yes
+1261,47,Sales,3802.0,No,1,1.0,16,Travel_Rarely,Single,Y,80,No
+1262,56,Research & Development,6103.0,No,4,4.0,18,Travel_Frequently,Single,Y,80,No
+1263,35,Research & Development,3024.0,No,2,2.0,15,Travel_Frequently,Divorced,Y,80,Yes
+1264,24,Human Resources,,No,9,1.0,3,Travel_Rarely,Married,Y,80,No
+1265,31,Sales,3029.0,No,1,3.0,13,Travel_Rarely,Married,Y,80,No
+1266,27,Research & Development,4724.0,Yes,6,2.0,15,Travel_Frequently,Single,Y,80,Yes
+1267,32,Research & Development,6373.0,Yes,9,,26,Travel_Frequently,Married,Y,80,No
+1268,42,Sales,6256.0,No,16,4.0,24,Travel_Rarely,Married,Y,80,No
+1269,45,Research & Development,5506.0,Yes,8,4.0,18,Travel_Rarely,Single,Y,80,No
+1270,42,Human Resources,6607.0,Yes,10,3.0,19,Non-Travel,Single,Y,80,Yes
+1271,20,Research & Development,4920.0,No,6,4.0,27,Travel_Rarely,Married,Y,80,No
+1272,59,Research & Development,8361.0,No,9,2.0,23,Travel_Rarely,Divorced,Y,80,No
+1273,31,Sales,5000.0,Yes,6,3.0,12,Travel_Frequently,Single,Y,80,Yes
+1274,59,Sales,7064.0,Yes,6,3.0,22,Non-Travel,Divorced,Y,80,No
+1275,21,Research & Development,3654.0,Yes,8,2.0,18,Travel_Rarely,Married,Y,80,Yes
+1276,43,Research & Development,6568.0,No,9,1.0,26,Travel_Rarely,Married,Y,80,No
+1277,48,Research & Development,6403.0,Yes,5,2.0,24,Travel_Rarely,Married,Y,80,Yes
+1278,50,Research & Development,6093.0,No,4,3.0,12,Travel_Rarely,Married,Y,80,No
+1279,53,Sales,5147.0,No,1,2.0,13,Travel_Rarely,Married,Y,80,No
+1280,47,Sales,4936.0,Yes,8,2.0,20,Travel_Rarely,Single,Y,80,No
+1281,28,Research & Development,3193.0,No,4,1.0,9,Non-Travel,Single,Y,80,No
+1282,25,Sales,3534.0,No,5,2.0,28,Non-Travel,Married,Y,80,Yes
+1283,46,Sales,4889.0,No,6,1.0,11,Non-Travel,Married,Y,80,No
+1284,44,Sales,8581.0,No,20,1.0,20,Travel_Rarely,Married,Y,80,No
+1285,39,Sales,4201.0,No,7,1.0,13,Travel_Rarely,Single,Y,80,Yes
+1286,32,Human Resources,4408.0,No,6,3.0,29,Travel_Rarely,Single,Y,80,No
+1287,24,Human Resources,3924.0,No,4,2.0,16,Non-Travel,Married,Y,80,No
+1288,34,Research & Development,6146.0,No,9,3.0,28,Travel_Rarely,Divorced,Y,80,No
+1289,33,Sales,4636.0,No,4,1.0,29,Travel_Rarely,Single,Y,80,Yes
+1290,26,Research & Development,4703.0,No,3,4.0,11,Travel_Rarely,Divorced,Y,80,No
+1291,21,Sales,4955.0,No,16,1.0,22,Travel_Frequently,Single,Y,80,No
+1292,20,Human Resources,3080.0,No,7,1.0,4,Travel_Frequently,Single,Y,80,Yes
+1293,45,Sales,7206.0,Yes,8,4.0,17,Travel_Rarely,Married,Y,80,No
+1294,54,Research & Development,5685.0,No,5,2.0,9,Travel_Rarely,Single,Y,80,No
+1295,45,Sales,6433.0,Yes,10,2.0,3,Travel_Rarely,Married,Y,80,No
+1296,48,Sales,4369.0,No,5,1.0,4,Travel_Rarely,Divorced,Y,80,No
+1297,31,Research & Development,5255.0,Yes,4,2.0,26,Travel_Rarely,Single,Y,80,No
+1298,50,Research & Development,6416.0,Yes,3,3.0,3,Travel_Rarely,Married,Y,80,Yes
+1299,50,Sales,5981.0,No,8,1.0,22,Travel_Rarely,Single,Y,80,No
+1300,31,Sales,1925.0,No,0,4.0,13,Travel_Rarely,Married,Y,80,No
+1301,20,Research & Development,5453.0,Yes,15,3.0,17,Travel_Rarely,Single,Y,80,Yes
+1302,36,Research & Development,5471.0,Yes,7,3.0,28,Travel_Rarely,Married,Y,80,Yes
+1303,55,Sales,8173.0,No,8,3.0,29,Non-Travel,Divorced,Y,80,No
+1304,27,Research & Development,5018.0,Yes,1,3.0,28,Travel_Rarely,Married,Y,80,No
+1305,30,Sales,4716.0,Yes,6,1.0,5,Travel_Rarely,Married,Y,80,No
+1306,44,Research & Development,5924.0,No,8,1.0,19,Travel_Rarely,Married,Y,80,No
+1307,30,Human Resources,3567.0,No,2,4.0,1,Travel_Frequently,Divorced,Y,80,Yes
+1308,53,Research & Development,6119.0,Yes,5,2.0,29,Travel_Rarely,Single,Y,80,No
+1309,37,Research & Development,3888.0,No,6,3.0,15,Travel_Rarely,Married,Y,80,No
+1310,51,Research & Development,5036.0,No,3,2.0,9,Travel_Frequently,Divorced,Y,80,No
+1311,27,Research & Development,3431.0,No,2,3.0,3,Travel_Frequently,Married,Y,80,No
+1312,57,Human Resources,,Yes,5,4.0,5,Travel_Rarely,Married,Y,80,Yes
+1313,33,Research & Development,2677.0,Yes,1,2.0,28,Travel_Rarely,Divorced,Y,80,Yes
+1314,30,Research & Development,5608.0,No,6,1.0,27,Travel_Rarely,Married,Y,80,No
+1315,37,Sales,3979.0,No,3,2.0,18,Travel_Rarely,Married,Y,80,No
+1316,48,Research & Development,6127.0,Yes,2,3.0,26,Travel_Rarely,Married,Y,80,No
+1317,32,Research & Development,5498.0,No,5,3.0,29,Travel_Rarely,Single,Y,80,No
+1318,25,Research & Development,4779.0,No,10,2.0,9,Non-Travel,Married,Y,80,No
+1319,51,Research & Development,6964.0,No,5,1.0,5,Travel_Frequently,Married,Y,80,No
+1320,41,Research & Development,6407.0,No,12,3.0,22,Non-Travel,Married,Y,80,No
+1321,57,Sales,6317.0,No,7,1.0,7,Travel_Rarely,Married,Y,80,No
+1322,24,Research & Development,3862.0,No,6,3.0,5,Travel_Rarely,Single,Y,80,No
+1323,50,Sales,5825.0,No,3,2.0,12,Travel_Rarely,Married,Y,80,Yes
+1324,41,Research & Development,7042.0,No,14,1.0,28,Non-Travel,Single,Y,80,No
+1325,50,Research & Development,7268.0,No,11,2.0,24,Travel_Rarely,Single,Y,80,No
+1326,41,Research & Development,6034.0,Yes,11,2.0,9,Travel_Rarely,Married,Y,80,Yes
+1327,23,Sales,5017.0,No,7,4.0,10,Travel_Rarely,Married,Y,80,No
+1328,33,Sales,4413.0,No,5,4.0,6,Travel_Rarely,Divorced,Y,80,No
+1329,38,Research & Development,4667.0,Yes,5,2.0,18,Travel_Rarely,Married,Y,80,No
+1330,33,Research & Development,4896.0,No,2,2.0,29,Travel_Rarely,Single,Y,80,No
+1331,33,Research & Development,4949.0,Yes,12,3.0,18,Travel_Rarely,Married,Y,80,No
+1332,48,Research & Development,5222.0,Yes,1,1.0,2,Travel_Rarely,Married,Y,80,Yes
+1333,24,Research & Development,5483.0,No,7,4.0,22,Travel_Frequently,Single,Y,80,No
+1334,39,Research & Development,4835.0,No,3,4.0,7,Non-Travel,Divorced,Y,80,Yes
+1335,58,Sales,8135.0,No,5,1.0,24,Travel_Frequently,Divorced,Y,80,No
+1336,36,Research & Development,4096.0,Yes,2,1.0,29,Travel_Rarely,Married,Y,80,No
+1337,21,Research & Development,3058.0,No,5,2.0,14,Non-Travel,Married,Y,80,No
+1338,24,Research & Development,3284.0,No,3,3.0,14,Travel_Rarely,Single,Y,80,No
+1339,58,Sales,9405.0,Yes,22,1.0,15,Travel_Rarely,Single,Y,80,No
+1340,31,Research & Development,6438.0,No,18,1.0,12,Non-Travel,Single,Y,80,No
+1341,30,Research & Development,4115.0,Yes,6,2.0,16,Non-Travel,Married,Y,80,No
+1342,53,Research & Development,7848.0,No,9,4.0,18,Travel_Rarely,Single,Y,80,No
+1343,29,Research & Development,4425.0,No,4,2.0,23,Travel_Rarely,Single,Y,80,No
+1344,58,Human Resources,,No,5,2.0,2,Travel_Rarely,Single,Y,80,No
+1345,25,Human Resources,2847.0,No,3,4.0,4,Non-Travel,Married,Y,80,No
+1346,34,Human Resources,7057.0,No,2,1.0,1,Travel_Rarely,Married,Y,80,No
+1347,39,Sales,4964.0,Yes,5,1.0,1,Travel_Frequently,Married,Y,80,Yes
+1348,54,Research & Development,7224.0,No,2,3.0,12,Travel_Rarely,Married,Y,80,No
+1349,43,Research & Development,4260.0,No,4,2.0,16,Travel_Rarely,Married,Y,80,Yes
+1350,54,Sales,,No,7,1.0,27,Travel_Frequently,Married,Y,80,No
+1351,57,Research & Development,8235.0,Yes,7,2.0,26,Travel_Rarely,Married,Y,80,No
+1352,28,Human Resources,3343.0,No,6,2.0,26,Travel_Rarely,Divorced,Y,80,Yes
+1353,49,Sales,5619.0,Yes,8,1.0,1,Travel_Rarely,Married,Y,80,Yes
+1354,30,Research & Development,4105.0,Yes,4,4.0,25,Travel_Rarely,Single,Y,80,No
+1355,57,Research & Development,5566.0,No,2,,25,Travel_Frequently,Single,Y,80,Yes
+1356,47,Human Resources,5601.0,Yes,5,,25,Travel_Rarely,Divorced,Y,80,Yes
+1357,40,Research & Development,4835.0,No,2,1.0,12,Travel_Rarely,Married,Y,80,No
+1358,32,Research & Development,5842.0,Yes,8,1.0,14,Non-Travel,Single,Y,80,No
+1359,45,Sales,6212.0,No,7,2.0,28,Travel_Rarely,Married,Y,80,No
+1360,58,Research & Development,6582.0,No,2,2.0,22,Non-Travel,Married,Y,80,No
+1361,25,Human Resources,4904.0,No,4,1.0,15,Travel_Rarely,Single,Y,80,No
+1362,34,Sales,5795.0,Yes,4,1.0,19,Travel_Rarely,Married,Y,80,Yes
+1363,53,Research & Development,5728.0,Yes,3,3.0,18,Travel_Frequently,Single,Y,80,Yes
+1364,49,Sales,4911.0,No,8,4.0,6,Non-Travel,Married,Y,80,No
+1365,42,Sales,4326.0,Yes,4,3.0,6,Travel_Frequently,Single,Y,80,Yes
+1366,48,Research & Development,7465.0,Yes,8,1.0,2,Travel_Rarely,Married,Y,80,No
+1367,35,Research & Development,3815.0,Yes,2,2.0,21,Travel_Rarely,Single,Y,80,Yes
+1368,28,Research & Development,2978.0,No,2,4.0,21,Non-Travel,Single,Y,80,No
+1369,33,Research & Development,5281.0,No,11,4.0,22,Travel_Rarely,Married,Y,80,No
+1370,54,Research & Development,7757.0,Yes,4,1.0,13,Travel_Frequently,Divorced,Y,80,No
+1371,28,Sales,5111.0,No,10,4.0,28,Travel_Frequently,Married,Y,80,No
+1372,33,Sales,4989.0,No,9,1.0,27,Travel_Rarely,Married,Y,80,Yes
+1373,22,Research & Development,2446.0,No,2,1.0,27,Travel_Rarely,Married,Y,80,No
+1374,24,Research & Development,3168.0,No,7,1.0,29,Travel_Rarely,Single,Y,80,No
+1375,43,Research & Development,8239.0,No,6,3.0,13,Travel_Frequently,Single,Y,80,No
+1376,22,Research & Development,3764.0,No,6,1.0,15,Non-Travel,Married,Y,80,Yes
+1377,51,Research & Development,8166.0,No,15,1.0,22,Travel_Rarely,Single,Y,80,No
+1378,38,Research & Development,5313.0,Yes,8,2.0,4,Travel_Rarely,Single,Y,80,No
+1379,44,Research & Development,7465.0,No,10,4.0,5,Travel_Frequently,Married,Y,80,No
+1380,45,Research & Development,4420.0,Yes,3,2.0,10,Travel_Rarely,Single,Y,80,No
+1381,59,Research & Development,6654.0,No,13,4.0,26,Travel_Rarely,Single,Y,80,No
+1382,30,Research & Development,4539.0,No,9,1.0,14,Travel_Rarely,Married,Y,80,Yes
+1383,30,Research & Development,6624.0,No,16,1.0,3,Travel_Rarely,Married,Y,80,No
+1384,53,Research & Development,9895.0,No,13,1.0,8,Travel_Rarely,Married,Y,80,No
+1385,42,Sales,5172.0,No,4,1.0,24,Travel_Rarely,Single,Y,80,Yes
+1386,30,Sales,,Yes,6,2.0,12,Travel_Frequently,Divorced,Y,80,Yes
+1387,21,Research & Development,3865.0,Yes,8,1.0,14,Non-Travel,Married,Y,80,No
+1388,53,Research & Development,5165.0,Yes,2,1.0,20,Travel_Rarely,Single,Y,80,Yes
+1389,27,Human Resources,,Yes,13,1.0,26,Travel_Rarely,Divorced,Y,80,No
+1390,21,Sales,3793.0,No,6,4.0,22,Travel_Frequently,Divorced,Y,80,No
+1391,58,Sales,6408.0,No,1,4.0,10,Travel_Rarely,Single,Y,80,No
+1392,30,Research & Development,5005.0,No,12,4.0,21,Non-Travel,Married,Y,80,No
+1393,21,Research & Development,4165.0,No,3,4.0,17,Travel_Rarely,Single,Y,80,Yes
+1394,26,Sales,3913.0,No,5,1.0,5,Travel_Rarely,Married,Y,80,Yes
+1395,35,Sales,4355.0,No,2,2.0,26,Travel_Rarely,Single,Y,80,No
+1396,37,Sales,4866.0,No,7,2.0,28,Non-Travel,Single,Y,80,No
+1397,39,Human Resources,6206.0,Yes,9,1.0,22,Travel_Rarely,Married,Y,80,No
+1398,34,Research & Development,5074.0,No,5,2.0,14,Travel_Rarely,Single,Y,80,Yes
+1399,45,Sales,7193.0,No,10,1.0,29,Travel_Rarely,Divorced,Y,80,No
+1400,35,Human Resources,4055.0,No,5,3.0,1,Travel_Rarely,Single,Y,80,No
+1401,35,Research & Development,5726.0,No,7,3.0,19,Travel_Frequently,Married,Y,80,No
+1402,54,Research & Development,5270.0,No,1,4.0,24,Non-Travel,Married,Y,80,No
+1403,40,Research & Development,6774.0,No,13,3.0,23,Travel_Rarely,Single,Y,80,No
+1404,43,Research & Development,6190.0,No,5,1.0,9,Travel_Rarely,Divorced,Y,80,No
+1405,31,Sales,5627.0,Yes,4,3.0,1,Travel_Frequently,Married,Y,80,Yes
+1406,44,Research & Development,5201.0,No,5,3.0,29,Travel_Frequently,Married,Y,80,Yes
+1407,46,Sales,4243.0,No,2,3.0,2,Travel_Frequently,Single,Y,80,Yes
+1408,35,Research & Development,5465.0,No,8,1.0,5,Travel_Frequently,Married,Y,80,No
+1409,38,Research & Development,10494.0,No,29,4.0,20,Travel_Rarely,Divorced,Y,80,No
+1410,52,Sales,5670.0,Yes,3,1.0,26,Travel_Rarely,Married,Y,80,Yes
+1411,32,Sales,7448.0,No,9,1.0,15,Travel_Rarely,Divorced,Y,80,No
+1412,40,Research & Development,3002.0,No,2,2.0,22,Travel_Rarely,Divorced,Y,80,No
+1413,23,Research & Development,5261.0,No,6,4.0,7,Travel_Frequently,Single,Y,80,No
+1414,49,Human Resources,6576.0,No,2,1.0,3,Travel_Rarely,Divorced,Y,80,Yes
+1415,26,Research & Development,4276.0,Yes,1,3.0,15,Travel_Rarely,Single,Y,80,No
+1416,56,Research & Development,5938.0,No,5,1.0,21,Travel_Rarely,Single,Y,80,No
+1417,34,Research & Development,6661.0,No,9,3.0,12,Travel_Rarely,Married,Y,80,No
+1418,44,Research & Development,8110.0,Yes,13,4.0,3,Travel_Rarely,Divorced,Y,80,No
+1419,48,Research & Development,9623.0,No,19,1.0,1,Non-Travel,Married,Y,80,No
+1420,37,Research & Development,4957.0,No,6,3.0,4,Travel_Frequently,Divorced,Y,80,No
+1421,27,Research & Development,4222.0,No,7,2.0,15,Travel_Rarely,Single,Y,80,Yes
+1422,30,Research & Development,6785.0,No,12,4.0,10,Travel_Rarely,Divorced,Y,80,No
+1423,46,Sales,7007.0,No,10,4.0,27,Non-Travel,Divorced,Y,80,No
+1424,56,Research & Development,7985.0,No,14,1.0,21,Travel_Rarely,Married,Y,80,No
+1425,55,Sales,6027.0,No,6,1.0,10,Travel_Rarely,Married,Y,80,No
+1426,50,Research & Development,6931.0,Yes,8,3.0,14,Travel_Rarely,Married,Y,80,No
+1427,53,Research & Development,5194.0,No,5,1.0,4,Non-Travel,Single,Y,80,Yes
+1428,51,Research & Development,7305.0,Yes,8,1.0,3,Travel_Rarely,Single,Y,80,No
+1429,34,Sales,4494.0,No,3,4.0,6,Travel_Rarely,Married,Y,80,No
+1430,28,Research & Development,2585.0,Yes,4,4.0,27,Travel_Rarely,Married,Y,80,No
+1431,55,Sales,7013.0,Yes,5,2.0,11,Travel_Rarely,Married,Y,80,Yes
+1432,37,Research & Development,5892.0,Yes,4,3.0,10,Travel_Rarely,Single,Y,80,No
+1433,45,Research & Development,6647.0,No,9,2.0,17,Travel_Rarely,Divorced,Y,80,No
+1434,55,Human Resources,5217.0,No,4,2.0,3,Travel_Rarely,Married,Y,80,No
+1435,52,Research & Development,6502.0,No,9,1.0,13,Travel_Frequently,Single,Y,80,Yes
+1436,29,Human Resources,6100.0,No,11,2.0,12,Travel_Rarely,Single,Y,80,No
+1437,57,Research & Development,,No,4,4.0,2,Non-Travel,Single,Y,80,Yes
+1438,52,Sales,5091.0,Yes,0,3.0,25,Travel_Rarely,Married,Y,80,Yes
+1439,20,Sales,5567.0,Yes,11,3.0,15,Travel_Rarely,Married,Y,80,No
+1440,41,Research & Development,4722.0,Yes,3,1.0,16,Travel_Rarely,Married,Y,80,No
+1441,20,Sales,2203.0,Yes,1,4.0,3,Travel_Rarely,Divorced,Y,80,Yes
+1442,28,Sales,5080.0,Yes,6,4.0,25,Travel_Rarely,Married,Y,80,No
+1443,45,Human Resources,7339.0,Yes,6,4.0,1,Travel_Rarely,Married,Y,80,No
+1444,35,Research & Development,5519.0,No,7,4.0,25,Travel_Rarely,Divorced,Y,80,No
+1445,44,Research & Development,4404.0,No,5,3.0,1,Travel_Rarely,Married,Y,80,No
+1446,23,Research & Development,,No,5,4.0,21,Travel_Rarely,Married,Y,80,No
+1447,25,Research & Development,2949.0,No,1,3.0,25,Non-Travel,Divorced,Y,80,No
+1448,46,Sales,5050.0,No,10,1.0,4,Travel_Rarely,Single,Y,80,No
+1449,28,Research & Development,4990.0,No,10,2.0,17,Non-Travel,Married,Y,80,No
+1450,49,Human Resources,7601.0,No,9,4.0,8,Travel_Rarely,Divorced,Y,80,No
+1451,29,Research & Development,2387.0,Yes,8,1.0,7,Travel_Rarely,Single,Y,80,Yes
+1452,21,Research & Development,3735.0,No,7,4.0,6,Travel_Rarely,Divorced,Y,80,No
+1453,21,Human Resources,3290.0,Yes,2,4.0,21,Travel_Rarely,Single,Y,80,Yes
+1454,32,Research & Development,5295.0,No,12,4.0,16,Non-Travel,Married,Y,80,No
+1455,21,Research & Development,4791.0,Yes,10,2.0,13,Travel_Rarely,Single,Y,80,Yes
+1456,50,Research & Development,6599.0,No,5,1.0,7,Travel_Frequently,Married,Y,80,No
+1457,22,Research & Development,4218.0,No,3,2.0,11,Travel_Rarely,Single,Y,80,No
+1458,28,Research & Development,6976.0,No,7,1.0,6,Travel_Rarely,Married,Y,80,No
+1459,45,Sales,7607.0,No,14,1.0,24,Travel_Rarely,Single,Y,80,No
+1460,41,Sales,6500.0,No,16,2.0,16,Travel_Rarely,Single,Y,80,No
+1461,43,Research & Development,4405.0,Yes,4,3.0,27,Travel_Rarely,Married,Y,80,No
+1462,52,Sales,4843.0,No,3,2.0,14,Travel_Rarely,Divorced,Y,80,Yes
+1463,46,Research & Development,6430.0,Yes,5,1.0,9,Travel_Rarely,Single,Y,80,No
+1464,42,Human Resources,7354.0,No,14,1.0,16,Non-Travel,Married,Y,80,Yes
+1465,31,Sales,5757.0,No,10,1.0,24,Travel_Rarely,Married,Y,80,No
+1466,24,Sales,3985.0,No,5,3.0,20,Non-Travel,Married,Y,80,No
+1467,58,Research & Development,8313.0,No,5,1.0,22,Travel_Rarely,Single,Y,80,No
+1468,56,Research & Development,7678.0,No,5,2.0,24,Travel_Rarely,Married,Y,80,No
+1469,46,Sales,7603.0,No,10,4.0,19,Travel_Frequently,Divorced,Y,80,No
+1470,49,Research & Development,4897.0,Yes,2,2.0,4,Travel_Rarely,Divorced,Y,80,Yes
+1471,39,Sales,5041.0,Yes,6,1.0,29,Travel_Frequently,Married,Y,80,Yes
+1472,42,Sales,3520.0,No,1,3.0,15,Travel_Rarely,Married,Y,80,Yes
+1473,47,Research & Development,6002.0,No,9,2.0,20,Travel_Rarely,Married,Y,80,No
+1474,33,Sales,4334.0,No,3,4.0,7,Travel_Frequently,Single,Y,80,No
+1475,38,Research & Development,4313.0,No,7,3.0,7,Travel_Frequently,Single,Y,80,No
+1476,43,Human Resources,4574.0,No,3,4.0,28,Travel_Rarely,Divorced,Y,80,No
+1477,54,Research & Development,8336.0,No,5,2.0,6,Travel_Rarely,Divorced,Y,80,No
+1478,35,Research & Development,5706.0,No,11,1.0,27,Non-Travel,Married,Y,80,No
+1479,21,Research & Development,2170.0,No,5,,29,Travel_Rarely,Married,Y,80,Yes
+1480,24,Sales,3931.0,No,12,2.0,10,Travel_Rarely,Married,Y,80,No
+1481,23,Research & Development,3454.0,No,4,2.0,28,Non-Travel,Married,Y,80,No
+1482,24,Research & Development,5109.0,No,8,4.0,29,Travel_Rarely,Divorced,Y,80,No
+1483,53,Sales,5973.0,No,3,1.0,23,Travel_Frequently,Single,Y,80,Yes
+1484,21,Research & Development,3960.0,Yes,3,1.0,26,Travel_Rarely,Single,Y,80,Yes
+1485,48,Sales,7327.0,No,11,2.0,8,Travel_Rarely,Divorced,Y,80,No
+1486,26,Research & Development,2072.0,No,0,4.0,24,Non-Travel,Married,Y,80,Yes
+1487,29,Sales,6631.0,No,13,4.0,21,Travel_Rarely,Divorced,Y,80,No
+1488,29,Research & Development,4922.0,Yes,11,2.0,3,Travel_Frequently,Married,Y,80,No
+1489,40,Research & Development,,No,15,3.0,13,Travel_Rarely,Single,Y,80,No
+1490,45,Research & Development,6240.0,No,11,4.0,8,Travel_Rarely,Single,Y,80,No
+1491,43,Human Resources,5384.0,Yes,5,2.0,1,Travel_Rarely,Married,Y,80,Yes
+1492,43,Human Resources,7000.0,Yes,16,2.0,19,Non-Travel,Married,Y,80,No
+1493,24,Research & Development,3561.0,No,5,2.0,19,Travel_Frequently,Divorced,Y,80,No
+1494,43,Research & Development,9710.0,Yes,26,4.0,9,Travel_Rarely,Married,Y,80,No
+1495,23,Sales,4085.0,Yes,8,3.0,22,Non-Travel,Single,Y,80,No
+1496,52,Research & Development,7761.0,No,7,3.0,8,Travel_Rarely,Married,Y,80,No
+1497,22,Research & Development,4913.0,Yes,10,4.0,28,Non-Travel,Divorced,Y,80,No
+1498,23,Research & Development,5513.0,Yes,7,1.0,1,Travel_Rarely,Divorced,Y,80,Yes
+1499,27,Research & Development,5041.0,No,10,2.0,2,Travel_Rarely,Divorced,Y,80,No
+1500,35,Research & Development,6331.0,No,7,2.0,4,Travel_Frequently,Married,Y,80,Yes

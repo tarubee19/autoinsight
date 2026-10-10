@@ -1,0 +1,30 @@
+{
+  "task_type": "regression",
+  "model": "ridge regression",
+  "n_train": 1600,
+  "n_test": 400,
+  "cv_folds": 5,
+  "cv_metric": "r2",
+  "model_comparison": [
+    {
+      "model": "baseline (mean)",
+      "cv_mean": -0.0018314476538811685,
+      "cv_std": 0.0022364190445262654
+    },
+    {
+      "model": "ridge regression",
+      "cv_mean": 0.9333078943890352,
+      "cv_std": 0.004377322697398188
+    },
+    {
+      "model": "gradient boosting",
+      "cv_mean": 0.9110983073971066,
+      "cv_std": 0.008597326947174294
+    }
+  ],
+  "r2": 0.9341170920028444,
+  "mae": 17172.351711150182,
+  "rmse": 21642.902378189585,
+  "target_std_test": 84425.31083017658,
+  "warnings": []
+}

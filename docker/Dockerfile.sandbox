@@ -1,0 +1,22 @@
+# Hardened execution environment for agent-written code.
+# Started per execution with: --network none --read-only --cap-drop ALL --user 65534 --memory --cpus --pids-limit
+# Build:  docker build -f docker/Dockerfile.sandbox -t autoinsight-sandbox:latest .
+FROM python:3.13-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    MPLCONFIGDIR=/tmp/mpl \
+    OMP_NUM_THREADS=2 \
+    OPENBLAS_NUM_THREADS=2
+
+COPY constraints.txt /tmp/constraints.txt
+# The packages agent code is allowed to import (see src/autoinsight/code_guard.py) + joblib for the trainer.
+RUN pip install --no-cache-dir -c /tmp/constraints.txt pandas numpy scipy matplotlib scikit-learn joblib \
+ && pip install --no-cache-dir statsmodels seaborn \
+ && rm -rf /root/.cache /tmp/constraints.txt
+
+# No application code, no secrets, no shell tools beyond what slim provides: the runner and the agent's
+# program are mounted read-only at /in at run time, outputs are written to the mounted /out.
+WORKDIR /out
+USER 65534:65534
+CMD ["python", "-I", "/in/runner.py", "agent_code.py"]

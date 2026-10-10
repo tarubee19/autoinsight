@@ -1,0 +1,29 @@
+# ONE container with API + UI, for hosts that run a single container (Hugging Face Spaces, Render, Railway, Fly.io).
+# Offline/template mode only: no LLM-written code ever runs here, so the in-container "local" sandbox is appropriate.
+#   docker build -f docker/Dockerfile.demo -t autoinsight-demo .
+#   docker run -p 7860:7860 autoinsight-demo
+FROM python:3.13-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PORT=7860 \
+    API_URL=http://127.0.0.1:8000 \
+    AUTOINSIGHT_LLM_PROVIDER=offline \
+    AUTOINSIGHT_SANDBOX_MODE=local \
+    AUTOINSIGHT_RUNS_DIR=/app/runs \
+    AUTOINSIGHT_SAMPLES_DIR=/app/data/sample \
+    AUTOINSIGHT_MAX_UPLOAD_MB=10 \
+    AUTOINSIGHT_RETENTION_HOURS=24
+
+WORKDIR /app
+COPY constraints.txt pyproject.toml README.md ./
+COPY src ./src
+RUN pip install --no-cache-dir -c constraints.txt ".[api,ui]"
+COPY app ./app
+COPY data/sample ./data/sample
+COPY docker/start_demo.sh ./start_demo.sh
+RUN useradd --create-home --uid 1000 app && mkdir -p /app/runs && chown -R app:app /app/runs && chmod +x start_demo.sh
+USER app
+
+EXPOSE 7860
+CMD ["./start_demo.sh"]

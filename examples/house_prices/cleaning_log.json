@@ -1,0 +1,51 @@
+{
+  "rows_raw": 2000,
+  "rows_clean": 2000,
+  "cols_raw": 9,
+  "cols_clean": 9,
+  "duplicates_removed": 0,
+  "placeholders_to_missing": 0,
+  "dropped_columns": {
+    "listing_id": "identifier / excluded by the plan"
+  },
+  "coerced_to_numeric": {},
+  "date_features": {},
+  "imputed": {
+    "year_built": {
+      "strategy": "median",
+      "n_missing": 40,
+      "share": 0.02
+    },
+    "lot_size": {
+      "strategy": "median",
+      "n_missing": 120,
+      "share": 0.06
+    }
+  },
+  "clipped_outliers": {
+    "sqft": 10,
+    "lot_size": 20
+  },
+  "target": {
+    "task_type": "regression",
+    "mean": 374645.85,
+    "std": 85446.07122812413
+  },
+  "steps": [
+    {
+      "step": "drop_columns",
+      "detail": "Dropped columns that carry no usable signal",
+      "count": 1
+    },
+    {
+      "step": "winsorise_outliers",
+      "detail": "Clipped extreme values to the 0.5-99.5 percentile range",
+      "count": 30
+    },
+    {
+      "step": "impute_missing",
+      "detail": "Filled remaining missing values",
+      "count": 160
+    }
+  ]
+}

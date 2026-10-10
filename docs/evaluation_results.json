@@ -1,0 +1,222 @@
+{
+  "driver_recovery": [
+    {
+      "dataset": "telco_churn",
+      "rows": 5040,
+      "columns": 17,
+      "task": "classification",
+      "metric": "ROC AUC",
+      "score": 0.835,
+      "k": 6,
+      "stats_precision_at_k": 0.83,
+      "model_precision_at_k": 1.0,
+      "stats_top": [
+        "Contract",
+        "tenure",
+        "TotalCharges",
+        "MonthlyCharges",
+        "InternetService",
+        "TechSupport"
+      ],
+      "model_top": [
+        "Contract",
+        "InternetService",
+        "tenure",
+        "MonthlyCharges",
+        "TechSupport",
+        "PaymentMethod"
+      ],
+      "planted": [
+        "Contract",
+        "InternetService",
+        "MonthlyCharges",
+        "PaymentMethod",
+        "TechSupport",
+        "tenure"
+      ],
+      "duplicates_removed": 40,
+      "columns_dropped": 2,
+      "grounding_rate": 1.0,
+      "numbers_checked": 71,
+      "seconds": 12.9,
+      "ok": true,
+      "llm": "offline:templates",
+      "attempts": {
+        "planner": 1,
+        "engineer": 1,
+        "analyst": 1,
+        "modeler": 1,
+        "reporter": 1
+      },
+      "fallbacks": []
+    },
+    {
+      "dataset": "hr_attrition",
+      "rows": 1500,
+      "columns": 13,
+      "task": "classification",
+      "metric": "ROC AUC",
+      "score": 0.737,
+      "k": 5,
+      "stats_precision_at_k": 0.8,
+      "model_precision_at_k": 1.0,
+      "stats_top": [
+        "MonthlyIncome",
+        "YearsAtCompany",
+        "OverTime",
+        "JobSatisfaction",
+        "Age"
+      ],
+      "model_top": [
+        "OverTime",
+        "MonthlyIncome",
+        "YearsAtCompany",
+        "JobSatisfaction",
+        "BusinessTravel"
+      ],
+      "planted": [
+        "BusinessTravel",
+        "JobSatisfaction",
+        "MonthlyIncome",
+        "OverTime",
+        "YearsAtCompany"
+      ],
+      "duplicates_removed": 0,
+      "columns_dropped": 3,
+      "grounding_rate": 1.0,
+      "numbers_checked": 68,
+      "seconds": 10.1,
+      "ok": true,
+      "llm": "offline:templates",
+      "attempts": {
+        "planner": 1,
+        "engineer": 1,
+        "analyst": 1,
+        "modeler": 1,
+        "reporter": 1
+      },
+      "fallbacks": []
+    },
+    {
+      "dataset": "house_prices",
+      "rows": 2000,
+      "columns": 9,
+      "task": "regression",
+      "metric": "R2",
+      "score": 0.934,
+      "k": 5,
+      "stats_precision_at_k": 1.0,
+      "model_precision_at_k": 1.0,
+      "stats_top": [
+        "sqft",
+        "neighborhood",
+        "year_built",
+        "bathrooms",
+        "garage"
+      ],
+      "model_top": [
+        "sqft",
+        "neighborhood",
+        "year_built",
+        "garage",
+        "bathrooms"
+      ],
+      "planted": [
+        "bathrooms",
+        "garage",
+        "neighborhood",
+        "sqft",
+        "year_built"
+      ],
+      "duplicates_removed": 0,
+      "columns_dropped": 1,
+      "grounding_rate": 1.0,
+      "numbers_checked": 37,
+      "seconds": 9.3,
+      "ok": true,
+      "llm": "offline:templates",
+      "attempts": {
+        "planner": 1,
+        "engineer": 1,
+        "analyst": 1,
+        "modeler": 1,
+        "reporter": 1
+      },
+      "fallbacks": []
+    }
+  ],
+  "fault_injection": [
+    {
+      "scenario": "Unsafe code (os.system) from the Data Engineer",
+      "recovered": true,
+      "attempts": {
+        "engineer": 2
+      },
+      "fallbacks": [],
+      "grounding_rate": 1.0
+    },
+    {
+      "scenario": "Runtime error (KeyError on a made-up column)",
+      "recovered": true,
+      "attempts": {
+        "engineer": 2
+      },
+      "fallbacks": [],
+      "grounding_rate": 1.0
+    },
+    {
+      "scenario": "Program runs but writes no output file",
+      "recovered": true,
+      "attempts": {
+        "engineer": 2
+      },
+      "fallbacks": [],
+      "grounding_rate": 1.0
+    },
+    {
+      "scenario": "Analyst names a feature that does not exist",
+      "recovered": true,
+      "attempts": {
+        "analyst": 2
+      },
+      "fallbacks": [],
+      "grounding_rate": 1.0
+    },
+    {
+      "scenario": "Reporter invents statistics (87.65%, 42.1%)",
+      "recovered": true,
+      "attempts": {
+        "reporter": 2
+      },
+      "fallbacks": [],
+      "grounding_rate": 1.0
+    },
+    {
+      "scenario": "Every LLM call fails (API outage)",
+      "recovered": true,
+      "attempts": {
+        "engineer": 4,
+        "analyst": 4
+      },
+      "fallbacks": [
+        "engineer",
+        "analyst",
+        "reporter"
+      ],
+      "grounding_rate": 1.0
+    },
+    {
+      "scenario": "LLM never writes working code (5 bad answers each)",
+      "recovered": true,
+      "attempts": {
+        "engineer": 4,
+        "analyst": 4
+      },
+      "fallbacks": [
+        "engineer",
+        "analyst"
+      ],
+      "grounding_rate": 1.0
+    }
+  ]
+}

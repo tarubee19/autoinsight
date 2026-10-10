@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# Local config + secrets
+.env
+
+# Runs (uploaded data, models, reports) - never commit these
+runs/
+!examples/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

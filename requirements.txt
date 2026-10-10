@@ -1,0 +1,3 @@
+# Everything (API, UI, LLM clients, dev tools). Equivalent to:  pip install -e ".[all]"
+-c constraints.txt
+-e .[all]

@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autoinsight"
+version = "0.1.0"
+description = "Multi-agent system (LangGraph) that turns a raw CSV + a business question into a cleaned dataset, statistical analysis, a trained model, a prediction API and a markdown report - with sandboxed code execution."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+    "pandas>=2.1",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+    "scikit-learn>=1.4",
+    "joblib>=1.3",
+    "langgraph>=0.2",
+    "markdown>=3.5",
+]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.110", "uvicorn>=0.29", "python-multipart>=0.0.9"]
+ui = ["streamlit>=1.33", "requests>=2.31"]
+llm = ["anthropic>=0.40", "openai>=1.40"]
+dev = ["pytest>=8", "httpx>=0.27", "ruff>=0.5"]
+all = [
+    "fastapi>=0.110", "uvicorn>=0.29", "python-multipart>=0.0.9",
+    "streamlit>=1.33", "requests>=2.31",
+    "anthropic>=0.40", "openai>=1.40",
+    "pytest>=8", "httpx>=0.27", "ruff>=0.5",
+]
+
+[project.scripts]
+autoinsight = "autoinsight.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+autoinsight = ["scripts/*.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests", "app", "scripts", "data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "B008"]
+
+[tool.ruff.lint.per-file-ignores]
+# The sandbox programs run inside runner.py, which injects INPUT_PATH, PARAMS, save_csv, save_json, save_fig, log.
+"src/autoinsight/scripts/*_template.py" = ["F821"]
+"src/autoinsight/scripts/train_model.py" = ["F821"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+    "docker: tests that need a running Docker daemon and the sandbox image",
+]

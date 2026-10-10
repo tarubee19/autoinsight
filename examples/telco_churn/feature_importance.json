@@ -1,0 +1,131 @@
+{
+  "metric": "roc_auc drop",
+  "features": [
+    {
+      "feature": "Contract",
+      "kind": "categorical",
+      "importance": 0.1418313211135838,
+      "importance_std": 0.008745335293662036,
+      "share_of_total": 0.6660432535364534,
+      "highest_level": "Month-to-month",
+      "lowest_level": "Two year"
+    },
+    {
+      "feature": "InternetService",
+      "kind": "categorical",
+      "importance": 0.018665128336334352,
+      "importance_std": 0.0057167146819975135,
+      "share_of_total": 0.08765188610808856,
+      "highest_level": "Fiber optic",
+      "lowest_level": "No"
+    },
+    {
+      "feature": "tenure",
+      "kind": "numeric",
+      "importance": 0.014169011976770576,
+      "importance_std": 0.004405451838250027,
+      "share_of_total": 0.066538016866159,
+      "effect_direction": "higher value -> lower prediction",
+      "effect_spearman": -0.7696216302855969
+    },
+    {
+      "feature": "MonthlyCharges",
+      "kind": "numeric",
+      "importance": 0.013464815521044948,
+      "importance_std": 0.0033164843752867116,
+      "share_of_total": 0.06323109357997792,
+      "effect_direction": "higher value -> higher prediction",
+      "effect_spearman": 0.4166172307135678
+    },
+    {
+      "feature": "TechSupport",
+      "kind": "categorical",
+      "importance": 0.011728763076210055,
+      "importance_std": 0.0024868108416931573,
+      "share_of_total": 0.05507855005440679,
+      "highest_level": "No",
+      "lowest_level": "No internet service"
+    },
+    {
+      "feature": "PaymentMethod",
+      "kind": "categorical",
+      "importance": 0.004953512172280086,
+      "importance_std": 0.001674246311733117,
+      "share_of_total": 0.023261810845121363,
+      "highest_level": "Electronic check",
+      "lowest_level": "Bank transfer (automatic)"
+    },
+    {
+      "feature": "OnlineSecurity",
+      "kind": "categorical",
+      "importance": 0.0031951330189088772,
+      "importance_std": 0.0014660419063420064,
+      "share_of_total": 0.015004420565832285,
+      "highest_level": "Yes",
+      "lowest_level": "No internet service"
+    },
+    {
+      "feature": "TotalCharges",
+      "kind": "numeric",
+      "importance": 0.002946522102234561,
+      "importance_std": 0.0022215321467769352,
+      "share_of_total": 0.013836937794704216,
+      "effect_direction": "higher value -> lower prediction",
+      "effect_spearman": -0.4671668918554391
+    },
+    {
+      "feature": "PaperlessBilling",
+      "kind": "categorical",
+      "importance": 0.001663641498230728,
+      "importance_std": 0.0009548089147759955,
+      "share_of_total": 0.007812499999999864,
+      "highest_level": "Yes",
+      "lowest_level": "No"
+    },
+    {
+      "feature": "Partner",
+      "kind": "categorical",
+      "importance": 0.0002612828323300259,
+      "importance_std": 0.0001139162640687838,
+      "share_of_total": 0.0012269903881029487,
+      "highest_level": "No",
+      "lowest_level": "Yes"
+    },
+    {
+      "feature": "PhoneService",
+      "kind": "categorical",
+      "importance": 6.698012560887867e-05,
+      "importance_std": 0.00022845417765351544,
+      "share_of_total": 0.00031454026115353747,
+      "highest_level": "No",
+      "lowest_level": "Yes"
+    },
+    {
+      "feature": "SeniorCitizen",
+      "kind": "numeric",
+      "importance": -4.827396440276743e-05,
+      "importance_std": 0.00010949786602253981,
+      "share_of_total": 0.0,
+      "effect_direction": "higher value -> lower prediction",
+      "effect_spearman": -0.06289763729699376
+    },
+    {
+      "feature": "Dependents",
+      "kind": "categorical",
+      "importance": -0.0002401629729038568,
+      "importance_std": 0.00019504339472162276,
+      "share_of_total": 0.0,
+      "highest_level": "Yes",
+      "lowest_level": "No"
+    },
+    {
+      "feature": "gender",
+      "kind": "categorical",
+      "importance": -0.0005340307312057258,
+      "importance_std": 0.0004999091111616545,
+      "share_of_total": 0.0,
+      "highest_level": "Female",
+      "lowest_level": "Male"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "metric": "r2 drop",
+  "features": [
+    {
+      "feature": "sqft",
+      "kind": "numeric",
+      "importance": 1.3775824291162755,
+      "importance_std": 0.07709565955221666,
+      "share_of_total": 0.7487087036796471,
+      "effect_direction": "higher value -> higher prediction",
+      "effect_spearman": 0.8413606106230063
+    },
+    {
+      "feature": "neighborhood",
+      "kind": "categorical",
+      "importance": 0.3372306806362009,
+      "importance_std": 0.02438375572469978,
+      "share_of_total": 0.18328307649953607,
+      "highest_level": "Hillcrest",
+      "lowest_level": "Eastgate"
+    },
+    {
+      "feature": "year_built",
+      "kind": "numeric",
+      "importance": 0.06541582212140223,
+      "importance_std": 0.006454180476568507,
+      "share_of_total": 0.035553150465248484,
+      "effect_direction": "higher value -> higher prediction",
+      "effect_spearman": 0.20627949131595638
+    },
+    {
+      "feature": "garage",
+      "kind": "numeric",
+      "importance": 0.03307718805733392,
+      "importance_std": 0.004282445409213034,
+      "share_of_total": 0.017977275310967305,
+      "effect_direction": "higher value -> higher prediction",
+      "effect_spearman": 0.16959298507188642
+    },
+    {
+      "feature": "bathrooms",
+      "kind": "numeric",
+      "importance": 0.023308789941313246,
+      "importance_std": 0.003327391831707605,
+      "share_of_total": 0.012668203029053615,
+      "effect_direction": "higher value -> higher prediction",
+      "effect_spearman": 0.12839291882774068
+    },
+    {
+      "feature": "lot_size",
+      "kind": "numeric",
+      "importance": 0.003308242307508466,
+      "importance_std": 0.0007356381442770847,
+      "share_of_total": 0.0017980120515196868,
+      "effect_direction": "higher value -> higher prediction",
+      "effect_spearman": 0.14164602216099717
+    },
+    {
+      "feature": "lot_size__was_missing",
+      "kind": "numeric",
+      "importance": 2.130465067863574e-05,
+      "importance_std": 2.2918409520565174e-05,
+      "share_of_total": 1.157896402771462e-05,
+      "effect_direction": "higher value -> lower prediction",
+      "effect_spearman": -0.060169497022853485
+    },
+    {
+      "feature": "bedrooms",
+      "kind": "numeric",
+      "importance": -4.998806482829632e-05,
+      "importance_std": 9.441770325479247e-05,
+      "share_of_total": 0.0,
+      "effect_direction": "higher value -> higher prediction",
+      "effect_spearman": 0.04999991061887047
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "rows_raw": 5040,
+  "rows_clean": 5000,
+  "cols_raw": 17,
+  "cols_clean": 15,
+  "duplicates_removed": 40,
+  "placeholders_to_missing": 2,
+  "dropped_columns": {
+    "customerID": "identifier / excluded by the plan",
+    "Country": "constant column"
+  },
+  "coerced_to_numeric": {
+    "TotalCharges": {
+      "non_numeric_entries_set_to_missing": 0
+    }
+  },
+  "date_features": {},
+  "imputed": {
+    "PaymentMethod": {
+      "strategy": "mode",
+      "n_missing": 75,
+      "share": 0.015
+    },
+    "MonthlyCharges": {
+      "strategy": "median",
+      "n_missing": 99,
+      "share": 0.0198
+    },
+    "TotalCharges": {
+      "strategy": "median",
+      "n_missing": 2,
+      "share": 0.0004
+    }
+  },
+  "clipped_outliers": {
+    "tenure": 2,
+    "MonthlyCharges": 25,
+    "TotalCharges": 50
+  },
+  "target": {
+    "task_type": "classification",
+    "positive_label": "Yes",
+    "negative_label": "no",
+    "positive_rate": 0.2926,
+    "n_positive": 1463
+  },
+  "steps": [
+    {
+      "step": "placeholder_to_missing",
+      "detail": "Converted blank / 'N/A' / '?' style placeholders to missing values",
+      "count": 2
+    },
+    {
+      "step": "drop_duplicates",
+      "detail": "Removed exact duplicate rows",
+      "count": 40
+    },
+    {
+      "step": "coerce_numeric",
+      "detail": "Converted text columns that are really numbers",
+      "count": 1
+    },
+    {
+      "step": "drop_columns",
+      "detail": "Dropped columns that carry no usable signal",
+      "count": 2
+    },
+    {
+      "step": "encode_target",
+      "detail": "Encoded target as 1 = 'Yes', 0 = other",
+      "count": 5000
+    },
+    {
+      "step": "winsorise_outliers",
+      "detail": "Clipped extreme values to the 0.5-99.5 percentile range",
+      "count": 77
+    },
+    {
+      "step": "impute_missing",
+      "detail": "Filled remaining missing values",
+      "count": 176
+    }
+  ]
+}

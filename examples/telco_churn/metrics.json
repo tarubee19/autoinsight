@@ -1,0 +1,70 @@
+{
+  "task_type": "classification",
+  "model": "logistic regression",
+  "n_train": 4000,
+  "n_test": 1000,
+  "cv_folds": 5,
+  "cv_metric": "roc_auc",
+  "model_comparison": [
+    {
+      "model": "baseline (majority class)",
+      "cv_mean": 0.5,
+      "cv_std": 0.0
+    },
+    {
+      "model": "logistic regression",
+      "cv_mean": 0.8407719488991574,
+      "cv_std": 0.013814619839688357
+    },
+    {
+      "model": "gradient boosting",
+      "cv_mean": 0.828543384373773,
+      "cv_std": 0.013723157506329381
+    }
+  ],
+  "threshold": 0.30338017442627685,
+  "roc_auc": 0.8348982143460567,
+  "pr_auc": 0.6420178958072037,
+  "accuracy": 0.742,
+  "precision": 0.541371158392435,
+  "recall": 0.7815699658703071,
+  "f1": 0.6396648044692738,
+  "brier": 0.1485248353462354,
+  "positive_rate_test": 0.293,
+  "baseline_accuracy": 0.7070000000000001,
+  "lift_top_decile": 2.559726962457338,
+  "capture_top_decile": 0.25597269624573377,
+  "calibration_bins": [
+    {
+      "bin": "(-0.001, 0.1]",
+      "n": 358,
+      "mean_predicted": 0.03526391070835964,
+      "observed_rate": 0.030726256983240222
+    },
+    {
+      "bin": "(0.1, 0.2]",
+      "n": 92,
+      "mean_predicted": 0.14659423025324064,
+      "observed_rate": 0.11956521739130435
+    },
+    {
+      "bin": "(0.2, 0.4]",
+      "n": 233,
+      "mean_predicted": 0.2988207402331838,
+      "observed_rate": 0.3905579399141631
+    },
+    {
+      "bin": "(0.4, 0.6]",
+      "n": 137,
+      "mean_predicted": 0.48614163523720977,
+      "observed_rate": 0.45985401459854014
+    },
+    {
+      "bin": "(0.6, 1.0]",
+      "n": 180,
+      "mean_predicted": 0.7222818350577188,
+      "observed_rate": 0.65
+    }
+  ],
+  "warnings": []
+}

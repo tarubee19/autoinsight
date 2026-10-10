@@ -1,0 +1,326 @@
+{
+  "task_type": "regression",
+  "target": "price",
+  "n_rows": 2000,
+  "n_features": 8,
+  "n_numeric_tested": 3,
+  "n_categorical_tested": 5,
+  "n_significant": 6,
+  "skipped_features": [],
+  "top_drivers": [
+    {
+      "feature": "sqft",
+      "kind": "numeric",
+      "strength": 0.8233363083020148,
+      "strength_label": "large",
+      "p_adjusted": 0.0,
+      "significant": true,
+      "finding": "sqft is positively related to price (Spearman rho = 0.82)"
+    },
+    {
+      "feature": "neighborhood",
+      "kind": "categorical",
+      "strength": 0.42810061125585136,
+      "strength_label": "medium",
+      "p_adjusted": 2.3807094636544763e-77,
+      "significant": true,
+      "finding": "neighborhood: 'Hillcrest' has the highest mean price (428534.22) vs 'Eastgate' (325178.18)"
+    },
+    {
+      "feature": "year_built",
+      "kind": "numeric",
+      "strength": 0.19581381406073622,
+      "strength_label": "small",
+      "p_adjusted": 2.615668362654366e-18,
+      "significant": true,
+      "finding": "year_built is positively related to price (Spearman rho = 0.20)"
+    },
+    {
+      "feature": "bathrooms",
+      "kind": "categorical",
+      "strength": 0.13014766846762055,
+      "strength_label": "small",
+      "p_adjusted": 1.5124159876078228e-05,
+      "significant": true,
+      "finding": "bathrooms: '3.5' has the highest mean price (390834.34) vs '1.0' (356005.17)"
+    },
+    {
+      "feature": "garage",
+      "kind": "categorical",
+      "strength": 0.12013347666345855,
+      "strength_label": "small",
+      "p_adjusted": 3.945542112081603e-06,
+      "significant": true,
+      "finding": "garage: '3' has the highest mean price (388333.67) vs '0' (355416.24)"
+    },
+    {
+      "feature": "lot_size",
+      "kind": "numeric",
+      "strength": 0.08685464205867933,
+      "strength_label": "negligible",
+      "p_adjusted": 0.00013411102211957732,
+      "significant": true,
+      "finding": "lot_size is positively related to price (Spearman rho = 0.09)"
+    },
+    {
+      "feature": "lot_size__was_missing",
+      "kind": "categorical",
+      "strength": 0.03029248347344546,
+      "strength_label": "negligible",
+      "p_adjusted": 0.18191088378300188,
+      "significant": false,
+      "finding": "lot_size__was_missing: '0' has the highest mean price (375299.63) vs '1' (364403.33)"
+    },
+    {
+      "feature": "bedrooms",
+      "kind": "categorical",
+      "strength": 0.017530995338864215,
+      "strength_label": "negligible",
+      "p_adjusted": 0.9273428325561466,
+      "significant": false,
+      "finding": "bedrooms: '5' has the highest mean price (376840.26) vs '4' (372712.71)"
+    }
+  ],
+  "all_tests": [
+    {
+      "feature": "sqft",
+      "kind": "numeric",
+      "test": "Spearman correlation",
+      "p_value": 0.0,
+      "spearman_rho": 0.8233363083020148,
+      "strength": 0.8233363083020148,
+      "direction": "higher",
+      "finding": "sqft is positively related to price (Spearman rho = 0.82)",
+      "p_adjusted": 0.0,
+      "significant": true,
+      "strength_label": "large"
+    },
+    {
+      "feature": "neighborhood",
+      "kind": "categorical",
+      "test": "Kruskal-Wallis",
+      "p_value": 5.951773659136191e-78,
+      "eta": 0.42810061125585136,
+      "strength": 0.42810061125585136,
+      "levels": [
+        {
+          "level": "Eastgate",
+          "n": 527,
+          "mean": 325178.17836812144
+        },
+        {
+          "level": "Harbor",
+          "n": 320,
+          "mean": 406811.875
+        },
+        {
+          "level": "Hillcrest",
+          "n": 301,
+          "mean": 428534.21926910296
+        },
+        {
+          "level": "Old Town",
+          "n": 360,
+          "mean": 357143.05555555556
+        },
+        {
+          "level": "Riverside",
+          "n": 492,
+          "mean": 386550.2032520325
+        }
+      ],
+      "top_level": "Hillcrest",
+      "low_level": "Eastgate",
+      "finding": "neighborhood: 'Hillcrest' has the highest mean price (428534.22) vs 'Eastgate' (325178.18)",
+      "p_adjusted": 2.3807094636544763e-77,
+      "significant": true,
+      "strength_label": "medium"
+    },
+    {
+      "feature": "year_built",
+      "kind": "numeric",
+      "test": "Spearman correlation",
+      "p_value": 9.808756359953872e-19,
+      "spearman_rho": 0.19581381406073622,
+      "strength": 0.19581381406073622,
+      "direction": "higher",
+      "finding": "year_built is positively related to price (Spearman rho = 0.20)",
+      "p_adjusted": 2.615668362654366e-18,
+      "significant": true,
+      "strength_label": "small"
+    },
+    {
+      "feature": "bathrooms",
+      "kind": "categorical",
+      "test": "Kruskal-Wallis",
+      "p_value": 9.452599922548893e-06,
+      "eta": 0.13014766846762055,
+      "strength": 0.13014766846762055,
+      "levels": [
+        {
+          "level": "1.0",
+          "n": 271,
+          "mean": 356005.1660516605
+        },
+        {
+          "level": "1.5",
+          "n": 211,
+          "mean": 358840.2843601896
+        },
+        {
+          "level": "2.0",
+          "n": 709,
+          "mean": 376368.8293370945
+        },
+        {
+          "level": "2.5",
+          "n": 402,
+          "mean": 376914.17910447763
+        },
+        {
+          "level": "3.0",
+          "n": 308,
+          "mean": 389744.8051948052
+        },
+        {
+          "level": "3.5",
+          "n": 99,
+          "mean": 390834.3434343434
+        }
+      ],
+      "top_level": "3.5",
+      "low_level": "1.0",
+      "finding": "bathrooms: '3.5' has the highest mean price (390834.34) vs '1.0' (356005.17)",
+      "p_adjusted": 1.5124159876078228e-05,
+      "significant": true,
+      "strength_label": "small"
+    },
+    {
+      "feature": "garage",
+      "kind": "categorical",
+      "test": "Kruskal-Wallis",
+      "p_value": 1.9727710560408016e-06,
+      "eta": 0.12013347666345855,
+      "strength": 0.12013347666345855,
+      "levels": [
+        {
+          "level": "0",
+          "n": 197,
+          "mean": 355416.24365482235
+        },
+        {
+          "level": "1",
+          "n": 600,
+          "mean": 365106.0
+        },
+        {
+          "level": "2",
+          "n": 1004,
+          "mean": 381407.0717131474
+        },
+        {
+          "level": "3",
+          "n": 199,
+          "mean": 388333.66834170854
+        }
+      ],
+      "top_level": "3",
+      "low_level": "0",
+      "finding": "garage: '3' has the highest mean price (388333.67) vs '0' (355416.24)",
+      "p_adjusted": 3.945542112081603e-06,
+      "significant": true,
+      "strength_label": "small"
+    },
+    {
+      "feature": "lot_size",
+      "kind": "numeric",
+      "test": "Spearman correlation",
+      "p_value": 0.000100583266589683,
+      "spearman_rho": 0.08685464205867933,
+      "strength": 0.08685464205867933,
+      "direction": "higher",
+      "finding": "lot_size is positively related to price (Spearman rho = 0.09)",
+      "p_adjusted": 0.00013411102211957732,
+      "significant": true,
+      "strength_label": "negligible"
+    },
+    {
+      "feature": "lot_size__was_missing",
+      "kind": "categorical",
+      "test": "Kruskal-Wallis",
+      "p_value": 0.15917202331012664,
+      "eta": 0.03029248347344546,
+      "strength": 0.03029248347344546,
+      "levels": [
+        {
+          "level": "0",
+          "n": 1880,
+          "mean": 375299.62765957444
+        },
+        {
+          "level": "1",
+          "n": 120,
+          "mean": 364403.3333333333
+        }
+      ],
+      "top_level": "0",
+      "low_level": "1",
+      "finding": "lot_size__was_missing: '0' has the highest mean price (375299.63) vs '1' (364403.33)",
+      "p_adjusted": 0.18191088378300188,
+      "significant": false,
+      "strength_label": "negligible"
+    },
+    {
+      "feature": "bedrooms",
+      "kind": "categorical",
+      "test": "Kruskal-Wallis",
+      "p_value": 0.9273428325561466,
+      "eta": 0.017530995338864215,
+      "strength": 0.017530995338864215,
+      "levels": [
+        {
+          "level": "1",
+          "n": 353,
+          "mean": 375232.8611898017
+        },
+        {
+          "level": "2",
+          "n": 413,
+          "mean": 373270.70217917673
+        },
+        {
+          "level": "3",
+          "n": 410,
+          "mean": 374759.756097561
+        },
+        {
+          "level": "4",
+          "n": 362,
+          "mean": 372712.7071823204
+        },
+        {
+          "level": "5",
+          "n": 462,
+          "mean": 376840.25974025973
+        }
+      ],
+      "top_level": "5",
+      "low_level": "4",
+      "finding": "bedrooms: '5' has the highest mean price (376840.26) vs '4' (372712.71)",
+      "p_adjusted": 0.9273428325561466,
+      "significant": false,
+      "strength_label": "negligible"
+    }
+  ],
+  "multicollinearity": [],
+  "charts": [
+    "categorical_drivers.png",
+    "correlation_heatmap.png",
+    "driver_strength.png",
+    "numeric_drivers.png",
+    "target_distribution.png"
+  ],
+  "target_mean": 374645.85,
+  "target_median": 372000.0,
+  "target_std": 85446.07122812413
+}

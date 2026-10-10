@@ -1,0 +1,153 @@
+{
+  "target": "Churn",
+  "task_type": "classification",
+  "positive_label": "Yes",
+  "model": "logistic regression",
+  "threshold": 0.30338017442627685,
+  "base_rate": 0.2926,
+  "features": [
+    {
+      "name": "gender",
+      "kind": "categorical",
+      "choices": [
+        "Male",
+        "Female"
+      ],
+      "default": "Male"
+    },
+    {
+      "name": "SeniorCitizen",
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "mean": 0.1566,
+      "integer": true,
+      "choices": [
+        0.0,
+        1.0
+      ],
+      "default": 0.0
+    },
+    {
+      "name": "Partner",
+      "kind": "categorical",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "default": "Yes"
+    },
+    {
+      "name": "Dependents",
+      "kind": "categorical",
+      "choices": [
+        "No",
+        "Yes"
+      ],
+      "default": "No"
+    },
+    {
+      "name": "tenure",
+      "kind": "numeric",
+      "min": 1.0,
+      "max": 72.0,
+      "median": 25.0,
+      "mean": 28.9478,
+      "integer": true,
+      "choices": null,
+      "default": 25.0
+    },
+    {
+      "name": "PhoneService",
+      "kind": "categorical",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "default": "Yes"
+    },
+    {
+      "name": "InternetService",
+      "kind": "categorical",
+      "choices": [
+        "Fiber optic",
+        "DSL",
+        "No"
+      ],
+      "default": "Fiber optic"
+    },
+    {
+      "name": "OnlineSecurity",
+      "kind": "categorical",
+      "choices": [
+        "No",
+        "Yes",
+        "No internet service"
+      ],
+      "default": "No"
+    },
+    {
+      "name": "TechSupport",
+      "kind": "categorical",
+      "choices": [
+        "No",
+        "Yes",
+        "No internet service"
+      ],
+      "default": "No"
+    },
+    {
+      "name": "Contract",
+      "kind": "categorical",
+      "choices": [
+        "Month-to-month",
+        "Two year",
+        "One year"
+      ],
+      "default": "Month-to-month"
+    },
+    {
+      "name": "PaperlessBilling",
+      "kind": "categorical",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "default": "Yes"
+    },
+    {
+      "name": "PaymentMethod",
+      "kind": "categorical",
+      "choices": [
+        "Electronic check",
+        "Mailed check",
+        "Bank transfer (automatic)",
+        "Credit card (automatic)"
+      ],
+      "default": "Electronic check"
+    },
+    {
+      "name": "MonthlyCharges",
+      "kind": "numeric",
+      "min": 18.0,
+      "max": 104.79,
+      "median": 63.52,
+      "mean": 60.733182000000006,
+      "integer": false,
+      "choices": null,
+      "default": 63.52
+    },
+    {
+      "name": "TotalCharges",
+      "kind": "numeric",
+      "min": 58.80895,
+      "max": 6356.1680500000175,
+      "median": 1313.85,
+      "mean": 1744.303009,
+      "integer": false,
+      "choices": null,
+      "default": 1313.85
+    }
+  ]
+}

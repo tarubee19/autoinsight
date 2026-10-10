@@ -1,0 +1,120 @@
+{
+  "target": "price",
+  "task_type": "regression",
+  "positive_label": null,
+  "model": "ridge regression",
+  "threshold": null,
+  "base_rate": null,
+  "features": [
+    {
+      "name": "sqft",
+      "kind": "numeric",
+      "min": 450.0,
+      "max": 3472.159999999996,
+      "median": 1921.5,
+      "mean": 1922.1918,
+      "integer": false,
+      "choices": null,
+      "default": 1921.5
+    },
+    {
+      "name": "bedrooms",
+      "kind": "numeric",
+      "min": 1.0,
+      "max": 5.0,
+      "median": 3.0,
+      "mean": 3.0835,
+      "integer": true,
+      "choices": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "default": 3.0
+    },
+    {
+      "name": "bathrooms",
+      "kind": "numeric",
+      "min": 1.0,
+      "max": 3.5,
+      "median": 2.0,
+      "mean": 2.1405,
+      "integer": false,
+      "choices": [
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5
+      ],
+      "default": 2.0
+    },
+    {
+      "name": "year_built",
+      "kind": "numeric",
+      "min": 1925.0,
+      "max": 2023.0,
+      "median": 1973.0,
+      "mean": 1973.701,
+      "integer": true,
+      "choices": null,
+      "default": 1973.0
+    },
+    {
+      "name": "neighborhood",
+      "kind": "categorical",
+      "choices": [
+        "Eastgate",
+        "Riverside",
+        "Old Town",
+        "Harbor",
+        "Hillcrest"
+      ],
+      "default": "Eastgate"
+    },
+    {
+      "name": "garage",
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 3.0,
+      "median": 2.0,
+      "mean": 1.6025,
+      "integer": true,
+      "choices": [
+        0.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "default": 2.0
+    },
+    {
+      "name": "lot_size",
+      "kind": "numeric",
+      "min": 276.395,
+      "max": 17114.28500000001,
+      "median": 4158.5,
+      "mean": 4802.9259,
+      "integer": false,
+      "choices": null,
+      "default": 4158.5
+    },
+    {
+      "name": "lot_size__was_missing",
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "mean": 0.06,
+      "integer": true,
+      "choices": [
+        0.0,
+        1.0
+      ],
+      "default": 0.0
+    }
+  ]
+}
