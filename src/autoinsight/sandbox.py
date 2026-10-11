@@ -188,6 +188,8 @@ class Sandbox:
 
     def _run_docker(self, in_dir: Path, out_dir: Path, timeout_s: int) -> SandboxResult:
         os.chmod(out_dir, 0o777)  # the container runs as an unprivileged uid
+        (out_dir / "charts").mkdir(exist_ok=True)  # created by the host so the host can always clean it up
+        os.chmod(out_dir / "charts", 0o777)
         name = f"autoinsight-{uuid.uuid4().hex[:12]}"
         cmd = build_docker_command(
             image=self.settings.sandbox_image,

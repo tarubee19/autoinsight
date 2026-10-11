@@ -87,3 +87,23 @@ def test_analyst_cannot_overwrite_the_engineers_cleaned_data(tmp_path, small_chu
         assert _sha(engineer_out) == _sha(res.run_dir / "artifacts" / "cleaned.csv")
     events = json.loads((res.run_dir / "state.json").read_text()).get("events", [])
     assert any("ignored" in e["message"] and "cleaned.csv" in e["message"] for e in events if e["agent"] == "analyst")
+
+
+def test_normalise_stats_works_when_the_file_is_not_writable(tmp_path):
+    """In Docker mode stats.json belongs to the sandbox uid; the host may only replace it, not write to it."""
+    import json
+    import os
+
+    from autoinsight.agents.contracts import normalise_stats
+
+    out = tmp_path / "out"
+    (out / "charts").mkdir(parents=True)
+    path = out / "stats.json"
+    path.write_text(json.dumps({"top_drivers": [{"feature": "a", "strength": 0.4}]}), encoding="utf-8")
+    os.chmod(path, 0o444)
+
+    normalise_stats(out)
+
+    data = json.loads(path.read_text(encoding="utf-8"))
+    assert data["top_drivers"][0]["strength_label"] == "medium"
+    assert not (out / "stats.json.tmp").exists()

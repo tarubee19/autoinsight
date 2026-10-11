@@ -8,6 +8,7 @@ that is fed back to the agent for its next attempt.
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 import pandas as pd
@@ -119,4 +120,8 @@ def normalise_stats(out_dir: Path) -> None:
         d.setdefault("p_adjusted", p_adj)
     stats.setdefault("all_tests", stats["top_drivers"])
     stats["charts"] = sorted(p.name for p in (out_dir / "charts").glob("*.png"))
-    path.write_text(json.dumps(stats, indent=2), encoding="utf-8")
+    # Replace the file instead of opening it for writing: in Docker mode it is owned by the sandbox uid, so the
+    # host user may not write to it, but it can always replace a file inside the (world-writable) output dir.
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(json.dumps(stats, indent=2), encoding="utf-8")
+    os.replace(tmp, path)

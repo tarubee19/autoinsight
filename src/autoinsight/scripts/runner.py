@@ -116,7 +116,35 @@ def _format_traceback(source_lines):
     return "\n".join(line.rstrip("\n") for line in lines)
 
 
+def _open_permissions():
+    """Make everything in OUT_DIR readable and replaceable by the host user.
+
+    In Docker mode this process runs as an unprivileged uid that differs from the host user's; whatever it
+    creates is owned by it. The directory is a throw-away per-run folder, so world-accessible modes are fine.
+    """
+    for root, dirs, files in os.walk(OUT_DIR):
+        for name in dirs + files:
+            path = os.path.join(root, name)
+            if os.path.islink(path):
+                continue
+            try:
+                os.chmod(path, 0o777 if os.path.isdir(path) else 0o666)
+            except OSError:
+                pass
+
+
 def main():
+    in_container = os.path.exists("/.dockerenv")  # local mode runs as the host user: leave its modes alone
+    if in_container:
+        os.umask(0)  # new files 0666 / dirs 0777: the host must be able to read and replace what we write
+    try:
+        _run()
+    finally:
+        if in_container:
+            _open_permissions()
+
+
+def _run():
     with open(os.path.join(IN_DIR, "params.json"), encoding="utf-8") as fh:
         params = json.load(fh)
     with open(os.path.join(IN_DIR, CODE_NAME), encoding="utf-8") as fh:
