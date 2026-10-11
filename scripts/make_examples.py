@@ -21,7 +21,12 @@ import pandas as pd  # noqa: E402
 from autoinsight.config import Settings  # noqa: E402
 from autoinsight.pipeline import run_pipeline  # noqa: E402
 from autoinsight.sandbox import Sandbox  # noqa: E402
-from autoinsight.testing import RUNTIME_BUG, UNSAFE_CODE, ScriptedLLM, engineer_template  # noqa: E402
+from autoinsight.testing import (  # noqa: E402
+    RUNTIME_BUG,
+    UNSAFE_CODE,
+    ScriptedLLM,
+    engineer_template,
+)
 
 OUT = ROOT / "examples"
 KEEP = ["report.md", "report.html", "stats.json", "metrics.json", "cleaning_log.json", "schema.json", "feature_importance.json"]
