@@ -44,6 +44,7 @@ def copy_run(run_dir: Path, name: str) -> None:
 
 
 def self_repair_trace(tmp: Path) -> str:
+    """Generate a self-repair trace for the given temporary directory."""
     csv = tmp / "churn_800.csv"
     pd.read_csv(ROOT / "data" / "sample" / "telco_churn.csv").head(800).to_csv(csv, index=False)
     settings = Settings(llm_provider="offline", sandbox_mode="local", runs_dir=tmp / "trace", allow_unsafe_local=True)
