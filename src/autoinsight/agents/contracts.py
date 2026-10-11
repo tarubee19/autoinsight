@@ -119,4 +119,7 @@ def normalise_stats(out_dir: Path) -> None:
         d.setdefault("p_adjusted", p_adj)
     stats.setdefault("all_tests", stats["top_drivers"])
     stats["charts"] = sorted(p.name for p in (out_dir / "charts").glob("*.png"))
-    path.write_text(json.dumps(stats, indent=2), encoding="utf-8")
+    payload = json.dumps(stats, indent=2)
+    tmp = path.with_name(f"{path.name}.tmp")
+    tmp.write_text(payload, encoding="utf-8")
+    tmp.replace(path)
