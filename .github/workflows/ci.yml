@@ -52,6 +52,10 @@ jobs:
       - name: Compose smoke test
         run: |
           docker compose up -d --build
-          for i in $(seq 1 60); do curl -fs localhost:8000/health && break || sleep 2; done
-          curl -fs localhost:8501/_stcore/health
+          wait_for() {  # wait_for <url>: retry for up to two minutes, fail if it never answers
+            for i in $(seq 1 60); do curl -fs "$1" && echo && return 0; sleep 2; done
+            echo "no answer from $1"; docker compose logs; return 1
+          }
+          wait_for localhost:8000/health
+          wait_for localhost:8501/_stcore/health
           docker compose down -v
