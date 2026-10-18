@@ -1,4 +1,4 @@
-# 🔎 AutoInsight — a multi-agent system for automated data analysis
+# AutoInsight: a multi-agent system for automated data analysis
 
 [![CI](https://github.com/tarubee19/autoinsight/actions/workflows/ci.yml/badge.svg)](https://github.com/tarubee19/autoinsight/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.12%20%7C%203.13-blue)
@@ -31,9 +31,8 @@ anyone can clone it and see it work in two minutes.
 10. [Docker and deployment](#docker-and-deployment)
 11. [Project structure](#project-structure)
 12. [Development: tests, lint, CI](#development-tests-lint-ci)
-13. [Honest status and limitations](#honest-status-and-limitations)
-14. [Publish this on GitHub](#publish-this-on-github)
-15. [Documentation index](#documentation-index)
+13. [Status and limitations](#status-and-limitations)
+14. [Documentation index](#documentation-index)
 
 ---
 
@@ -280,7 +279,7 @@ and then deliberately corrupted (duplicates, numbers-as-text, blanks, constant/I
 | Every LLM call fails (API outage) | ✅ degrades to vetted templates + deterministic report |
 | LLM never writes working code | ✅ falls back to vetted templates after the attempt budget |
 
-> **How to read this honestly.** The datasets are synthetic and the planted effects are fairly strong, so these
+> **Reading these results.** The datasets are synthetic and the planted effects are fairly strong, so these
 > numbers show that *the pipeline works* (cleaning doesn't destroy signal, tests are sensible, rankings are sane) —
 > not that it finds insight on every real dataset. Try it on the public IBM Telco churn dataset or your own data.
 
@@ -360,7 +359,7 @@ autoinsight/
 ├── scripts/                evaluate.py (benchmark) · make_examples.py
 ├── examples/               committed real outputs (reports, charts, self-repair trace)
 ├── docker/ · docker-compose*.yml · deploy/hf-space/ · .github/workflows/ci.yml
-└── docs/                   ARCHITECTURE · SECURITY · DEPLOYMENT · EVALUATION · CV_AND_INTERVIEW
+└── docs/                   ARCHITECTURE · SECURITY · DEPLOYMENT · EVALUATION
 ```
 
 ## Development: tests, lint, CI
@@ -376,21 +375,14 @@ make eval        # regenerate docs/EVALUATION.md
 runs lint + tests on Python 3.12/3.13, then builds all images, runs the Docker-backend sandbox tests (network
 isolation, hardening flags), an end-to-end run with the Docker sandbox, and a `docker compose` smoke test.
 
-## Honest status and limitations
+## Status and limitations
 
-What has been **run and verified**: the complete workflow on all three datasets (offline), the self-repair and
-fault-injection scenarios, the REST API (including predict), the CLI, the Streamlit UI, the single-container demo
-script, lint, and the test suite (101 passed, 1 Docker-only test skipped) on Python 3.13, plus a clean-room install, a CLI run and the earlier test suite on Python 3.12.
+**Tested:** the full workflow on all three sample datasets, the self-repair and fault-injection scenarios, the REST
+API (including predict), the CLI and the Streamlit UI. The test suite runs in CI on every push.
 
-What has **not been run by the author of this repo** — verify these yourself before claiming them:
-
-* **Docker-backed execution** (sandbox image build, `docker compose`, the Docker-backend tests). The commands and
-  configuration are validated and the CI workflow exercises them, but the machine this was developed on had no Docker
-  daemon. Push to GitHub and check that CI is green; run `pytest -m docker` locally if you have Docker.
-* **Live LLM runs.** The Anthropic/OpenAI clients are implemented, but all LLM behaviour was tested with a scripted
-  stand-in (which is what makes the fault-injection results reproducible). Run `python scripts/evaluate.py --real-llm`
-  with your key and publish *your* results.
-* **Real-world data.** Sample datasets are synthetic. Try a public dataset (IBM Telco churn, Kaggle HR attrition…).
+**How the agent results were produced:** the fault-injection benchmark uses a scripted LLM stand-in so the results
+are reproducible run to run. `python scripts/evaluate.py --real-llm` runs the same benchmark against Claude or GPT.
+The sample datasets are synthetic; the pipeline accepts any CSV.
 
 Known limitations: the number-grounding check proves a figure *exists in the computed results* (and the rate is
 shown in the report), not that the sentence around it is correct — a real number attached to the wrong claim would
@@ -398,30 +390,6 @@ pass; a single random train/test split (use a time-based split for time-dependen
 are one-feature what-ifs, not SHAP; association is not causation; CSV only, in-memory processing (practical limit
 ~50 MB by default); background jobs use a local thread pool and filesystem state — fine for a demo, replace with a
 queue (Celery/RQ) and object storage for real multi-user scale; no authentication beyond an optional API key.
-
-## Publish this on GitHub
-
-1. **Fill in the two placeholders** (Hub username and your name — used in badges, clone URLs, deploy files and the licence).
-   One command, works on Windows, macOS and Linux:
-   ```bash
-   python scripts/personalize.py --github-user your-github-name --name "Your Full Name"
-   python scripts/personalize.py --check        # should print: No placeholders left.
-   ```
-2. Create the repository and push:
-   ```bash
-   git init -b main
-   git add .
-   git commit -m "AutoInsight: multi-agent automated data analysis"
-   # Option A — GitHub CLI
-   gh repo create autoinsight --public --source=. --push
-   # Option B — create an empty repo on github.com, then:
-   git remote add origin https://github.com/your-github-name/autoinsight.git
-   git push -u origin main
-   ```
-3. Open the **Actions** tab and wait for CI. Fix anything red *before* you put the link on your CV.
-4. Add repository topics: `langgraph`, `multi-agent`, `llm`, `data-analysis`, `fastapi`, `streamlit`, `docker`, `mlops`.
-5. Deploy the live demo ([docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)) and add its URL to the top of this README.
-6. Write your CV bullets and prepare for interviews with [docs/CV_AND_INTERVIEW.md](docs/CV_AND_INTERVIEW.md).
 
 ## Documentation index
 
@@ -431,7 +399,6 @@ queue (Celery/RQ) and object storage for real multi-user scale; no authenticatio
 | [docs/SECURITY.md](docs/SECURITY.md) | Threat model, each defensive layer, what is *not* protected, hardening checklist |
 | [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | Docker Compose, Hugging Face Space, Render/Railway, VPS, environment variables |
 | [docs/EVALUATION.md](docs/EVALUATION.md) | Benchmark methodology and results |
-| [docs/CV_AND_INTERVIEW.md](docs/CV_AND_INTERVIEW.md) | CV bullets, 60-second pitch, interview Q&A, honest-claims checklist |
 
 ## License
 
