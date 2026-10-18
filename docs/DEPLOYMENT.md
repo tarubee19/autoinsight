@@ -14,7 +14,7 @@
 | Try it on your laptop | [A. Local, no Docker](#a-local-no-docker) | offline templates (or Docker sandbox if you have Docker) |
 | Run the full stack on your machine | [B. Docker Compose](#b-docker-compose) | offline; **C** adds a real LLM |
 | Real LLM + hardened sandbox on **your own machine** | [C. Compose + LLM override](#c-compose--real-llm--docker-sandbox-your-own-machine-only) | yes, in Docker |
-| Free public demo for your CV | [D. Hugging Face Space](#d-hugging-face-space-free-public-demo) or [E. Render/Railway/Fly/Cloud Run](#e-any-single-container-host) | **no** — offline only |
+| Free public demo | [D. Hugging Face Space](#d-hugging-face-space-free-public-demo) or [E. Render/Railway/Fly/Cloud Run](#e-any-single-container-host) | **no** — offline only |
 | A server you control | [F. VPS + Caddy](#f-vps-with-docker-compose-and-https) | offline; LLM mode only with a separate sandbox host |
 
 **Rule of thumb:** anything reachable from the internet runs in **offline mode**. See [SECURITY.md](SECURITY.md).
@@ -65,7 +65,7 @@ Result: a public URL such as `https://huggingface.co/spaces/<you>/autoinsight`, 
 
 1. Push this repository to GitHub first (see the README) and make sure it is **public** — the Space builds from it.
 2. Create a Hugging Face account → **New Space** → name `autoinsight` → **SDK: Docker** → blank template → *CPU basic (free)* → Public.
-3. Make sure `deploy/hf-space/Dockerfile` (the `REPO_URL` line) and `deploy/hf-space/README.md` contain your GitHub username — `python scripts/personalize.py --github-user <name>` does it.
+3. Make sure `deploy/hf-space/Dockerfile` (the `REPO_URL` line) and `deploy/hf-space/README.md` point to this repository.
 4. Add those two files to the Space repository — **the file must be named `README.md` and keep its YAML header**
    (`sdk: docker`, `app_port: 7860`):
    ```bash
@@ -76,7 +76,7 @@ Result: a public URL such as `https://huggingface.co/spaces/<you>/autoinsight`, 
 5. The Space builds (a few minutes) and starts. It runs one container: the API on `127.0.0.1:8000` and Streamlit on `$PORT`
    (7860) — `docker/start_demo.sh`. Defaults for a public demo: offline mode, 10 MB uploads, runs deleted after 24 h,
    runs stored in `/tmp` (ephemeral).
-6. Put the Space URL at the top of your README and on your CV.
+6. Add the Space URL to the top of the README.
 
 Notes: free Spaces sleep after inactivity (first load takes ~30 s); to redeploy after you change the code, restart or
 "Factory reboot" the Space so the Dockerfile re-clones the repository. Set `AUTOINSIGHT_API_KEY` as a Space *secret* only
