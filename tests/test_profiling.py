@@ -99,3 +99,19 @@ def test_profile_never_contains_raw_rows_beyond_three_examples(samples):
     prof = profile_dataframe(df)
     assert all(len(c.get("examples", [])) <= 3 for c in prof["columns"])
     assert all("examples" not in c for c in profile_dataframe(df, send_samples=False)["columns"] if c["kind"] not in ("categorical", "boolean"))
+
+
+def test_generic_target_name_beats_a_feature_that_only_looks_like_an_outcome():
+    """UCI bank marketing: 'default' (credit in default: no/yes/unknown) is a feature, the label is 'y'.
+    Found by the real-data benchmark: the old heuristic picked 'default' and the run failed."""
+    import pandas as pd
+
+    from autoinsight.profiling import detect_target
+
+    df = pd.DataFrame({
+        "age": [30, 41, 52, 33, 47, 29] * 5,
+        "default": ["no", "unknown", "yes", "no", "no", "unknown"] * 5,
+        "duration": [100, 250, 80, 300, 120, 90] * 5,
+        "y": ["no", "yes", "no", "no", "yes", "no"] * 5,
+    })
+    assert detect_target(df, "What makes a customer subscribe to a term deposit?") == "y"
