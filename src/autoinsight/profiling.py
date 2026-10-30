@@ -34,6 +34,8 @@ OUTCOME_SYNONYMS = {
     "click": {"ctr"},
     "cancel": {"cancellation"},
 }  # fmt: skip
+# Conventional names for "the column to predict" in ML datasets (UCI bank marketing uses a bare "y").
+GENERIC_TARGET_NAMES = {"y", "target", "label", "class", "outcome"}
 ID_NAME = re.compile(r"(^|[_\s-])(id|uuid|guid|key|number|no|code|index)$|^id([_\s-]|$)|identifier", re.I)
 ID_CAMEL = re.compile(r"(?<=[a-z0-9])(Id|ID|Uuid|Guid|Key|Number|Code|Index)$")  # EmployeeNumber, customerID
 DATE_VALUE = re.compile(r"^\s*(\d{4}-\d{1,2}-\d{1,2}|\d{1,2}[/-]\d{1,2}[/-]\d{2,4})")
@@ -179,15 +181,19 @@ def detect_target(df: pd.DataFrame, question: str, hint: str | None = None) -> s
         overlap |= {t for t in col_tokens for q in q_tokens if len(t) >= 4 and (q.startswith(t) or t.startswith(q))}
         synonym_hit = any(root in col_flat and (words & q_tokens) for root, words in OUTCOME_SYNONYMS.items())
         is_hint = any(h in col.lower() for h in TARGET_NAME_HINTS)
-        score = 2.0 * len(overlap) + (3.0 if synonym_hit else 0.0)
+        generic = col.strip().lower() in GENERIC_TARGET_NAMES
+        score = 2.0 * len(overlap) + (3.0 if synonym_hit else 0.0) + (1.5 if generic else 0.0)
         if score or is_hint:
             score += (1.0 if df[col].nunique(dropna=True) == 2 else 0.0) + (0.5 if is_hint else 0.0)
         if score >= 1.5:  # real overlap/synonym evidence, or a binary column with an outcome-like name
             scored.append((score, -len(str(col)), col))
     if scored:
         return max(scored)[2]
-    for col in eligible:
-        if any(h in col.lower() for h in TARGET_NAME_HINTS):
+    # No evidence from the question. A name hint alone is weak ("default" is a *feature* in the UCI bank
+    # marketing data), so prefer binary hinted columns and never pick a multi-class one this way.
+    hinted = [c for c in eligible if any(h in c.lower() for h in TARGET_NAME_HINTS)]
+    for col in sorted(hinted, key=lambda c: df[c].nunique(dropna=True) != 2):
+        if df[col].nunique(dropna=True) == 2 or pd.api.types.is_numeric_dtype(df[col]):
             return col
     raise PlanError(
         "Could not tell which column to predict/explain. Mention it in your question (e.g. "
