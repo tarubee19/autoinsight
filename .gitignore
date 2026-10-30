@@ -21,3 +21,5 @@ runs/
 .DS_Store
 .idea/
 .vscode/
+data/real/
+catboost_info/

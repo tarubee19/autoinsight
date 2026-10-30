@@ -25,7 +25,7 @@ anyone can clone it and see it work in two minutes.
 4. [Using a real LLM (Claude or GPT)](#using-a-real-llm-claude-or-gpt)
 5. [The interfaces: CLI, REST API, web UI](#the-interfaces-cli-rest-api-web-ui)
 6. [Example output](#example-output)
-7. [Evaluation](#evaluation)
+7. [Evaluation](#evaluation) · [Real-data benchmark](#real-data-benchmark-public-datasets-not-synthetic)
 8. [Why it is built this way (design decisions)](#why-it-is-built-this-way-design-decisions)
 9. [Security model](#security-model)
 10. [Docker and deployment](#docker-and-deployment)
@@ -44,7 +44,7 @@ anyone can clone it and see it work in two minutes.
 | 2 | **Planner** | Decides the **target column** and task type (classification / regression) from your question + the profile. Its plan is *validated against the real schema* — it cannot invent a column. |
 | 3 | **Data Engineer** | Writes and executes Python to clean the data: de-duplicate, fix numbers stored as text, impute missing values, clip outliers, drop IDs/constants. Every step is logged. |
 | 4 | **Analyst** | Writes and executes Python for the statistics (Mann-Whitney / Welch + Cohen's d, χ² + Cramér's V, Spearman, Kruskal-Wallis, Benjamini-Hochberg multiple-testing correction) and the Matplotlib charts. |
-| 5 | **Modeler** (trusted script) | Cross-validated model selection (baseline vs. regularised linear vs. gradient boosting), held-out evaluation, permutation importance, leakage scan, calibration, lift, and a saved model + schema for the prediction API. |
+| 5 | **Modeler** (trusted script) | Cross-validated model selection (baseline vs. regularised linear vs. two gradient-boosting configs, plus a log-target model for skewed positive targets), held-out evaluation, permutation importance, leakage scan, calibration, lift, and a saved model + schema for the prediction API. |
 | 6 | **Reporter** | Writes the markdown business report from a compact facts file (it never sees raw data). Its numbers are **checked against the computed results**: if fewer than 90% trace back, it gets one correction attempt, then a deterministic writer takes over. The verified rate is printed in the report. |
 
 Outputs of one run: `report.md` / `report.html` (charts inlined), `cleaned.csv`, `cleaning_log.json`, `stats.json`,
@@ -283,6 +283,53 @@ and then deliberately corrupted (duplicates, numbers-as-text, blanks, constant/I
 > numbers show that *the pipeline works* (cleaning doesn't destroy signal, tests are sensible, rankings are sane) —
 > not that it finds insight on every real dataset. Try it on the public IBM Telco churn dataset or your own data.
 
+## Real-data benchmark (public datasets, not synthetic)
+
+The synthetic results above prove the plumbing. To find out whether the system holds up on data it was never tuned
+on, it was run, unchanged and with no target given, on four public real datasets, and its model choices were compared
+with a wider model zoo using repeated cross-validation. Full tables: **[docs/REAL_DATA_BENCHMARK.md](docs/REAL_DATA_BENCHMARK.md)**.
+Reproduce: `python scripts/benchmark_real_data.py && python scripts/render_real_benchmark.py` (~40 min on 2 CPUs).
+
+<!-- REAL:START -->
+| Dataset (rows) | Question asked | Target picked | Model chosen by CV | Held-out score | Original version |
+|---|---|---|---|---|---|
+| IBM Telco churn (7,043) | "Find the driving factors behind customer churn" | `Churn` | logistic regression | ROC AUC **0.842** | same (published results on this data: ~0.84-0.85) |
+| IBM HR attrition (1,470) | "Why do employees leave the company?" | `Attrition` | logistic regression | ROC AUC **0.813** | same |
+| Ames housing (2,930 x 82) | "What drives the sale price of a house?" | `SalePrice` | gradient boosting, log target | R2 **0.929** | ridge, R2 0.885 |
+| UCI bank marketing (41,188) | "What makes a customer subscribe to a term deposit?" | `y` | gradient boosting | ROC AUC **0.951** | **failed**: picked the feature `default` as target |
+
+![Cross-validated score by model](docs/assets/real_data_model_zoo.png)
+<!-- REAL:END -->
+
+**What the real data exposed, and what was changed because of it**
+
+1. **Wrong target on real column names (bug, fixed).** In the UCI bank data, `default` (has the customer defaulted
+   on credit: no/yes/unknown) is a *feature*, and the label is a bare `y`. The heuristic planner matched the outcome
+   word "default" and the run failed with "3 classes". Fix: conventional label names (`y`, `target`, `label`,
+   `class`, `outcome`) now score, and a name hint alone can never select a multi-class column. A regression test
+   pins this case (`tests/test_profiling.py`).
+2. **The modeler's candidate list was too weak for wide tabular data (fixed, with evidence).** On Ames housing
+   (80 features, right-skewed price) the original candidates topped out at CV R2 0.90 while XGBoost / CatBoost reached
+   0.924-0.925 (p = 0.06 / 0.01, corrected resampled t-test). Rather than adding three heavy dependencies, two
+   scikit-learn candidates were added and tested first: a slower gradient-boosting config (800 x 0.03, 15 leaves:
+   CV R2 0.919) and, only when the target is positive and skewed, the same model on log(y) (0.921), which closes
+   almost the whole gap. Held-out R2 rose from **0.885 to 0.929**. On Telco and HR, cross-validation still picks the
+   logistic regression, which is the right call there: no learner beats it significantly on 1.5k-7k rows, and on HR
+   the original gradient-boosting config is significantly *worse* (-0.042 AUC, p = 0.005).
+3. **Leakage the automatic scan cannot see.** In the bank data, `duration` (length of the sales call) is only known
+   *after* the outcome. With it every model reaches ROC AUC ~0.95; without it ~0.81, which matches what Moro et al.
+   (2014) report for a realistic model. The existing leakage scan (single-feature AUC > 0.97) does not fire, because
+   0.80 is not suspicious on its own. A new note flags any feature that carries > 50% of the model's importance
+   (`duration`: 66%), but it also fires on `tenure` in Telco (60%), which is legitimate. Data alone cannot tell
+   the two apart; this is a question about *when* a field is recorded, and it is left to the human or the LLM planner.
+4. **A 300-second modeler timeout on Ames was CPU contention, not slowness.** Under a parallel CPU-heavy job, OpenMP
+   threads in HistGradientBoosting spin-wait: a 5-fold cross-validation on the Telco data went from under 2 s to 62 s. With the machine idle the full
+   modeler takes ~80 s on Ames. Benchmarks now pin `OMP_NUM_THREADS=1` so timings are comparable.
+
+**Trade-off decided by the numbers:** XGBoost / CatBoost / LightGBM were *not* added as dependencies. Over the new scikit-learn candidates they
+win by only 0.3-0.5 R2 points on one dataset (inside one fold standard deviation), never significantly on the classification sets,
+and CatBoost fits 10-30x slower. The tuned scikit-learn candidates get most of the gain with no new dependency.
+
 ## Why it is built this way (design decisions)
 
 * **Defence in depth for LLM-written code.** An AST allow-list rejects dangerous code *before* it runs; a Docker
@@ -377,14 +424,17 @@ isolation, hardening flags), an end-to-end run with the Docker sandbox, and a `d
 
 ## Status and limitations
 
-**Tested:** the full workflow on all three sample datasets, the self-repair and fault-injection scenarios, the REST
+**Tested:** the full workflow on all three sample datasets and on four public real datasets (IBM Telco, IBM HR,
+Ames housing, UCI bank marketing; see [Real-data benchmark](#real-data-benchmark-public-datasets-not-synthetic)), the self-repair and fault-injection scenarios, the REST
 API (including predict), the CLI and the Streamlit UI. The test suite runs in CI on every push.
 
 **How the agent results were produced:** the fault-injection benchmark uses a scripted LLM stand-in so the results
 are reproducible run to run. `python scripts/evaluate.py --real-llm` runs the same benchmark against Claude or GPT.
-The sample datasets are synthetic; the pipeline accepts any CSV.
+The bundled sample datasets are synthetic; the real-data benchmark downloads its four public datasets (SHA-256
+pinned) on first run.
 
-Known limitations: the number-grounding check proves a figure *exists in the computed results* (and the rate is
+Known limitations: leakage through fields recorded *after* the outcome (like `duration` in the bank data) is
+flagged as a note but cannot be decided from the data alone; the number-grounding check proves a figure *exists in the computed results* (and the rate is
 shown in the report), not that the sentence around it is correct — a real number attached to the wrong claim would
 pass; a single random train/test split (use a time-based split for time-dependent data); explanations
 are one-feature what-ifs, not SHAP; association is not causation; CSV only, in-memory processing (practical limit
