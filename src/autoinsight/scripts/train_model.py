@@ -20,7 +20,7 @@ import joblib
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from sklearn.compose import ColumnTransformer
+from sklearn.compose import ColumnTransformer, TransformedTargetRegressor
 from sklearn.dummy import DummyClassifier, DummyRegressor
 from sklearn.ensemble import HistGradientBoostingClassifier, HistGradientBoostingRegressor
 from sklearn.inspection import permutation_importance
@@ -98,6 +98,12 @@ if classification:
             ("prep", preprocessor(False)),
             ("model", HistGradientBoostingClassifier(max_iter=250, learning_rate=0.06, l2_regularization=1.0, early_stopping=True, random_state=SEED)),
         ]),
+        # slower, smaller trees: on the real-data benchmark (docs/REAL_DATA_BENCHMARK.md) this closes most of
+        # the gap to XGBoost/CatBoost on larger tables, while CV still picks the linear model where it wins
+        "gradient boosting (800 x 0.03, 15 leaves)": Pipeline([
+            ("prep", preprocessor(False)),
+            ("model", HistGradientBoostingClassifier(max_iter=800, learning_rate=0.03, max_leaf_nodes=15, l2_regularization=1.0, early_stopping=False, random_state=SEED)),
+        ]),
     }  # fmt: skip
 else:
     cv = KFold(n_splits=n_folds, shuffle=True, random_state=SEED)
@@ -109,7 +115,19 @@ else:
             ("prep", preprocessor(False)),
             ("model", HistGradientBoostingRegressor(max_iter=250, learning_rate=0.06, l2_regularization=1.0, early_stopping=True, random_state=SEED)),
         ]),
+        "gradient boosting (800 x 0.03, 15 leaves)": Pipeline([
+            ("prep", preprocessor(False)),
+            ("model", HistGradientBoostingRegressor(max_iter=800, learning_rate=0.03, max_leaf_nodes=15, l2_regularization=1.0, early_stopping=False, random_state=SEED)),
+        ]),
     }  # fmt: skip
+    # Prices, incomes, counts: strictly positive and right-skewed. Fitting log(y) stops a few very expensive
+    # rows from dominating the squared loss (Ames housing: skew 1.7, CV R2 0.919 -> 0.921, see the benchmark).
+    if float(y.min()) > 0 and float(y.skew()) > 1.0:
+        candidates["gradient boosting, log target"] = TransformedTargetRegressor(
+            Pipeline([("prep", preprocessor(False)),
+                      ("model", HistGradientBoostingRegressor(max_iter=800, learning_rate=0.03, max_leaf_nodes=15, l2_regularization=1.0, early_stopping=False, random_state=SEED))]),
+            func=np.log1p, inverse_func=np.expm1)  # fmt: skip
+        warnings_out.append(f"Target is right-skewed (skew {float(y.skew()):.1f}); a log-target model was added to model selection.")
 
 comparison = []
 for name, pipe in candidates.items():
@@ -226,6 +244,17 @@ for i, col in enumerate(sample.columns):
             row["lowest_level"] = str(by_level["mean"].idxmin())
     rows.append(row)
 rows.sort(key=lambda r: -r["importance"])
+# Dominant-feature check. The AUC>0.97 scan above only catches near-copies of the target; it missed the classic
+# UCI bank-marketing leak ("duration" = call length, only known AFTER the outcome; AUC 0.95 with it, 0.81 without).
+# When one feature carries most of the model's skill, ask the human whether it is known at prediction time.
+# This is a NOTE, not a warning: data alone cannot tell a leak from a genuinely strong driver (it also fires
+# for 'tenure' on the real Telco data, which is legitimate). Only a person or the LLM planner can judge timing.
+metrics["notes"] = []
+if rows and rows[0]["share_of_total"] > 0.5 and rows[0]["importance"] > 0:
+    metrics["notes"].append(
+        f"Feature '{rows[0]['feature']}' accounts for {rows[0]['share_of_total']:.0%} of the model's importance - "
+        "check that it is known at prediction time (not recorded after the outcome)."
+    )
 save_json({"metric": "roc_auc drop" if classification else "r2 drop", "features": rows}, "feature_importance.json")
 
 # ------------------------------------------------------------------ charts
