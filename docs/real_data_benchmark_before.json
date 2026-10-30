@@ -1,0 +1,138 @@
+{
+  "telco_churn_ibm": {
+    "e2e": {
+      "seconds": 11.6,
+      "status": "completed",
+      "error": null,
+      "target": "Churn",
+      "task": "classification",
+      "model": "logistic regression",
+      "score": 0.8418946498230386,
+      "metric": "ROC AUC",
+      "warnings": [],
+      "cv_comparison": [
+        {
+          "model": "baseline (majority class)",
+          "cv_mean": 0.5,
+          "cv_std": 0.0
+        },
+        {
+          "model": "logistic regression",
+          "cv_mean": 0.8460794823363198,
+          "cv_std": 0.0123340223509523
+        },
+        {
+          "model": "gradient boosting",
+          "cv_mean": 0.8436675033878238,
+          "cv_std": 0.009516346540346126
+        }
+      ],
+      "grounding_rate": 1.0,
+      "numbers_checked": 72,
+      "target_correct": true,
+      "attempts": {
+        "planner": 1,
+        "engineer": 1,
+        "analyst": 1,
+        "modeler": 1,
+        "reporter": 1
+      },
+      "fallbacks": []
+    },
+    "reference": "Published ROC AUC on this dataset is typically 0.84-0.85 (logistic regression and GBMs perform alike)."
+  },
+  "hr_attrition_ibm": {
+    "e2e": {
+      "seconds": 9.7,
+      "status": "completed",
+      "error": null,
+      "target": "Attrition",
+      "task": "classification",
+      "model": "logistic regression",
+      "score": 0.8131622017400293,
+      "metric": "ROC AUC",
+      "warnings": [],
+      "cv_comparison": [
+        {
+          "model": "baseline (majority class)",
+          "cv_mean": 0.5,
+          "cv_std": 0.0
+        },
+        {
+          "model": "logistic regression",
+          "cv_mean": 0.8392156942116866,
+          "cv_std": 0.02951327639883249
+        },
+        {
+          "model": "gradient boosting",
+          "cv_mean": 0.7846203148233604,
+          "cv_std": 0.017659132065162696
+        }
+      ],
+      "grounding_rate": 1.0,
+      "numbers_checked": 68,
+      "target_correct": true,
+      "attempts": {
+        "planner": 1,
+        "engineer": 1,
+        "analyst": 1,
+        "modeler": 1,
+        "reporter": 1
+      },
+      "fallbacks": []
+    },
+    "reference": "Small (1,470 rows, 16% positives); linear models usually match or beat GBMs, ROC AUC ~0.80-0.85."
+  },
+  "ames_housing": {
+    "e2e": {
+      "seconds": 24.7,
+      "status": "completed",
+      "error": null,
+      "target": "SalePrice",
+      "task": "regression",
+      "model": "ridge regression",
+      "score": 0.8849276831926588,
+      "metric": "R2",
+      "warnings": [],
+      "cv_comparison": [
+        {
+          "model": "baseline (mean)",
+          "cv_mean": -0.0017293875155699912,
+          "cv_std": 0.001133731230820968
+        },
+        {
+          "model": "ridge regression",
+          "cv_mean": 0.889142221297881,
+          "cv_std": 0.037089195179509725
+        },
+        {
+          "model": "gradient boosting",
+          "cv_mean": 0.8879072595948362,
+          "cv_std": 0.04333706292611677
+        }
+      ],
+      "grounding_rate": 0.9815,
+      "numbers_checked": 54,
+      "target_correct": true,
+      "attempts": {
+        "planner": 1,
+        "engineer": 1,
+        "analyst": 1,
+        "modeler": 1,
+        "reporter": 1
+      },
+      "fallbacks": []
+    },
+    "reference": "Right-skewed price; GBMs typically reach R2 ~0.90-0.93."
+  },
+  "bank_marketing": {
+    "e2e": {
+      "target": "default",
+      "model": null,
+      "score": null,
+      "error": "wrong target: picked 'default' (3 classes) -> run failed",
+      "seconds": null
+    },
+    "reference": "'duration' (call length) is only known after the call - a classic leakage feature. Moro et al. report AUC ~0.80 for a realistic (pre-call) model; with duration ~0.93."
+  }
+}

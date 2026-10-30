@@ -37,8 +37,8 @@
       "duplicates_removed": 40,
       "columns_dropped": 2,
       "grounding_rate": 1.0,
-      "numbers_checked": 71,
-      "seconds": 12.9,
+      "numbers_checked": 75,
+      "seconds": 17.0,
       "ok": true,
       "llm": "offline:templates",
       "attempts": {
@@ -84,8 +84,8 @@
       "duplicates_removed": 0,
       "columns_dropped": 3,
       "grounding_rate": 1.0,
-      "numbers_checked": 68,
-      "seconds": 10.1,
+      "numbers_checked": 72,
+      "seconds": 11.7,
       "ok": true,
       "llm": "offline:templates",
       "attempts": {
@@ -131,8 +131,8 @@
       "duplicates_removed": 0,
       "columns_dropped": 1,
       "grounding_rate": 1.0,
-      "numbers_checked": 37,
-      "seconds": 9.3,
+      "numbers_checked": 41,
+      "seconds": 12.9,
       "ok": true,
       "llm": "offline:templates",
       "attempts": {
